@@ -751,7 +751,7 @@
         <names>
           <str language="en">
             <version>0</version>
-            <text>Accession</text>
+            <text>Registration</text>
           </str>
           <str language="pt">
             <version>0</version>
@@ -773,7 +773,7 @@
     <names>
       <str language="en">
         <version>0</version>
-        <text>Accession Attachment</text>
+        <text>Registration Attachment</text>
       </str>
       <str language="pt" country="BR">
         <version>1</version>
@@ -787,7 +787,7 @@
     <descs>
       <str language="en">
         <version>0</version>
-        <text>An attachment for the Accession. This may be one or more PDF files of paperwork or a photo of the Accession.</text>
+        <text>An attachment for the Registration. This may be one or more PDF files of paperwork or a photo of the Registration.</text>
       </str>
     </descs>
   </container>
@@ -2235,13 +2235,13 @@
           </str>
           <str language="en">
             <version>0</version>
-            <text>Accession</text>
+            <text>Registration</text>
           </str>
         </names>
         <descs>
           <str language="en">
             <version>0</version>
-            <text>accession</text>
+            <text>registration</text>
           </str>
         </descs>
       </item>
@@ -2329,7 +2329,7 @@
         <descs>
           <str language="en">
             <version>0</version>
-            <text>Role the agent played in the accession process.</text>
+            <text>Role the agent played in the registration process.</text>
           </str>
           <str language="pt" country="BR">
             <version>1</version>
@@ -2427,7 +2427,7 @@
     <names>
       <str language="en">
         <version>0</version>
-        <text>Accession Agent</text>
+        <text>Registration Agent</text>
       </str>
       <str language="pt">
         <version>0</version>
@@ -2441,7 +2441,7 @@
     <descs>
       <str language="en">
         <version>0</version>
-        <text>The person(s) requesting the Accession. This references an Agent.</text>
+        <text>The person(s) requesting the Registration. This references an Agent.</text>
       </str>
       <str language="pt">
         <version>0</version>
@@ -5257,7 +5257,7 @@
         <names>
           <str language="en">
             <version>0</version>
-            <text>Accessions</text>
+            <text>Registrations</text>
           </str>
           <str language="pt">
             <version>0</version>
@@ -5271,7 +5271,7 @@
         <descs>
           <str language="en">
             <version>0</version>
-            <text>accessions</text>
+            <text>registrations</text>
           </str>
         </descs>
       </item>
@@ -5479,7 +5479,7 @@
       </str>
       <str language="en">
         <version>0</version>
-        <text>An agreement for allowing an Accession to occur, but does not include ownership.</text>
+        <text>An agreement for allowing an Registration to occur, but does not include ownership.</text>
       </str>
     </descs>
   </container>
@@ -7143,13 +7143,13 @@
           </str>
           <str language="en">
             <version>0</version>
-            <text>Accession</text>
+            <text>Registration</text>
           </str>
         </names>
         <descs>
           <str language="en">
             <version>0</version>
-            <text>accession</text>
+            <text>registration</text>
           </str>
         </descs>
       </item>
@@ -7261,7 +7261,7 @@
     <names>
       <str language="en">
         <version>0</version>
-        <text>Accession Authorization</text>
+        <text>Registration Authorization</text>
       </str>
       <str language="pt">
         <version>0</version>
@@ -7283,7 +7283,7 @@
       </str>
       <str language="en">
         <version>0</version>
-        <text>This represents the person authorizing the Accession. It references an existing Agent.</text>
+        <text>This represents the person authorizing the Registration. It references an existing Agent.</text>
       </str>
     </descs>
   </container>
@@ -14499,7 +14499,7 @@ Specify provides an extensive array of utilities for curatorial management of sp
           </str>
           <str language="en">
             <version>0</version>
-            <text>Quantity resolved (Returned, Accessioned, Lost, Discarded, Destroyed ...).</text>
+            <text>Quantity resolved (Returned, Registered, Lost, Discarded, Destroyed ...).</text>
           </str>
         </descs>
       </item>
@@ -27769,7 +27769,7 @@ Specify provides an extensive array of utilities for curatorial management of sp
         <names>
           <str language="en">
             <version>0</version>
-            <text>Accession Authorizations</text>
+            <text>Registration Authorizations</text>
           </str>
           <str language="pt" country="BR">
             <version>1</version>
@@ -40175,7 +40175,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Accession</text>
+            <text>Registration</text>
           </str>
           <str language="pt" country="BR">
             <version>1</version>
@@ -40185,7 +40185,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
         <descs>
           <str language="en">
             <version>0</version>
-            <text>accession</text>
+            <text>registration</text>
           </str>
         </descs>
       </item>
@@ -41713,13 +41713,13 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Accession</text>
+            <text>Registration</text>
           </str>
         </names>
         <descs>
           <str language="en">
             <version>0</version>
-            <text>accession</text>
+            <text>registration</text>
           </str>
         </descs>
       </item>
@@ -48113,7 +48113,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Accession Attachments</text>
+            <text>Registration Attachments</text>
           </str>
         </names>
         <descs>
@@ -54631,7 +54631,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
         <names>
           <str language="en">
             <version>0</version>
-            <text>Accession</text>
+            <text>Registration</text>
           </str>
           <str language="pt" country="BR">
             <version>1</version>
@@ -54645,7 +54645,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
         <descs>
           <str language="en">
             <version>0</version>
-            <text>accession</text>
+            <text>registration</text>
           </str>
         </descs>
       </item>
@@ -59519,7 +59519,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
         <descs>
           <str language="en">
             <version>0</version>
-            <text>accession</text>
+            <text>registration</text>
           </str>
         </descs>
       </item>
@@ -70007,7 +70007,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Accessions</text>
+            <text>Registrations</text>
           </str>
           <str language="pt" country="BR">
             <version>1</version>
@@ -70017,7 +70017,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
         <descs>
           <str language="en">
             <version>0</version>
-            <text>accessions</text>
+            <text>registrations</text>
           </str>
         </descs>
       </item>
@@ -74199,7 +74199,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Accession Number</text>
+            <text>Registration Number</text>
           </str>
         </names>
         <descs>
@@ -74213,7 +74213,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Usually an integer or alphanumeric value that is assigned to material when it enters the collection. The format of accession numbers varies among collections, but all refer to the acquisition of specimens, observations, or other collection objects.</text>
+            <text>Usually an integer or alphanumeric value that is assigned to material when it enters the collection. The format of registration numbers varies among collections, but all refer to the acquisition of specimens, observations, or other collection objects.</text>
           </str>
         </descs>
       </item>
@@ -74355,7 +74355,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Accession Agents</text>
+            <text>Registration Agents</text>
           </str>
         </names>
         <descs>
@@ -74565,7 +74565,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Date Accessioned</text>
+            <text>Date Registered</text>
           </str>
         </names>
         <descs>
@@ -74575,7 +74575,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Date of Accession.</text>
+            <text>Date of Registration.</text>
           </str>
           <str language="pt">
             <version>0</version>
@@ -74605,7 +74605,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Source of Accession, e.g. `Collecting`, `Gift`, `Bequest` ...</text>
+            <text>Source of Registration, e.g. `Collecting`, `Gift`, `Bequest` ...</text>
           </str>
           <str language="pt">
             <version>0</version>
@@ -74635,7 +74635,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Status of Accession, e.g. `In process`, `Complete` ...</text>
+            <text>Status of Registration, e.g. `In process`, `Complete` ...</text>
           </str>
           <str language="pt">
             <version>0</version>
@@ -74655,7 +74655,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Accession Condition</text>
+            <text>Registration Condition</text>
           </str>
         </names>
         <descs>
@@ -74669,7 +74669,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Physical description of the condition of the accession.</text>
+            <text>Physical description of the condition of the registration.</text>
           </str>
         </descs>
       </item>
@@ -74791,7 +74791,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>Accession Attachments</text>
+            <text>Registration Attachments</text>
           </str>
           <str language="pt">
             <version>0</version>
@@ -74897,7 +74897,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>A user-visible identifier of the Accession. Typically an integer, but may include alphanumeric characters as prefix, suffix, and separators.</text>
+            <text>A user-visible identifier of the Registration. Typically an integer, but may include alphanumeric characters as prefix, suffix, and separators.</text>
           </str>
         </descs>
       </item>
@@ -74945,7 +74945,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
           </str>
           <str language="en">
             <version>0</version>
-            <text>The total monetary value of the accession.</text>
+            <text>The total monetary value of the registration.</text>
           </str>
           <str language="pt" country="BR">
             <version>1</version>
@@ -74979,7 +74979,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
         <names>
           <str language="en">
             <version>0</version>
-            <text>Accession Authorizations</text>
+            <text>Registration Authorizations</text>
           </str>
           <str language="pt">
             <version>0</version>
@@ -75071,7 +75071,7 @@ Preparação: Uma subdivisão de um objeto de coleção q</text>
       </str>
       <str language="en">
         <version>0</version>
-        <text>Accession</text>
+        <text>Registration</text>
       </str>
       <str language="pt">
         <version>0</version>
