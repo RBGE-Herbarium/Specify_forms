@@ -545,6 +545,10 @@
                     <cell type="subview" viewname="Collectors" id="12" name="collectors" colspan="12" rows="3"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="t5"/>
+                    <cell type="field" id="t5" name="text5" uitype="text" colspan="10"/>
+                </row>    
+                <row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="stationFieldNumber" uitype="text"/>
                     <cell type="label" label="" colspan="5"/>
@@ -563,12 +567,12 @@
                     <cell type="field" id="4" name="locality" uitype="querycbx" initialize="name=Locality;title=Locality;clonebtn=true" colspan="10"/> 
                 </row>
                 <row>
+                    <cell type="label" labelfor="vloc"/>
+                    <cell type="field" id="vloc" name="verbatimLocality" uitype="text" colspan="10" rows="3"/>
+                </row>    
+                <row>
                     <cell type="label" labelfor="20"/>
                     <cell type="field" id="20" name="text1" uitype="text" colspan="10"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="vl"/>
-                    <cell type="field" id="vl" name="text4" uitype="text" colspan="10"/>   
                 </row>
                 <row>
                     <cell type="label" labelfor="6"/>
