@@ -241,29 +241,40 @@
                     <cell type="field" id="1" name="catalogNumber" uitype="formattedtext"/>
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="accession" uitype="querycbx" initialize="name=AccessionCO;title=AccessionCO" isrequired="false"/>
-                    <cell type="label" labelfor="14"/>
-                    <cell type="field" id="14" name="altCatalogNumber" uitype="text"/>
+                    
                 </row>
                 <row>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="cataloger" uitype="querycbx" initialize="name=Agent;title=Catalog Agent" isrequired="true"/>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" uitype="plugin" name="this" initialize="name=PartialDateUI;df=catalogedDate;tp=catalogedDatePrecision" uifieldformatter="Date"/>
-                    <cell type="label" labelfor="2"/>
-                    <cell type="field" id="2" name="text3" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" uitype="text"/>
                     <cell type="label" labelfor="fn"/>
                     <cell type="field" id="fn" name="fieldNumber" uitype="text"/>
-                    <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
                 </row>
+                <row>
+                    <cell type="label" labelfor="14"/>
+                    <cell type="field" id="14" name="altCatalogNumber" uitype="text"/>
+                    <cell type="label" labelfor="t2"/>
+                    <cell type="field" id="t2" name="text2" uitype="text"/>
+                    <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
+                </row>    
+                <row>
+                    <cell type="label" labelfor="t1"/>
+                    <cell type="field" id="t1" name="text1" uitype="textarea" colspan="11" rows="3"/> 
+                </row>
+                <row>
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="text3" uitype="text" colspan="5"/>
+                </row>    
                 <row>
                     <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="13" rows="5"/>
                 </row>
                 <row>
-                    <cell type="subview" viewname="CollectingEventSub" id="21" label="Collection Information" name="collectingEvent" colspan="13" rows="5"/>
+                    <cell type="subview" viewname="CollectingEventSub" id="21" label="Collecting Event" name="collectingEvent" colspan="13" rows="5"/>
                 </row>
                 <row>
                     <cell type="subview" viewname="Preparation" id="8" name="preparations" defaulttype="table" colspan="13" rows="3"/>
@@ -275,35 +286,42 @@
                     <cell type="subview" viewname="CollectionObjectProperty" id="cop" name="collectionObjectProperties" colspan="13" rows="3"/>
                 </row>
                 <row>
-                    <cell type="separator" label="Attachments" colspan="13"/>
+                    <cell type="label" labelfor="vis"/>
+                    <cell type="field" id="vis" name="visibility" uitype="text"/>
+                    <cell type="label" labelfor="vsb"/>
+                    <cell type="field" id="vsb" name="visibilitySetBy" uitype="querycbx" initialize="name=Agent;title=Catalog Agent"/>
                 </row>
                 <row>
-                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments" colspan="5" initialize="icon=CollectionObjectAttachment" defaulttype="icon"/>
-                    <cell type="panel" id="116" name="outerPanel" coldef="p,2px,p:g" rowdef="p,4px,p,4px,p,4px,p,4px,p" colspan="6">
-                        <rows>
-                            <row>
-								<cell type="label" labelfor="10"/>
-								<cell type="field" id="10" name="modifiedByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
-							</row>
-							<row>
-								<cell type="label" labelfor="11"/>
-								<cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
-							</row>
-							<row>
-								<cell type="label" label=""/>
-                                <cell type="field" id="113" uitype="checkbox" name="generateLabelChk" label="Generate Label on Save" ignore="true" default="true" initialize="visible=false"/>
-                            </row>
-							<row>
-								<cell type="label" label=""/>
-                                <cell type="command" id="114" name="generateLabelBtn" label="Generate Label" ignore="true" default="true" initialize="visible=false"/>
-                            </row>
-							<row>
-								<cell type="label" labelfor="guid"/>
-								<cell type="field" id="guid" name="guid" uitype="text" readonly="true"/>
-							</row>
-                        </rows>
-                    </cell>
+                    <cell type="separator" label="Attachments" colspan="5"/>
                 </row>
+                <row>
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="collectionObjectAttachments" colspan="13" initialize="icon=CollectionObjectAttachment" defaulttype="icon"/>
+                </row>        
+                <row>
+                    <cell type="label" labelfor="9"/>
+                    <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="12"/>
+                    <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="10"/>
+                    <cell type="field" id="10" name="modifiedByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
+                </row>
+                <row>
+                    <cell type="label" label=""/>
+                    <cell type="field" id="113" uitype="checkbox" name="generateLabelChk" label="Generate Label on Save" ignore="true" default="true" initialize="visible=false"/>
+                </row>
+                <row>
+                    <cell type="label" label=""/>
+                    <cell type="command" id="114" name="generateLabelBtn" label="Generate Label" ignore="true" default="true" initialize="visible=false"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="guid"/>
+                    <cell type="field" id="guid" name="guid" uitype="text" readonly="true"/>
+                </row>
+
                 <!--<row>
 								<cell type="subview" id="exsiccataitem" viewname="ExsiccataItem" name="exsiccataItems" initialize="align=right;btn=true"/>
                     <cell type="label" label="RELNAMEHERE:" initialize="align=right;"/>
