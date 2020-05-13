@@ -1092,27 +1092,24 @@
                     <cell type="field" id="7" name="prepType" uitype="combobox" picklist="PrepType"/>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date"/>
-                    <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
-                    <cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/>
-                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="preparedByAgent" uitype="querycbx" initialize="name=Agent"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="countAmt" uitype="text"/>
-                    <cell type="label" labelfor="2"/>
-                    <cell type="field" id="2" name="preparedByAgent" uitype="querycbx" initialize="name=Agent"/>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3"/>
+                    <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
+                    <cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/>             
                 </row>
                 <row>
                     <cell type="label" labelfor="sn"/>
                     <cell type="field" id="sn" name="sampleNumber" uitype="text"/>
                     <cell type="label" labelfor="stat"/>
                     <cell type="field" id="stat" name="status" uitype="text"/>
-                    <cell type="label" labelfor="t6"/>
-                    <cell type="field" id="t6" name="text6" uitype="text" colspan="3"/>
-                </row>
-                <row>
+                    <cell type="label" labelfor="t9"/>
+                    <cell type="field" id="t9" name="text9" uitype="text" colspan="3"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="i1"/>
@@ -1121,6 +1118,17 @@
                     <cell type="field" id="i2" name="integer2" uitype="text"/>
                     <cell type="label" labelfor="t5"/>
                     <cell type="field" id="t5" name="text5" uitype="text" colspan="3"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="n1"/>
+                    <cell type="field" id="n1" name="number1" uitype="text"/>
+                    <cell type="label" labelfor="t6"/>
+                    <cell type="field" id="t6" name="text6" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="t8"/>
+                    <cell type="field" id="t8" name="text8" uitype="text" colspan="7"/>
+                    <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="t1"/>
@@ -1132,18 +1140,22 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="t4"/>
-                    <cell type="field" id="t4" name="text4" uitype="text" colspan="3"/>
+                    <cell type="field" id="t4" name="text4" uitype="text"/>
+                    <cell type="label" labelfor="t3"/>
+                    <cell type="field" id="t3" name="text3" uitype="text"/>
                     <cell type="label" labelfor="t7"/>
-                    <cell type="field" id="t7" name="text7" uitype="text" colspan="5"/>
+                    <cell type="field" id="t7" name="text7" uitype="text"/>
                 </row>
                 <row>
-                </row>
+                    <cell type="label" labelfor="rem"/>
+                    <cell type="field" id="rem" name="remarks" uitype="textareabrief" rows="2" colspan="11"/>
+                </row>    
                 <row>
-                    <cell type="label" labelfor="t8"/>
-                    <cell type="field" id="t8" name="text8" uitype="text" colspan="7"/>
-                    <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
                     <cell type="subview" id="ms" viewname="MaterialSample" name="materialSamples" initialize="align=right;btn=true;icon=MaterialSample"/>
-                </row>
+                </row>    
+                
+                
                 <!--<row>
                     <cell type="label" labelfor="t3"/>
                     <cell type="field" id="t3" name="text3" uitype="text"/>
@@ -1292,7 +1304,10 @@
                     <cell type="label" labelfor="t3"/>
                     <cell type="field" id="t3" name="text3" uitype="text"/>
                     <cell type="label" labelfor="t4"/>
-                    <cell type="field" id="t4" name="text4" uitype="combobox"/>
+                    <cell type="field" id="t4" name="text4" uitype="text"/>
+                </row>
+                
+                <!--<row>
                     <cell type="label" labelfor="t5"/>
                     <cell type="field" id="t5" name="text5" uitype="text"/>
                 </row>
@@ -1305,7 +1320,7 @@
                     <cell type="field" id="t8" name="text8" uitype="text"/>
                     <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
                 </row>
-                <!--<row>
+                <row>
                     <cell type="label" labelfor="t9"/>
                     <cell type="field" id="t9" name="text9" uitype="text"/>
                     <cell type="label" labelfor="t10"/>
