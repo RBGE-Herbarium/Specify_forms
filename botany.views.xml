@@ -734,7 +734,7 @@
                 </row>
                 <row>
                  <cell type="field" id="sdv" name="startDateVerbatim" uitype="text"/>
-                    <cell type="label" labelfor="3"/>
+                 <cell type="label" labelfor="sdv"/>
                 </row>
                 <row>
                     <cell type="subview" viewname="CollectionObjectSub" id="11" colspan="9" rows="3" name="collectionObjects" initialize="addsearch=true"/>
