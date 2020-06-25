@@ -1150,12 +1150,12 @@
                 <row>
                     <cell type="subview" viewname="CollectionObjectProperty" id="cop" name="collectionObjectProperties" colspan="13" rows="3"/>
                 </row>
-                <row>
+                <!--<row>
                     <cell type="label" labelfor="vis"/>
                     <cell type="field" id="vis" name="visibility" uitype="text"/>
                     <cell type="label" labelfor="vsb"/>
                     <cell type="field" id="vsb" name="visibilitySetBy" uitype="querycbx" initialize="name=Agent;title=Catalog Agent"/>
-                </row>
+                </row>-->
                 <row>
                     <cell type="separator" label="Attachments" colspan="5"/>
                 </row>
