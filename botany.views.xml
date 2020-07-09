@@ -1058,7 +1058,7 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Form For OtherIdentifier]]></desc>
             
-            <columnDef>100px,2px,100px,5px,100px,2px,100px,5px,100px,2px,100px,5px,100px,2px,100px,4px</columnDef>
+            <columnDef>90px,2px,90px,5px,90px,2px,90px,5px,90px,2px,90px,5px,90px,2px,90px,44px</columnDef>
             <columnDef os="lnx">105px,2px,105px,5px,105px,2px,105px,5px,105px,2px,105px,5px,105px,2px,105px,44px</columnDef>
             <columnDef os="mac">115px,2px,115px,5px,115px,2px,115px,5px,115px,2px,115px,5px,115px,2px,115px,74px</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),p:g</columnDef>
