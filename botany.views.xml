@@ -1355,33 +1355,32 @@
                     <cell type="field" id="3" name="accession" uitype="querycbx" initialize="name=AccessionCO;title=AccessionCO" isrequired="false"/>
                     
                 </row>
-                <row>
+                <!--<row>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="cataloger" uitype="querycbx" initialize="name=Agent;title=Catalog Agent" isrequired="true"/>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" uitype="plugin" name="this" initialize="name=PartialDateUI;df=catalogedDate;tp=catalogedDatePrecision" uifieldformatter="Date"/>
-                </row>
+                </row>-->
                 <row>
-                    <cell type="label" labelfor="n1"/>
-                    <cell type="field" id="n1" name="number1" uitype="text"/>
-                    <cell type="label" labelfor="fn"/>
-                    <cell type="field" id="fn" name="fieldNumber" uitype="text"/>
-                </row>
+                    <cell type="separator" label="Cultivated Information" colspan="5"/>
+                </row> 
                 <row>
                     <cell type="label" labelfor="14"/>
                     <cell type="field" id="14" name="altCatalogNumber" uitype="text"/>
                     <cell type="label" labelfor="t2"/>
                     <cell type="field" id="t2" name="text2" uitype="text"/>
                     <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
-                </row>    
-                
+                </row>   
                 <row>
-                    <cell type="label" labelfor="2"/>
-                    <cell type="field" id="2" name="text3" uitype="text" colspan="5"/>
-                </row>    
+                    <cell type="subview" viewname="Preparation" id="8" name="preparations" defaulttype="table" colspan="13"/>
+                </row> 
                 <row>
                     <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="13" rows="5"/>
                 </row>
+                <row>
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="text3" uitype="text" colspan="5"/>
+                </row> 
                 <row>
                     <cell type="subview" viewname="CollectingEventSub" id="21" label="Collecting Event" name="collectingEvent" colspan="13" rows="5"/>
                 </row>
@@ -1390,7 +1389,13 @@
                     <cell type="field" id="t1" name="text1" uitype="textarea" colspan="11" rows="3"/> 
                 </row>
                 <row>
-                    <cell type="subview" viewname="Preparation" id="8" name="preparations" defaulttype="table" colspan="13"/>
+                    <cell type="separator" label="" colspan="5"/>
+                </row> 
+                <row>
+                    <cell type="label" labelfor="n1"/>
+                    <cell type="field" id="n1" name="number1" uitype="text"/>
+                    <cell type="label" labelfor="fn"/>
+                    <cell type="field" id="fn" name="fieldNumber" uitype="text"/>
                 </row>
                 <row>
                     <cell type="subview" id="15" viewname="BotanyAttributes" name="collectionObjectAttribute" colspan="13"/>
@@ -1743,7 +1748,7 @@
             <definition>CollectionObjectProperty</definition>
         </viewdef>
 
-<!--SECTION: COMMON NAMEs-->        
+<!--SECTION: COMMON NAMES-->        
 
         <viewdef 
             type="form"
@@ -1823,18 +1828,14 @@
                     <cell type="field" id="3" name="isCurrent" uitype="checkbox"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="13"/>
+                    <cell type="field" id="13" name="preferredTaxon" uitype="text" readonly="true" colspan="5"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="8"/>
                     <cell type="field" id="8" name="qualifier" uitype="text"/>
                     <cell type="label" labelfor="9"/>
-                    <cell type="field" id="9" name="addendum" uitype="text"/>  
-                    <cell type="label" labelfor="11"/>
-                    <cell type="field" id="11" name="nameUsage" uitype="combobox"/>       
-                </row>
-                <row>
-                    <cell type="label" labelfor="13"/>
-                    <cell type="field" id="13" name="preferredTaxon" uitype="text" readonly="true" colspan="5"/>
-                    <cell type="label" labelfor="6"/>
-                    <cell type="field" id="6" name="typeStatusName" uitype="combobox"/>
+                    <cell type="field" id="9" name="addendum" uitype="text"/>        
                 </row>
                 <row>
                     <cell type="label" labelfor="7"/>
@@ -1845,10 +1846,16 @@
                     <cell type="field" id="fob" name="featureOrBasis" uitype="text"/>  
                 </row>
                 <row>
-                    <cell type="label" labelfor="dett1"/>
-                    <cell type="field" id="dett1" name="text1" uitype="text"/>
                     <cell type="label" labelfor="dett2"/>
                     <cell type="field" id="dett2" name="text2" uitype="text"/>
+                    <cell type="label" labelfor="dett1"/>
+                    <cell type="field" id="dett1" name="text1" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="nameUsage" uitype="combobox"/> 
+                    <cell type="label" labelfor="6"/>
+                    <cell type="field" id="6" name="typeStatusName" uitype="combobox"/>  
                 </row>
                 <row>
                     <cell type="label" labelfor="12"/>
