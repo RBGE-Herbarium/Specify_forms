@@ -2562,6 +2562,10 @@
                     <cell type="field" id="pol" name="purposeOfLoan" uitype="text" colspan = "3"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="con"/>
+                    <cell type="field" id="con" name="contents" uitype="text" colspan="12" rows="2"/>
+                </row>    
+                <row>
 
                     <cell type="label" labelfor="rc"/>
                     <cell type="field" id="rc" name="receivedComments" uitype="text" colspan = "12"/>
