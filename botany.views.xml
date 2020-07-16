@@ -997,13 +997,12 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="t5"/>
-                    <cell type="field" id="t5" name="text5" uitype="text" colspan="10"/>
+                    <cell type="field" id="t5" name="text5" uitype="text" colspan="10" readonly="true"/>
                 </row>    
                 <row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="stationFieldNumber" uitype="text"/>
                     <cell type="label" label="" colspan="5"/>
-                    <cell type="subview" id="1" viewname="ObjectAttachment" name="collectingEventAttachments" initialize="align=right;btn=true;icon=CollectingEventAttachment"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="7"/>
@@ -1014,18 +1013,23 @@
                     <cell type="field" id="13" name="startDateVerbatim" uitype="text" colspan="2"/>   
                 </row>
                 <row>
+                    <cell type="separator" label="" colspan="9"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="t4"/>
+                    <cell type="field" id="t4" name="text4" uitype="text"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="locality" uitype="querycbx" initialize="name=Locality;title=Locality;clonebtn=true" colspan="10"/> 
                 </row>
                 <row>
                     <cell type="label" labelfor="vloc"/>
-                    <cell type="field" id="vloc" name="verbatimLocality" uitype="text" colspan="10" rows="3"/>
+                    <cell type="field" id="vloc" name="verbatimLocality" uitype="textarea " colspan="10" rows="3"/>
                 </row>   
                 <row>
                     <cell type="label" labelfor="t3"/>
                     <cell type="field" id="t3" name="text3" uitype="text"/>
-                    <cell type="label" labelfor="t4"/>
-                    <cell type="field" id="t4" name="text4" uitype="text"/>
                 </row>              
                 <row>
                     <cell type="label" labelfor="20"/>
@@ -1033,7 +1037,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="t2"/>
-                    <cell type="field" id="t2" name="text2" uitype="text"/>
+                    <cell type="field" id="t2" name="text2" uitype="text" colspan="10"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="6"/>
@@ -1041,6 +1045,9 @@
                 </row>
                 <row>
                     <cell type="subview" viewname="CollectingEventAttribute" id="cea" label="Collecting Event Attribute" name="collectingEventAttribute" colspan="12" rows="15"/>
+                </row>
+                <row>
+                    <cell type="separator" label="" colspan="5"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="10"/>
@@ -1083,9 +1090,9 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="t9"/>
-                    <cell type="field" id="t9" name="text9" uitype="text"/>
+                    <cell type="field" id="t9" name="text9" uitype="label"/>
                     <cell type="label" labelfor="n9"/>
-                    <cell type="field" id="n9" name="number9" uitype="text"/>
+                    <cell type="field" id="n9" name="number9" uitype="label"/>
                 </row>
                 <row>
                     <cell type="separator" label="Latitude" colspan="5"/>
@@ -1106,7 +1113,7 @@
                     <cell type="label" labelfor="t14"/>
                     <cell type="field" id="t14" name="text14" uitype="text"/>
                     <cell type="label" labelfor="n10"/>
-                    <cell type="field" id="n10" name="number10" uitype="text"/>
+                    <cell type="field" id="n10" name="number10" uitype="label"/>
                 </row>  
                 <row>
                     <cell type="separator" label="Longitude" colspan="5"/>
@@ -1127,16 +1134,18 @@
                     <cell type="label" labelfor="t15"/>
                     <cell type="field" id="t15" name="text15" uitype="text"/>
                     <cell type="label" labelfor="n11"/>
-                    <cell type="field" id="n11" name="number11" uitype="text"/>
+                    <cell type="field" id="n11" name="number11" uitype="label"/>
                 </row>  
+                <row>
+                    <cell type="label" labelfor="t5"/>
+                    <cell type="field" id="t5" name="text5" uitype="text" default="WGS84"/>
+                </row>
                 <row>
                     <cell type="separator" label="GeoCoordinate Information" colspan="5"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="t11"/>
                     <cell type="field" id="t11" name="text11" uitype="text"/>
-                    <cell type="label" labelfor="t5"/>
-                    <cell type="field" id="t5" name="text5" uitype="text"/>
                     <cell type="label" labelfor="t3"/>
                     <cell type="field" id="t3" name="text3" uitype="text" colspan="6"/>
                 </row>
@@ -1384,6 +1393,9 @@
                 <row>
                     <cell type="subview" viewname="CollectingEventSub" id="21" label="Collecting Event" name="collectingEvent" colspan="13" rows="5"/>
                 </row>
+                 <row>
+                    <cell type="separator" label="" colspan="5"/>
+                </row>
                 <row>
                     <cell type="label" labelfor="t1"/>
                     <cell type="field" id="t1" name="text1" uitype="textarea" colspan="11" rows="3"/> 
@@ -1394,8 +1406,6 @@
                 <row>
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" uitype="text"/>
-                    <cell type="label" labelfor="fn"/>
-                    <cell type="field" id="fn" name="fieldNumber" uitype="text"/>
                 </row>
                 <row>
                     <cell type="subview" id="15" viewname="BotanyAttributes" name="collectionObjectAttribute" colspan="13"/>
@@ -1607,15 +1617,16 @@
             <rowDef auto="true" sep="2px" cell="p"/>
             <rows>
                 <row>
+                    <cell type="label" labelfor="t18"/>
+                    <cell type="field" id="t18" name="text18" uitype="text" colspan="6"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="t16"/>
                     <cell type="field" id="t16" name="text16" uitype="text"/>
                     <cell type="label" labelfor="t17"/>
                     <cell type="field" id="t17" name="text17" uitype="text"/>
                 </row>
-                <row>
-                    <cell type="label" labelfor="t18"/>
-                    <cell type="field" id="t18" name="text18" uitype="text" colspan="6"/>
-                </row>    
+                   
                 <!--<row>
                     <cell type="label" labelfor="d1"/>
                     <cell type="field" id="d1" name="date1" uitype="formattedtext" uifieldformatter="Date"/>
