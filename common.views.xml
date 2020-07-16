@@ -1705,11 +1705,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
+                    <cell type="field" id="1" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="7"/>
                 </row>
                 <!--<row>
                     <cell type="label" labelfor="9"/>
@@ -1770,10 +1766,6 @@
                 <row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="agent.firstName" uitype="text" colspan="3"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="7"/>
-                    <cell type="field" id="7" name="remarks" uitype="text" colspan="3"/>
                 </row>
             </rows>
         </viewdef>
