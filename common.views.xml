@@ -3284,6 +3284,10 @@
                     <cell type="field" id="9" name="endDate" uitype="formattedtext" uifieldformatter="Date"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="t1"/>
+                    <cell type="field" id="t1" name="text1" uitype="text"/>
+                </row>    
+                <row>
                     <cell type="label" labelfor="10"/>
                     <cell type="field" id="10" name="remarks" uitype="textareabrief" rows="2" colspan="9"/>
                 </row>
