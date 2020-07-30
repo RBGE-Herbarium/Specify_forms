@@ -730,13 +730,13 @@
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="text4" uitype="text"/>
                     <cell type="label" labelfor="t5"/>
-                    <cell type="field" id="t5" name="text5" uitype="text"/>
+                    <cell type="field" id="t5" name="text5" uitype="combobox"/>
                 </row>
 				<row>
                     <cell type="label" labelfor="t6"/>
                     <cell type="field" id="t6" name="text6" uitype="text"/>
                     <cell type="label" labelfor="t7"/>
-                    <cell type="field" id="t7" name="text7" uitype="text"/>
+                    <cell type="field" id="t7" name="text7" uitype="combobox"/>
                 </row>
                 <!--<row>
                     <cell type="label" labelfor="22"/>
@@ -1023,7 +1023,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="t4"/>
-                    <cell type="field" id="t4" name="text4" uitype="text"/>
+                    <cell type="field" id="t4" name="text4" uitype="combobox"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="4"/>
@@ -1090,9 +1090,9 @@
                     <cell type="label" labelfor="n8"/>
                     <cell type="field" id="n8" name="number8" uitype="text"/>
                     <cell type="label" labelfor="t6"/>
-                    <cell type="field" id="t6" name="text6" uitype="text"/>
+                    <cell type="field" id="t6" name="text6" uitype="combobox"/>
                     <cell type="label" labelfor="t10"/>
-                    <cell type="field" id="t10" name="text10" uitype="text"/>
+                    <cell type="field" id="t10" name="text10" uitype="combobox"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="t9"/>
@@ -1110,14 +1110,14 @@
                     <cell type="field" id="n2" name="number2" uitype="text"/>
                     <cell type="label" labelfor="n3"/>
                     <cell type="field" id="n3" name="number3" uitype="text"/>
-                    <cell type="label" labelfor="t7"/>
-                    <cell type="field" id="t7" name="text7" uitype="text"/>
+                    <cell type="label" labelfor="t8"/>
+                    <cell type="field" id="t8" name="text8" uitype="combobox"/>
                 </row>   
                 <row>
                     <cell type="label" labelfor="n12"/>
                     <cell type="field" id="n12" name="number12" uitype="text"/>
                     <cell type="label" labelfor="t14"/>
-                    <cell type="field" id="t14" name="text14" uitype="text"/>
+                    <cell type="field" id="t14" name="text14" uitype="combobox"/>
                     <cell type="label" labelfor="n10"/>
                     <cell type="field" id="n10" name="number10" uitype="label"/>
                 </row>  
@@ -1131,20 +1131,20 @@
                     <cell type="field" id="n5" name="number5" uitype="text"/>
                     <cell type="label" labelfor="n6"/>
                     <cell type="field" id="n6" name="number6" uitype="text"/>
-                    <cell type="label" labelfor="t8"/>
-                    <cell type="field" id="t8" name="text8" uitype="text"/>
+                    <cell type="label" labelfor="t7"/>
+                    <cell type="field" id="t7" name="text7" uitype="combobox"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="n13"/>
                     <cell type="field" id="n13" name="number13" uitype="text"/>
                     <cell type="label" labelfor="t15"/>
-                    <cell type="field" id="t15" name="text15" uitype="text"/>
+                    <cell type="field" id="t15" name="text15" uitype="combobox"/>
                     <cell type="label" labelfor="n11"/>
                     <cell type="field" id="n11" name="number11" uitype="label"/>
                 </row>  
                 <row>
                     <cell type="label" labelfor="t5"/>
-                    <cell type="field" id="t5" name="text5" uitype="text" default="WGS84"/>
+                    <cell type="field" id="t5" name="text5" uitype="combobox" default="Unknown"/>
                 </row>
                 <row>
                     <cell type="separator" label="GeoCoordinate Information" colspan="5"/>
@@ -1153,13 +1153,13 @@
                     <cell type="label" labelfor="t11"/>
                     <cell type="field" id="t11" name="text11" uitype="text"/>
                     <cell type="label" labelfor="t3"/>
-                    <cell type="field" id="t3" name="text3" uitype="text" colspan="6"/>
+                    <cell type="field" id="t3" name="text3" uitype="combobox" colspan="6"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="t1"/>
-                    <cell type="field" id="t1" name="text1" uitype="text" colspan="5"/>
+                    <cell type="field" id="t1" name="text1" uitype="combobox" colspan="5"/>
                     <cell type="label" labelfor="t2"/>
-                    <cell type="field" id="t2" name="text2" uitype="text" colspan="6"/>
+                    <cell type="field" id="t2" name="text2" uitype="combobox" colspan="6"/>
                 </row>
 
                 <!--<row>
@@ -1380,6 +1380,9 @@
                     <cell type="field" id="2" name="text3" uitype="text" colspan="5"/>
                 </row>
 		<row>
+		    <cell type="separator" label="" colspan="5"/>
+		</row>
+		<row>
 		    <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="accession" uitype="querycbx" initialize="name=AccessionCO;title=AccessionCO" isrequired="false"/>
                 </row> 
@@ -1388,7 +1391,7 @@
                 </row>
 		<row>
                     <cell type="label" labelfor="avail"/>
-                    <cell type="field" id="avail" name="availability" uitype="text"/>
+                    <cell type="field" id="avail" name="availability" uitype="combobox" colspan ="3"/>
                 </row>
                  <row>
                     <cell type="separator" label="" colspan="5"/>
@@ -1842,6 +1845,10 @@
             <rowDef auto="true" cell="p" sep="2px"/>
 
             <rows>
+		<row>
+		    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="nameUsage" uitype="combobox"/>
+		</row>
                 <row>
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="taxon" uitype="querycbx" initialize="name=Taxon" colspan="7"/>
@@ -1853,9 +1860,9 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="8"/>
-                    <cell type="field" id="8" name="qualifier" uitype="text"/>
+                    <cell type="field" id="8" name="qualifier" uitype="combobox"/>
                     <cell type="label" labelfor="9"/>
-                    <cell type="field" id="9" name="addendum" uitype="text"/>        
+                    <cell type="field" id="9" name="addendum" uitype="combobox"/>        
                 </row>
                 <row>
                     <cell type="label" labelfor="7"/>
@@ -1872,8 +1879,6 @@
                     <cell type="field" id="dett1" name="text1" uitype="text"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="11"/>
-                    <cell type="field" id="11" name="nameUsage" uitype="combobox"/> 
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="typeStatusName" uitype="combobox"/>  
                 </row>
@@ -1902,8 +1907,6 @@
                     <cell type="field" id="fob" name="featureOrBasis" uitype="text"/>
                     <cell type="label" labelfor="mtd"/>
                     <cell type="field" id="mtd" name="method" uitype="text"/>
-                    <cell type="label" labelfor="11"/>
-                    <cell type="field" id="11" name="nameUsage" uitype="combobox"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="n1"/>
@@ -2330,7 +2333,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="stat"/>
-                    <cell type="field" id="stat" name="status" uitype="text"/>
+                    <cell type="field" id="stat" name="status" uitype="combobox"/>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3"/>              
                 </row>
