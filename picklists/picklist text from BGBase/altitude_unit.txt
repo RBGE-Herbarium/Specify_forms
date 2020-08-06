@@ -1,0 +1,5 @@
+Altitude Unit
+
+M	altitude measured in meters
+F	altitude measured in feet
+U	uncertain which unit was used

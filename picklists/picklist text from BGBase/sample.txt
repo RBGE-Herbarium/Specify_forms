@@ -1,0 +1,9 @@
+Sample
+
+SO	sexual material (seed/seedlings/sporelings) from one individual
+SM	sexual material (seed/seedlings/sporelings) from many individuals
+Sn	sexual material (seed/seedlings/sporelings) from n individuals (where n is an integer)
+VO	vegetative material (cutting, whole plant etc) from one individual
+VM	vegetative material (cutting, whole plant etc) from many individuals
+Vn	vegetative material (cutting, whole plant etc) from n individuals (where n is an integer)
+XX	uncertain

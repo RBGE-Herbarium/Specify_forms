@@ -1,0 +1,7 @@
+Accuracy
+
+A	within 5km of the coordinates
+B	within 6-20km of the coordinates
+C	more than 20km from the coordinates
+G	locality information derived from a GPS
+Z	no data (accuracy cannot be determined)

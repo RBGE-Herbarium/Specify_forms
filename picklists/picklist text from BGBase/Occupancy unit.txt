@@ -1,0 +1,9 @@
+Area of Occupancy Unit
+
+A	acres
+F	square feet
+H	hectares
+K	square kilometres
+M	squre metres
+MI	squre miles
+X	unknown

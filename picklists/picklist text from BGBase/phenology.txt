@@ -1,0 +1,17 @@
+Phenology
+
+FB	flower buds
+FL	flowering
+FL-I	flowering - immature flowers or cones
+FL-M	flowering - matureflowers or cones
+FL-O	flowering - oldflowers or cones persisting
+FL/FR	flowering and fruiting
+FR	fruiting
+FR-D	fruiting - young, developing fruits (unripe)
+FR-R	fruiting - mature fruits (ripe)
+FR-O	fruiting - old fruits persisting
+J	juvenile
+S	sterile
+VP	producing vegetative propagules (turions etc.)
+W	winter/dormant condition
+X	unknown

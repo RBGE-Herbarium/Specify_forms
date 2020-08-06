@@ -1,0 +1,5 @@
+Altitude Qualifier
+
+>	greater than, above
+<	less than, below
+ca	about, approximately

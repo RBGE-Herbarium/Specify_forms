@@ -1,0 +1,4 @@
+Longitude Direction
+
+E
+W

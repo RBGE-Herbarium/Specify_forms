@@ -1,0 +1,13 @@
+Location Sensitive
+
+Y	suppress all wild collecting locality infomation
+RE	suppress regiona and below
+CO	suppress country and below
+BR	suppress BRU and below
+S1	suppress Sub-Country 1 and below
+S2	suppress Sub-Country 2 and below
+S3	suppress Sub-Country 3 and below
+GA	suppress Geographic Area and below
+LO	suppress locality and below (including Habitat, Vegetation etc.)
+LL	suppress latitude/longitude and below (including UTM)
+NG	suppress national grid

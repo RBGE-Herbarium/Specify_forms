@@ -1,0 +1,5 @@
+Population Size Qualifier
+
+> 	greater than
+<	less than
+ca	about

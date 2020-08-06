@@ -1,0 +1,14 @@
+GeoRef Source
+
+E	estimated (it is better to use one of the other codes below)
+L	all georeferenced information come from the original label
+GPS	lat/long information comes from GPS
+GAZ	added lat/long by comparision with gazetteer
+GAZS	added lat/long seconds by comparision with gazetteer
+GAZM	added lat/long minutes by comparision with gazetteer
+GAZD	added lat/long degrees by comparision with gazetteer
+MAP	added lat/long by comparision with a map
+MAPS	added lat/long seconds by comparision with a map
+MAPM	added lat/long minutes by comparision with a map
+MAPD 	added lat/long by degrees comparision with a map
+X	unknown

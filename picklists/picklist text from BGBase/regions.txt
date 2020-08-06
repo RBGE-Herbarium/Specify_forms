@@ -1,0 +1,36 @@
+Regions
+
+1 - Europe excl. Britain and Ireland
+1A - Britain and Ireland
+2A - West Asia and Egypt
+2A_Arabia - Arabian Peninsula
+2B - North Africa
+2C - NE Atlantic Islands
+3 - Northern Asia
+3A - Outer China incl. Tibet
+4 - Inner China, Korea and Taiwan
+4A - Japan
+5 - South Asia
+5A - India, Bangladesh & Pakistan
+5B - Sri Lanka
+5c - Myanmar (Burma)
+5D - Bhutan, Sikkim & Darjeeling
+5E - Nepal
+6A - Malay Peninsula
+6B - Indo-China
+6C - Malay Islands
+6D - Philippines
+6E - New Guinea
+7 - Australia
+8 - New Zealand
+9 - Pacific Islands
+10 - Tropical Africa
+11 - Madagascar and Indian Ocean
+12 - Southern Africa
+12A - St Helena & Ascension
+13 - North America
+14 - Central America
+16 - E. Tropical South America
+17 - W. Tropical South America
+18 - Temperate South America
+19 - Antarctica

@@ -1,0 +1,11 @@
+Abundance
+
+dominant
+Abundant
+Very common
+Common
+Frequent
+Infrequent
+Rare
+Scattered
+Sporadic

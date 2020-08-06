@@ -1,0 +1,6 @@
+Certainty
+
+1	long shot - a poor match in the gazetteer or map and/or unresolved ambiguity
+2	possible - a reasonable match in the gazetteer or map and/or a significant ambiguity
+3	probable - close match for the locality name in the gazetteer or map, with possible, although unlikely, ambiguity
+4  	certain - an exact match for the locality name in the gazetteer or map; or information derived from a GPS
