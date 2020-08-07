@@ -2393,7 +2393,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="n2"/>
-                    <cell type="field" id="n2" name="number2" uitype="text" readonly="true"/>
+                    <cell type="field" id="n2" name="number2" uitype="label"/>
                 </row>
                 <row>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
