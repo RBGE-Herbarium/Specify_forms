@@ -1,0 +1,8 @@
+Start at Borrow:
+
+Borrow - Invoice Number (Contains)
+Borrow - Their Number (Contains)
+Borrow - Borrow Date (=)
+Borrow Material - Quantity (=)
+Borrow Material - Quantity returned (=)
+Borrow Material - Description (Contains)
