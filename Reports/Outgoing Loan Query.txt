@@ -1,0 +1,9 @@
+Start at Loan
+
+Select:
+Loan - Loan Number (Contains)
+Loan - Current Due Date (=)
+Loan - Loan date (=)
+Loan - Contents (Contains)
+Preparation - Barcode (Contains)
+
