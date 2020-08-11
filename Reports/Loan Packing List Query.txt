@@ -1,0 +1,10 @@
+Start at Loan
+
+Select:
+
+Loan - Loan Number (Contains)
+Preparation - Barcode (Contains)
+Collecting Event - Collector Number (Contains)
+Determination - Current (Yes)
+Taxon - Full Name (Contains)
+Collectors - Collectors [Aggregated]
