@@ -1009,6 +1009,10 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="geography" uitype="text" colspan="3" readonly="false"/>
                 </row>
+                <row>
+                    <cell type="label" labelfor="4"/>
+                    <cell type="field" id="4" name="geore" uitype="text" colspan="3"/>
+                </row>
             </rows>
         </viewdef>
 
@@ -1025,6 +1029,10 @@
                 <row>
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="geography" uitype="text" colspan="3" readonly="false"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="4"/>
+                    <cell type="field" id="4" name="geore" uitype="text" colspan="3"/>
                 </row>
             </rows>
         </viewdef>
@@ -1560,8 +1568,8 @@
                     <cell type="field" id="6" name="remarks" uitype="textarea" colspan="6"/>
                 </row>
                 <row>
-                 <cell type="field" id="sdv" name="startDateVerbatim" uitype="text"/>
-                 <cell type="label" labelfor="sdv"/>
+                    <cell type="field" id="sdv" name="startDateVerbatim" uitype="text"/>
+                    <cell type="label" labelfor="sdv"/>
                 </row>
                 <row>
                     <cell type="subview" viewname="CollectionObjectSub" id="11" colspan="9" rows="3" name="collectionObjects" initialize="addsearch=true"/>
@@ -2768,12 +2776,16 @@
                     <cell type="field" id="6" name="typeStatusName" uitype="combobox"/>  
                 </row>
                 <row>
+                    <cell type="label" labelfor="12"/>
+                    <cell type="field" id="12" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
+                </row>  
+                <row>
                     <cell type="subview" id="detcit" name="determinationCitations" viewname="DeterminationCitation" colspan="13"/>                    
                 </row>
                 <row>
-                    <cell type="label" labelfor="12"/>
-                    <cell type="field" id="12" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
-                </row>    
+                    <cell type="label"/>
+                </row>
+                  
 
                 <!--<row>
                     <cell type="label" labelfor="9"/>
@@ -3030,7 +3042,7 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="giftDate" uitype="formattedtext" uifieldformatter="Date"  default="today"/>
                     <cell type="label" labelfor="4"/>
-                    <cell type="field" id="4" name="purposeOfGift" uitype="text"/>    
+                    <cell type="field" id="4" name="purposeOfGift" uitype="combobox"/>    
                 </row>
                 <row>
                     <cell type="label" labelfor="t1"/>
@@ -5161,6 +5173,10 @@
                         <cell type="label" labelfor="t1"/>
                         <cell type="field" id="t1" name="text1" uitype="text" readonly="true"/>	
                     </row> 
+                    <row>
+                        <cell type="label" labelfor="n1"/>
+                        <cell type="field" id="n1" name="number1" uitype="text" readonly="true"/>	
+                    </row>
                     <row>
                          <cell type="label" labelfor="lsid"/>
                         <cell type="field" id="lsid" name="lsid" uitype="text" colspan="10"/>	
