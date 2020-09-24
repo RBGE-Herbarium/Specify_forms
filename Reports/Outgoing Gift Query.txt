@@ -1,0 +1,3 @@
+Gift>Contents (Contains)
+Gift>Gift Number (Contains)
+Preparation>Quantity (=)

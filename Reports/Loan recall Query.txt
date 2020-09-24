@@ -1,0 +1,13 @@
+Loan> Loan Number (contains)
+Agennt> Abbreviation (=)
+Loan> Their Number (contains)
+Loan> Contents (contains)
+Preparation> Barcode (contains)
+Preparation> Quantity (=)
+Preparation> Quantity Returned (=)
+Determination> Current (Yes)
+Taxon [formatted]
+Agent> Role (= Donor)
+Preparation> Is Resolved (No)
+Loan> Loan Date (=)
+Loan> Orignal Due Date (=)
