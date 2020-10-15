@@ -1269,7 +1269,7 @@
                 <row>
                     <cell type="subview" viewname="AgentSpecialty" id="50" name="agentSpecialties" colspan="19"/>
                 </row>
-                <row>
+               <row>
                     <cell type="subview" viewname="AgentGeography" id="ag" name="agentGeographies" colspan="19"/>
                 </row>
                 <row>
@@ -2818,17 +2818,6 @@
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
                 </row>-->
             </rows>
-        </viewdef>
-
-        <viewdef
-            type="formtable"
-            name="CollectionObjectProperty Table"
-            class="edu.ku.brc.specify.datamodel.CollectionObjectProperty"
-            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
-            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
-            
-            <desc><![CDATA[Preparation subform table for Collection Object form.]]></desc>
-            <definition>CollectionObjectProperty</definition>
         </viewdef>
 
         <viewdef
@@ -4762,8 +4751,8 @@
                 <row>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="prepType" uitype="combobox" picklist="PrepType"/>
-                    <cell type="label" labelfor="sn"/>
-                    <cell type="field" id="sn" name="sampleNumber" uitype="text"/>
+                    <cell type="label" labelfor="bc"/>
+                    <cell type="field" id="bc" name="barCode" uitype="text"/>
                     <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
                     <!--<cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/>-->
                 </row>    
@@ -4772,6 +4761,10 @@
                     <cell type="field" id="i1" name="integer1" uitype="text"/>
                     <cell type="label" labelfor="i2"/>
                     <cell type="field" id="i2" name="integer2" uitype="text"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="sn"/>
+                    <cell type="field" id="sn" name="sampleNumber" uitype="text"/>
                 </row>
                 <row>
                     <cell type="separator" label="" colspan="14"/>    
@@ -4920,8 +4913,8 @@
 
             <rows>
                 <row>
-                    <cell type="label" labelfor="sn"/>
-                    <cell type="field" id="sn" name="sampleNumber" uitype="text"/>
+                    <cell type="label" labelfor="bc"/>
+                    <cell type="field" id="bc" name="BarCode" uitype="text"/>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="prepType" uitype="combobox" picklist="PrepType"/>
                     <cell type="label" labelfor="stat"/>
