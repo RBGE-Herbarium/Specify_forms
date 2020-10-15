@@ -7173,7 +7173,7 @@
             </rows>
         </viewdef>-->    
 
-        <!--<viewdef
+        <viewdef
             type="form"
             name="LocalityNameAlias"
             class="edu.ku.brc.specify.datamodel.LocalityNameAliass"
@@ -7194,7 +7194,7 @@
                     <cell type="field" id="2" name="source" uitype="text" isrequired="true" colspan="6"/>  
                 </row>
             </rows>
-        </viewdef>-->
+        </viewdef>
         
 
     </viewdefs>
