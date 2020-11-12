@@ -4819,7 +4819,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="t7"/>
-                    <cell type="field" id="t7" name="text7" uitype="text"/>
+                    <cell type="field" id="t7" name="text7" uitype="combobox"/>
                 </row>    
                 <row>
                     <cell type="label" labelfor="2"/>
