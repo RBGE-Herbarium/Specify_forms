@@ -4155,7 +4155,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="13" label="Barcode"/>
-                    <cell type="field" id="13" name="preparation.sampleNumber" uitype="dsptextfield"/>
+                    <cell type="field" id="13" name="preparation.barCode" uitype="dsptextfield"/>
                     <cell type="label" labelfor="2" label="Preparation Type"/>
                     <cell type="field" id="2" name="preparation.prepType.name" uitype="dsptextfield" readonly="true" colspan="3"/>
                 </row>
@@ -4826,6 +4826,8 @@
                     <cell type="field" id="2" name="preparedByAgent" uitype="querycbx" initialize="name=Agent" colspan="3"/>                    
                     <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date" colspan="3"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="sn"/>
                     <cell type="field" id="sn" name="sampleNumber" uitype="text"/>
                 </row>
