@@ -410,8 +410,8 @@
             </altviews> -->
 
             
-				<altview name="Determination Table View" viewdef="Determination Table" mode="view"/>
-				<altview name="Determination Table Edit" viewdef="Determination Table" mode="edit"/>
+				<altview name="Determination Table View" viewdef="Determination Abridged Table" mode="view"/>
+				<altview name="Determination Table Edit" viewdef="Determination Abridged Table" mode="edit"/>
 				<altview name="Determination View" viewdef="Determination" mode="view"/>
 				<altview name="Determination Edit" viewdef="Determination" mode="edit" default="true"/>
 			</altviews>
@@ -3183,7 +3183,7 @@
             <definition>Determination</definition>
         </viewdef>
 
-        <!-- <viewdef
+        <viewdef
             name="Determination Abridged"
             type="form"
             class="edu.ku.brc.specify.datamodel.Determination"
@@ -3240,7 +3240,7 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Determination subform table for Collection Object form.]]></desc>
             <definition>Determination Abridged</definition>
-        </viewdef> -->
+        </viewdef> 
 
         <viewdef
             type="form"
