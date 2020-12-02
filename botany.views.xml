@@ -3212,10 +3212,10 @@
                 <row>
                     <cell type="label" labelfor="8"/>
                     <cell type="field" id="8" name="qualifier" uitype="combobox"/>
-                    <cell type="label" labelfor="9"/>
-                    <cell type="field" id="9" name="addendum" uitype="combobox"/>        
+                    <!-- <cell type="label" labelfor="9"/>
+                    <cell type="field" id="9" name="addendum" uitype="combobox"/>         -->
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" uitype="plugin" name="this" initialize="name=PartialDateUI;df=determinedDate;tp=determinedDatePrecision" uifieldformatter="Date"/>
                     <cell type="label" labelfor="5"/>
@@ -3227,7 +3227,7 @@
                 <row>
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="typeStatusName" uitype="combobox"/>  
-                </row>
+                </row> -->
                
             </rows>
         </viewdef>
