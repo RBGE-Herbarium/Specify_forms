@@ -405,9 +405,16 @@
             <altviews>
                 <!-- <altview name="Determination Table View" viewdef="Determination Table" mode="view"/>
                 <altview name="Determination Table Edit" viewdef="Determination Table" mode="edit"/> -->
-                <altview name="Determination View"       viewdef="Determination" mode="view" default="true"/>
+                <!-- <altview name="Determination View"       viewdef="Determination" mode="view" default="true"/>
                 <altview name="Determination Edit"       viewdef="Determination" mode="edit"/>
-            </altviews>
+            </altviews> -->
+
+            
+				<altview name="Determination Table View" viewdef="Determination Table" mode="view"/>
+				<altview name="Determination Table Edit" viewdef="Determination Table" mode="edit"/>
+				<altview name="Determination View" viewdef="Determination" mode="view"/>
+				<altview name="Determination Edit" viewdef="Determination" mode="edit" default="true"/>
+			</altviews>
         </view>
 
         <view name="DeterminationCitation"
@@ -1343,10 +1350,10 @@
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="geography" uitype="text" colspan="3" readonly="false"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="geore" uitype="text" colspan="3"/>
-                </row>
+                </row> -->
             </rows>
         </viewdef>
 
@@ -2432,10 +2439,9 @@
                 </row>-->                
                 <row>
                     <cell type="subview" viewname="Preparation" id="8" name="preparations" defaulttype="table" colspan="13"/>
-                </row> 
-
+                </row>
                 <row>
-                    <cell type="subview" viewname="Determination" id="6" name="determinations" colspan="13" rows="5"/>
+                    <cell type="subview" viewname="Determination" id="6" name="determinations" defaulttype="table" colspan="13" rows="5"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="2"/>
@@ -5494,7 +5500,9 @@
                     <row>
                         <cell type="label" labelfor="author"/>
                         <cell type="field" id="author" uitype="text" name="author" colspan="5"/>
-                    </row> 
+                        <cell type="label" labelfor="lsid"/>
+                        <cell type="field" id="lsid" name="lsid" uitype="text"/>	
+                    </row>
                     <row>
                         <cell type="label" labelfor="acceptedParent"/>
                         <cell type="field" id="acceptedParent"  uitype="querycbx" initialize="name=Taxon;title=Taxon;editbtn=false;newbtn=false" name="acceptedParent" colspan="5"/>
@@ -5506,12 +5514,12 @@
                     <row>
                         <cell type="subview" viewname="TaxonSubform" id="children" name="children" colspan="14"/>
                     </row>            
-                    <row>
+                    <!-- <row>
                         <cell type="label" labelfor="cn"/>
                         <cell type="field" id="cn" name="cultivarName" uitype="text" colspan="3"/>
                         <cell type="label" labelfor="t5"/>
                         <cell type="field" id="t5" name="text5" uitype="text"/>
-                    </row>
+                    </row> -->
                      <row>
                         <cell type="label" labelfor="t3"/>
                         <cell type="field" id="t3" name="text3" uitype="text"/>		
@@ -5545,7 +5553,7 @@
                     </row>
                     <row>			
                         <cell type="label" labelfor="t8"/>
-                        <cell type="field" id="t8" name="text8" uitype="text" colspan="7"/>					   
+                        <cell type="field" id="t8" name="text8" uitype="text" colspan="7" readonly="true"/>					   
                     </row>  
                                                 
                     
@@ -5572,10 +5580,6 @@
                     <row>
                         <cell type="label" labelfor="n1"/>
                         <cell type="field" id="n1" name="number1" uitype="text" readonly="true"/>	
-                    </row>
-                    <row>
-                         <cell type="label" labelfor="lsid"/>
-                        <cell type="field" id="lsid" name="lsid" uitype="text" colspan="10"/>	
                     </row>
                     <row>
                         <cell type="label" labelfor="remarks"/>
