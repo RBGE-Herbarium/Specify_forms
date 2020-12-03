@@ -2697,14 +2697,14 @@
             <rowDef auto="true" sep="2px" cell="p"/>
             <rows>
                 <row>
-                    <cell type="label" labelfor="t18"/>
-                    <cell type="field" id="t18" name="text18" uitype="text" colspan="6"/>
+                    <cell type="label" labelfor="t31"/>
+                    <cell type="field" id="t31" name="text31" uitype="combobox" colspan="6"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="t16"/>
-                    <cell type="field" id="t16" name="text16" uitype="text"/>
-                    <cell type="label" labelfor="t17"/>
-                    <cell type="field" id="t17" name="text17" uitype="text"/>
+                    <cell type="label" labelfor="t32"/>
+                    <cell type="field" id="t32" name="text32" uitype="text"/>
+                    <cell type="label" labelfor="t33"/>
+                    <cell type="field" id="t33" name="text33" uitype="text"/>
                 </row>
                    
                 <!--<row>
