@@ -5022,7 +5022,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="bc"/>
-                    <cell type="field" id="bc" name="BarCode" uitype="text"/>
+                    <cell type="field" id="bc" name="barCode" uitype="dsptextfield"/>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="prepType" uitype="combobox" picklist="PrepType"/>
                     <cell type="label" labelfor="stat"/>
