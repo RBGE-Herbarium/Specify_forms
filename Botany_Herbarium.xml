@@ -1,0 +1,473 @@
+<list>
+  <picklist name="AccessionRole" type="0" readonly="true" sizelimit="5" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="Collector" value="collector" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Donor" value="donor" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Reviewer" value="reviewer" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Receiver" value="receiver" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Staff" value="staff" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="AccessionStatus" type="0" readonly="true" sizelimit="3" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="No Data" value="nodata" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="In Process" value="inprocess" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Complete" value="complete" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="AccessionType" type="0" readonly="true" sizelimit="2" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="Collection" value="cln" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Gift" value="gift" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Field Work" value="field_work" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="accuracy" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2021-01-13 14:15:35.0" timestampModified="2021-01-13 14:15:35.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="Addendum" type="0" tablename="none" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-11-05 09:56:51.0" timestampModified="2020-11-05 09:56:51.0" version="1">
+    <items>
+      <picklistitem title="Sensu lato" value="Sensu lato" ordinal="1" timestampCreated="2020-11-05 09:56:51.0" timestampModified="2020-11-05 09:56:51.0" version="0"/>
+      <picklistitem title="Sensu strictu" value="Sensu strictu" ordinal="0" timestampCreated="2020-11-05 09:56:32.0" timestampModified="2020-11-05 09:56:32.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="agent" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-04-15 17:18:36.0" timestampModified="2020-04-15 17:18:36.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="AgentTitles" type="0" readonly="true" sizelimit="6" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="Asst. Director" value="asstdir" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Mrs." value="mrs" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Mr." value="mr" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Ms." value="ms" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Dr." value="dr" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Curator" value="curator" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="AgentVariant" type="0" readonly="true" sizelimit="-1" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="Label Name" value="4" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Author" value="2" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Variant" value="0" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Author Abbrev." value="3" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Vernacular" value="1" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="0" value="1" ordinal="0" timestampCreated="2020-12-17 14:35:11.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="altitudeQualifier" type="0" tablename="none" readonly="true" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-07-30 09:36:49.0" timestampModified="2020-07-30 09:36:49.0" version="1">
+    <items>
+      <picklistitem title="ca" value="ca" ordinal="2" timestampCreated="2020-07-30 09:36:49.0" timestampModified="2020-07-30 09:36:49.0" version="0"/>
+      <picklistitem title="Above/Greater than" value="&gt;" ordinal="0" timestampCreated="2020-07-30 09:35:55.0" timestampModified="2020-07-30 09:35:55.0" version="0"/>
+      <picklistitem title="Below/Less than" value="&lt;" ordinal="1" timestampCreated="2020-07-30 09:36:24.0" timestampModified="2020-07-30 09:36:24.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="altitudeUnit" type="0" tablename="none" readonly="true" sizelimit="0" issystem="false" sort="1" timestampCreated="2020-07-30 09:33:20.0" timestampModified="2021-01-15 12:15:28.0" version="3">
+    <items>
+      <picklistitem title="m" value="M" ordinal="0" timestampCreated="2020-07-30 09:33:03.0" timestampModified="2021-01-15 12:15:28.0" version="1"/>
+      <picklistitem title="Unknown" value="U" ordinal="2" timestampCreated="2020-07-30 09:33:20.0" timestampModified="2020-07-30 09:34:49.0" version="1"/>
+      <picklistitem title="ft" value="FT" ordinal="1" timestampCreated="2020-07-30 09:33:08.0" timestampModified="2020-07-30 09:33:08.0" version="1"/>
+    </items>
+  </picklist>
+  <picklist name="areaOfOccupancyUnit" type="0" tablename="none" readonly="true" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-07-29 14:07:05.0" timestampModified="2020-07-29 14:07:05.0" version="1">
+    <items>
+      <picklistitem title="Hectares" value="H" ordinal="2" timestampCreated="2020-07-29 14:04:20.0" timestampModified="2020-07-29 14:04:20.0" version="0"/>
+      <picklistitem title="Square feet" value="F" ordinal="1" timestampCreated="2020-07-29 14:04:11.0" timestampModified="2020-07-29 14:04:11.0" version="0"/>
+      <picklistitem title="Unknown" value="X" ordinal="6" timestampCreated="2020-07-29 14:07:05.0" timestampModified="2020-07-29 14:07:05.0" version="0"/>
+      <picklistitem title="Square kilometers" value="K" ordinal="3" timestampCreated="2020-07-29 14:04:28.0" timestampModified="2020-07-29 14:04:28.0" version="0"/>
+      <picklistitem title="Square meters" value="M" ordinal="4" timestampCreated="2020-07-29 14:04:43.0" timestampModified="2020-07-29 14:04:43.0" version="0"/>
+      <picklistitem title="Square miles" value="MI" ordinal="5" timestampCreated="2020-07-29 14:06:40.0" timestampModified="2020-07-29 14:06:40.0" version="0"/>
+      <picklistitem title="Acres" value="A" ordinal="0" timestampCreated="2020-07-29 14:04:05.0" timestampModified="2020-07-29 14:04:05.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="BorrowRole" type="0" readonly="true" sizelimit="12" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="Other" value="other" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Guest" value="guest" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Borrower" value="borrower" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Receiver" value="receiver" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Staff" value="staff" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="transfer_herbarium_1" value="transfer_herbarium_1" ordinal="0" timestampCreated="2020-12-17 16:42:58.0" version="1"/>
+      <picklistitem title="transfer_herbarium_3" value="transfer_herbarium_3" ordinal="0" timestampCreated="2020-12-17 16:43:02.0" version="1"/>
+      <picklistitem title="Student" value="student" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Preparer" value="preparer" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Contributor" value="contributor" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Benefactor" value="benefactor" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="processor" value="processor" ordinal="0" timestampCreated="2020-12-17 16:42:51.0" version="1"/>
+      <picklistitem title="transfer_herbarium_2" value="transfer_herbarium_2" ordinal="0" timestampCreated="2020-12-17 16:43:02.0" version="1"/>
+      <picklistitem title="herbarium" value="herbarium" ordinal="0" timestampCreated="2020-12-17 16:42:51.0" version="1"/>
+      <picklistitem title="Donor" value="donor" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Sponsor" value="sponsor" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="certainty" type="0" tablename="none" readonly="true" sizelimit="0" issystem="false" sort="1" timestampCreated="2020-07-29 15:21:51.0" timestampModified="2020-07-29 15:40:28.0" version="2">
+    <items>
+      <picklistitem title="Certain - an exact match or derived from GPS" value="4" ordinal="3" timestampCreated="2020-07-29 15:21:51.0" timestampModified="2020-07-29 15:40:28.0" version="1"/>
+      <picklistitem title="Long shot - a poor match or ambiguous" value="1" ordinal="0" timestampCreated="2020-07-29 15:19:46.0" timestampModified="2020-07-29 15:19:46.0" version="0"/>
+      <picklistitem title="Probable - close match to the locality, with possible ambiguity" value="3" ordinal="2" timestampCreated="2020-07-29 15:20:39.0" timestampModified="2020-07-29 15:20:39.0" version="0"/>
+      <picklistitem title="Possible - a reasonable match with significant ambiguity" value="2" ordinal="1" timestampCreated="2020-07-29 15:20:10.0" timestampModified="2020-07-29 15:20:10.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="collectingevent" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-04-15 17:18:33.0" timestampModified="2020-04-15 17:18:33.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="collectingeventattachment" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2021-01-15 10:20:54.0" timestampModified="2021-01-15 10:20:54.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="CollectingMethod" type="0" readonly="true" sizelimit="5" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:13.0" timestampModified="2020-01-22 14:00:13.0" version="0">
+    <items>
+      <picklistitem title="cut" value="cut" ordinal="0" timestampCreated="2020-01-22 14:00:13.0" timestampModified="2020-01-22 14:00:13.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="collection" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-04-15 17:18:21.0" timestampModified="2020-04-15 17:18:21.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="collectionobject" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-04-16 16:30:39.0" timestampModified="2020-04-16 16:30:39.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="collector" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-04-15 17:18:35.0" timestampModified="2020-04-15 17:18:35.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="CollObjPrepMeth" type="0" readonly="true" sizelimit="5" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:13.0" timestampModified="2020-01-22 14:00:13.0" version="0">
+    <items>
+      <picklistitem title="Sheet" value="sheet" ordinal="0" timestampCreated="2020-01-22 14:00:13.0" timestampModified="2020-01-22 14:00:13.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="ContainerType" type="0" readonly="true" sizelimit="5" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="None" value="0" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Specimen" value="3" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Sheet" value="2" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Folder" value="1" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="decimalLatitudeDirection" type="0" tablename="none" readonly="true" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-07-29 15:12:55.0" timestampModified="2020-07-29 15:12:55.0" version="1">
+    <items>
+      <picklistitem title="N" value="N" ordinal="0" timestampCreated="2020-07-29 15:12:48.0" timestampModified="2020-07-29 15:12:48.0" version="0"/>
+      <picklistitem title="S" value="S" ordinal="1" timestampCreated="2020-07-29 15:12:55.0" timestampModified="2020-07-29 15:12:55.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="decimalLongitudeDirection" type="0" tablename="none" readonly="true" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-07-29 15:13:42.0" timestampModified="2020-07-29 15:13:42.0" version="1">
+    <items>
+      <picklistitem title="E" value="E" ordinal="0" timestampCreated="2020-07-29 15:13:27.0" timestampModified="2020-07-29 15:13:27.0" version="0"/>
+      <picklistitem title="W" value="W" ordinal="1" timestampCreated="2020-07-29 15:13:42.0" timestampModified="2020-07-29 15:13:42.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="Department" type="2" tablename="accession" fieldname="text1" readonly="true" sizelimit="-1" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="determination" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-04-15 17:31:36.0" timestampModified="2020-04-15 17:31:36.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="Discipline" type="1" tablename="discipline" formatter="Discipline" readonly="true" sizelimit="-1" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="Division" type="1" tablename="division" formatter="Division" readonly="true" sizelimit="-1" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="ExpressSearch" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-01-22 14:01:25.0" timestampModified="2020-01-22 14:01:25.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="geoRefSource" type="0" tablename="none" readonly="true" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-07-29 14:23:31.0" timestampModified="2020-07-29 14:23:31.0" version="1">
+    <items>
+      <picklistitem title="Map (Seconds)" value="MAPS" ordinal="8" timestampCreated="2020-07-29 14:22:44.0" timestampModified="2020-07-29 14:22:44.0" version="0"/>
+      <picklistitem title="Unknown" value="X" ordinal="11" timestampCreated="2020-07-29 14:23:14.0" timestampModified="2020-07-29 14:23:14.0" version="0"/>
+      <picklistitem title="Map (Degrees)" value="MAPD" ordinal="10" timestampCreated="2020-07-29 14:23:02.0" timestampModified="2020-07-29 14:23:02.0" version="0"/>
+      <picklistitem title="Gazetteer (seconds)" value="GAZS" ordinal="4" timestampCreated="2020-07-29 14:20:46.0" timestampModified="2020-07-29 14:20:46.0" version="0"/>
+      <picklistitem title="Map" value="MAP" ordinal="7" timestampCreated="2020-07-29 14:22:35.0" timestampModified="2020-07-29 14:22:35.0" version="0"/>
+      <picklistitem title="Gazetteer" value="GAZ" ordinal="3" timestampCreated="2020-07-29 14:20:26.0" timestampModified="2020-07-29 14:20:26.0" version="0"/>
+      <picklistitem title="Gazetteer (Minutes)" value="GAZM" ordinal="5" timestampCreated="2020-07-29 14:21:22.0" timestampModified="2020-07-29 14:21:22.0" version="0"/>
+      <picklistitem title="GPS" value="GPS" ordinal="2" timestampCreated="2020-07-29 14:20:16.0" timestampModified="2020-07-29 14:20:16.0" version="0"/>
+      <picklistitem title="Gazetteer (Degrees)" value="GAZD" ordinal="6" timestampCreated="2020-07-29 14:21:35.0" timestampModified="2020-07-29 14:21:35.0" version="0"/>
+      <picklistitem title="Map (Minutes)" value="MAPM" ordinal="9" timestampCreated="2020-07-29 14:22:55.0" timestampModified="2020-07-29 14:22:55.0" version="0"/>
+      <picklistitem title="Estimated" value="E" ordinal="0" timestampCreated="2020-07-29 14:19:35.0" timestampModified="2020-07-29 14:19:35.0" version="0"/>
+      <picklistitem title="Label" value="L" ordinal="1" timestampCreated="2020-07-29 14:19:44.0" timestampModified="2020-07-29 14:19:44.0" version="0"/>
+      <picklistitem title="Label (to be cleaned)" value="label" ordinal="12" timestampCreated="2020-07-29 14:23:31.0" timestampModified="2020-07-29 14:23:31.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="GPSDatum" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2021-01-13 14:15:35.0" timestampModified="2021-01-13 14:15:35.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="journal" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-05-28 11:57:01.0" timestampModified="2020-05-28 11:57:01.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="Languages" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-06-11 16:54:54.0" timestampModified="2020-06-11 16:54:54.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="latDir" type="0" tablename="none" readonly="true" sizelimit="0" issystem="false" sort="1" timestampCreated="2020-07-29 14:46:06.0" timestampModified="2020-07-29 15:11:17.0" version="4">
+    <items>
+      <picklistitem title="S" value="S" ordinal="1" timestampCreated="2020-07-29 14:46:06.0" timestampModified="2020-07-29 14:46:06.0" version="2"/>
+      <picklistitem title="W (do not use)" value="W" ordinal="3" timestampCreated="2020-07-29 14:50:02.0" timestampModified="2020-07-29 15:11:17.0" version="2"/>
+      <picklistitem title="E (do not use)" value="E" ordinal="2" timestampCreated="2020-07-29 14:49:45.0" timestampModified="2020-07-29 14:49:45.0" version="2"/>
+      <picklistitem title="N" value="N" ordinal="0" timestampCreated="2020-07-29 14:45:40.0" timestampModified="2020-07-29 14:45:40.0" version="2"/>
+    </items>
+  </picklist>
+  <picklist name="LoanAgentRole" type="0" readonly="true" sizelimit="12" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="Other" value="other" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="approver (approved)" value="approver (approved)" ordinal="0" timestampCreated="2020-12-17 16:43:13.0" version="1"/>
+      <picklistitem title="Receiver" value="receiver" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="approver (denied)_2" value="approver (denied)_2" ordinal="0" timestampCreated="2020-12-17 16:43:43.0" version="1"/>
+      <picklistitem title="Guest" value="guest" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Student" value="student" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="approver (denied)_1" value="approver (denied)_1" ordinal="0" timestampCreated="2020-12-17 16:43:25.0" version="1"/>
+      <picklistitem title="approver (approved)_2" value="approver (approved)_2" ordinal="0" timestampCreated="2020-12-17 16:43:24.0" version="1"/>
+      <picklistitem title="approver (denied)" value="approver (denied)" ordinal="0" timestampCreated="2020-12-17 16:43:13.0" version="1"/>
+      <picklistitem title="herbarium" value="herbarium" ordinal="0" timestampCreated="2020-12-17 16:40:16.0" version="1"/>
+      <picklistitem title="approver (approved)_5" value="approver (approved)_5" ordinal="0" timestampCreated="2020-12-17 16:43:26.0" version="1"/>
+      <picklistitem title="approver (pending)" value="approver (pending)" ordinal="0" timestampCreated="2020-12-17 16:43:13.0" version="1"/>
+      <picklistitem title="transfer_herbarium_2" value="transfer_herbarium_2" ordinal="0" timestampCreated="2020-12-17 16:40:26.0" version="1"/>
+      <picklistitem title="approver (future)" value="approver (future)" ordinal="0" timestampCreated="2020-12-17 16:43:13.0" version="1"/>
+      <picklistitem title="Preparer" value="preparer" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="transfer_herbarium_1" value="transfer_herbarium_1" ordinal="0" timestampCreated="2020-12-17 16:40:25.0" version="1"/>
+      <picklistitem title="Borrower" value="borrower" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="requestor" value="requestor" ordinal="0" timestampCreated="2020-12-17 16:43:13.0" version="1"/>
+      <picklistitem title="approver (approved)_3" value="approver (approved)_3" ordinal="0" timestampCreated="2020-12-17 16:43:24.0" version="1"/>
+      <picklistitem title="Donor" value="donor" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Sponsor" value="sponsor" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="approver (approved)_4" value="approver (approved)_4" ordinal="0" timestampCreated="2020-12-17 16:43:26.0" version="1"/>
+      <picklistitem title="Contributor" value="contributor" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Staff" value="staff" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="approver (pending)_1" value="approver (pending)_1" ordinal="0" timestampCreated="2020-12-17 16:43:25.0" version="1"/>
+      <picklistitem title="approver (pending)_3" value="approver (pending)_3" ordinal="0" timestampCreated="2020-12-17 16:43:39.0" version="1"/>
+      <picklistitem title="approver (unavailable)_1" value="approver (unavailable)_1" ordinal="0" timestampCreated="2020-12-17 16:43:28.0" version="1"/>
+      <picklistitem title="Benefactor" value="benefactor" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="transfer_herbarium_3" value="transfer_herbarium_3" ordinal="0" timestampCreated="2020-12-17 16:41:32.0" version="1"/>
+      <picklistitem title="approver (pending)_2" value="approver (pending)_2" ordinal="0" timestampCreated="2020-12-17 16:43:27.0" version="1"/>
+      <picklistitem title="approver (unavailable)" value="approver (unavailable)" ordinal="0" timestampCreated="2020-12-17 16:43:13.0" version="1"/>
+      <picklistitem title="approver (approved)_1" value="approver (approved)_1" ordinal="0" timestampCreated="2020-12-17 16:43:24.0" version="1"/>
+    </items>
+  </picklist>
+  <picklist name="locationSensitive" type="0" tablename="none" readonly="true" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-07-29 14:44:26.0" timestampModified="2020-07-29 14:44:26.0" version="1">
+    <items>
+      <picklistitem title="Suppress Lat/Long and below (inc. UTM)" value="10" ordinal="9" timestampCreated="2020-07-29 14:43:28.0" timestampModified="2020-07-29 14:43:28.0" version="0"/>
+      <picklistitem title="Suppress BRU and below" value="4" ordinal="3" timestampCreated="2020-07-29 14:41:27.0" timestampModified="2020-07-29 14:41:27.0" version="0"/>
+      <picklistitem title="Suppress region and below " value="2" ordinal="1" timestampCreated="2020-07-29 14:40:50.0" timestampModified="2020-07-29 14:40:50.0" version="0"/>
+      <picklistitem title="Suppress Sub-Country 2 and below" value="6" ordinal="5" timestampCreated="2020-07-29 14:41:59.0" timestampModified="2020-07-29 14:41:59.0" version="0"/>
+      <picklistitem title="Suppress Geographic area and below" value="8" ordinal="7" timestampCreated="2020-07-29 14:42:45.0" timestampModified="2020-07-29 14:42:45.0" version="0"/>
+      <picklistitem title="Suppress all wild collecting locality infomation " value="1" ordinal="0" timestampCreated="2020-07-29 14:40:23.0" timestampModified="2020-07-29 14:40:23.0" version="0"/>
+      <picklistitem title="Suppress Sub-Country 1 and below" value="5" ordinal="4" timestampCreated="2020-07-29 14:41:39.0" timestampModified="2020-07-29 14:41:39.0" version="0"/>
+      <picklistitem title="Suppress Country and below" value="3" ordinal="2" timestampCreated="2020-07-29 14:41:12.0" timestampModified="2020-07-29 14:41:12.0" version="0"/>
+      <picklistitem title="Suppress Sub-Country 3 and below" value="7" ordinal="6" timestampCreated="2020-07-29 14:42:33.0" timestampModified="2020-07-29 14:42:33.0" version="0"/>
+      <picklistitem title="Suppress Locality and below (inc Habitat etc)" value="9" ordinal="8" timestampCreated="2020-07-29 14:43:06.0" timestampModified="2020-07-29 14:43:06.0" version="0"/>
+      <picklistitem title="LO-A (to be cleaned)" value="LO-A" ordinal="11" timestampCreated="2020-07-29 14:44:26.0" timestampModified="2020-07-29 14:44:26.0" version="0"/>
+      <picklistitem title="Suppress National Grid" value="11" ordinal="10" timestampCreated="2020-07-29 14:43:49.0" timestampModified="2020-07-29 14:43:49.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="longDir" type="0" tablename="none" readonly="true" sizelimit="0" issystem="false" sort="1" timestampCreated="2020-07-29 14:46:40.0" timestampModified="2020-07-29 15:10:47.0" version="3">
+    <items>
+      <picklistitem title="N (do not use)" value="N" ordinal="2" timestampCreated="2020-07-29 15:02:06.0" timestampModified="2020-07-29 15:02:06.0" version="1"/>
+      <picklistitem title="S (do not use)" value="S" ordinal="3" timestampCreated="2020-07-29 15:02:13.0" timestampModified="2020-07-29 15:02:13.0" version="1"/>
+      <picklistitem title="E" value="E" ordinal="0" timestampCreated="2020-07-29 14:46:33.0" timestampModified="2020-07-29 14:46:33.0" version="2"/>
+      <picklistitem title="W" value="W" ordinal="1" timestampCreated="2020-07-29 14:46:40.0" timestampModified="2020-07-29 15:10:47.0" version="2"/>
+    </items>
+  </picklist>
+  <picklist name="MaterialSample" type="0" tablename="none" readonly="true" sizelimit="50" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="Extract" value="Extract" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="MoleculeType" type="0" tablename="none" readonly="false" sizelimit="20" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="NameUsages" type="0" tablename="none" readonly="true" sizelimit="0" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2021-01-15 12:08:02.0" version="3">
+    <items>
+      <picklistitem title="Filing Name" value="Filing name" ordinal="0" timestampCreated="2020-11-03 16:45:42.0" timestampModified="2020-11-03 16:45:42.0" version="2"/>
+      <picklistitem title="Fide" value="Fide" ordinal="3" timestampCreated="2020-11-03 16:48:49.0" timestampModified="2020-11-03 16:48:49.0" version="1"/>
+      <picklistitem title="Unknown" value="Unknown" ordinal="4" timestampCreated="2021-01-15 12:04:46.0" timestampModified="2021-01-15 12:04:46.0" version="0"/>
+      <picklistitem title="Label Name" value="Label name" ordinal="1" timestampCreated="2020-11-03 16:48:28.0" timestampModified="2020-11-03 16:48:28.0" version="2"/>
+      <picklistitem title="Det." value="Det" ordinal="2" timestampCreated="2020-11-03 16:48:37.0" timestampModified="2020-11-03 16:48:37.0" version="1"/>
+    </items>
+  </picklist>
+  <picklist name="NumberingScheme" type="1" tablename="autonumberingscheme" formatter="AutoNumberingScheme" readonly="true" sizelimit="-1" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="PermitType" type="0" readonly="true" sizelimit="5" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="State" value="state" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="no data" value="no data" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="US Dept Wildlife" value="udw" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Federal" value="fed" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="International" value="int" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="Phenology" type="0" tablename="none" readonly="true" sizelimit="0" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:13.0" timestampModified="2020-11-12 15:10:20.0" version="1">
+    <items>
+      <picklistitem title="Sterila/Vegetative" value="S" ordinal="4" timestampCreated="2020-11-12 15:09:46.0" timestampModified="2020-11-12 15:09:46.0" version="0"/>
+      <picklistitem title="Fruiting - Old/Persistent" value="FR-O" ordinal="2" timestampCreated="2020-11-12 15:09:16.0" timestampModified="2020-11-12 15:09:16.0" version="0"/>
+      <picklistitem title="Flower Buds" value="FB" ordinal="0" timestampCreated="2020-01-22 14:00:13.0" timestampModified="2020-01-22 14:00:13.0" version="1"/>
+      <picklistitem title="Fruiting - Developing" value="FR-D" ordinal="0" timestampCreated="2020-01-22 14:00:13.0" timestampModified="2020-01-22 14:00:13.0" version="1"/>
+      <picklistitem title="Flowering - Old/Persisting" value="FL-O" ordinal="0" timestampCreated="2020-01-22 14:00:13.0" timestampModified="2020-01-22 14:00:13.0" version="1"/>
+      <picklistitem title="Flowering - Immature" value="FL-I" ordinal="0" timestampCreated="2020-01-22 14:00:13.0" timestampModified="2020-01-22 14:00:13.0" version="1"/>
+      <picklistitem title="Juvenile" value="J" ordinal="3" timestampCreated="2020-11-12 15:09:31.0" timestampModified="2020-11-12 15:09:31.0" version="0"/>
+      <picklistitem title="Fruiting" value="FR" ordinal="0" timestampCreated="2020-01-22 14:00:13.0" timestampModified="2020-01-22 14:00:13.0" version="1"/>
+      <picklistitem title="Winter/Dormant Condition" value="W" ordinal="5" timestampCreated="2020-11-12 15:10:04.0" timestampModified="2020-11-12 15:10:04.0" version="0"/>
+      <picklistitem title="Flowering - Mature" value="FL-M" ordinal="0" timestampCreated="2020-01-22 14:00:13.0" timestampModified="2020-01-22 14:00:13.0" version="1"/>
+      <picklistitem title="No Data" value="No Data" ordinal="0" timestampCreated="2020-01-22 14:00:13.0" timestampModified="2020-01-22 14:00:13.0" version="0"/>
+      <picklistitem title="Uncertain" value="U" ordinal="6" timestampCreated="2020-11-12 15:10:20.0" timestampModified="2020-11-12 15:10:20.0" version="0"/>
+      <picklistitem title="Flowering/Fruiting" value="FL/FR" ordinal="0" timestampCreated="2020-01-22 14:00:13.0" timestampModified="2020-01-22 14:00:13.0" version="1"/>
+      <picklistitem title="Fruiting - Mature" value="FR-M" ordinal="1" timestampCreated="2020-11-12 15:06:52.0" timestampModified="2020-11-12 15:06:52.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="popSizeQual" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-11-16 11:07:44.0" timestampModified="2020-11-16 11:07:44.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="preparation" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-06-19 11:36:45.0" timestampModified="2020-06-19 11:36:45.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="PrepType" type="1" tablename="preptype" formatter="PrepType" readonly="true" sizelimit="-1" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="qualifier" type="0" tablename="none" readonly="true" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-07-30 09:51:29.0" timestampModified="2020-07-30 09:51:29.0" version="1">
+    <items>
+      <picklistitem title="?" value="?" ordinal="2" timestampCreated="2020-07-30 09:51:19.0" timestampModified="2020-07-30 09:51:19.0" version="0"/>
+      <picklistitem title="cf." value="cf" ordinal="0" timestampCreated="2020-07-30 09:51:10.0" timestampModified="2020-07-30 09:51:10.0" version="0"/>
+      <picklistitem title="aff." value="aff" ordinal="1" timestampCreated="2020-07-30 09:51:15.0" timestampModified="2020-07-30 09:51:15.0" version="0"/>
+      <picklistitem title="forsan" value="forsan" ordinal="3" timestampCreated="2020-07-30 09:51:29.0" timestampModified="2020-07-30 09:51:29.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="ReferenceWorkType" type="0" tablename="referencework" fieldname="referenceWorkType" readonly="true" sizelimit="6" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="Book" value="0" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Paper" value="2" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Thesis" value="4" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Electronic Media" value="1" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Section in Book" value="5" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Technical Report" value="3" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="regions" type="0" tablename="none" readonly="true" sizelimit="0" issystem="false" sort="1" timestampCreated="2020-07-30 10:13:16.0" timestampModified="2020-07-30 10:33:13.0" version="2">
+    <items>
+      <picklistitem title="6C - Malay Islands" value="6C" ordinal="18" timestampCreated="2020-07-30 10:02:39.0" timestampModified="2020-07-30 10:02:39.0" version="0"/>
+      <picklistitem title="11 - Madagascar and Indian Ocean" value="11" ordinal="25" timestampCreated="2020-07-30 10:03:38.0" timestampModified="2020-07-30 10:03:38.0" version="0"/>
+      <picklistitem title="1 - Europe excl. Britain and Ireland " value="1" ordinal="0" timestampCreated="2020-07-30 09:52:29.0" timestampModified="2020-07-30 09:52:29.0" version="0"/>
+      <picklistitem title="2A - West Asia and Egypt" value="2A" ordinal="2" timestampCreated="2020-07-30 09:53:21.0" timestampModified="2020-07-30 09:53:21.0" version="0"/>
+      <picklistitem title="15 - Caribbean" value="15" ordinal="30" timestampCreated="2020-07-30 10:10:47.0" timestampModified="2020-07-30 10:10:47.0" version="0"/>
+      <picklistitem title="12A - St Helena &amp; Ascension" value="12A" ordinal="27" timestampCreated="2020-07-30 10:04:18.0" timestampModified="2020-07-30 10:04:18.0" version="0"/>
+      <picklistitem title="14 - Central America" value="14" ordinal="29" timestampCreated="2020-07-30 10:04:57.0" timestampModified="2020-07-30 10:04:57.0" version="0"/>
+      <picklistitem title="17 - W. Tropical South America" value="17" ordinal="32" timestampCreated="2020-07-30 10:12:28.0" timestampModified="2020-07-30 10:12:28.0" version="0"/>
+      <picklistitem title="4 - Inner China, Korea and Taiwan" value="4" ordinal="8" timestampCreated="2020-07-30 09:54:59.0" timestampModified="2020-07-30 09:54:59.0" version="0"/>
+      <picklistitem title="5E - Nepal" value="5E" ordinal="15" timestampCreated="2020-07-30 10:02:01.0" timestampModified="2020-07-30 10:02:01.0" version="0"/>
+      <picklistitem title="7 - Australia" value="7" ordinal="21" timestampCreated="2020-07-30 10:03:09.0" timestampModified="2020-07-30 10:03:09.0" version="0"/>
+      <picklistitem title="5C - Myanmar (Burma)" value="5C" ordinal="13" timestampCreated="2020-07-30 09:59:29.0" timestampModified="2020-07-30 09:59:29.0" version="0"/>
+      <picklistitem title="13 - North America" value="13" ordinal="28" timestampCreated="2020-07-30 10:04:48.0" timestampModified="2020-07-30 10:04:48.0" version="0"/>
+      <picklistitem title="2B - North Africa" value="2B" ordinal="4" timestampCreated="2020-07-30 09:54:05.0" timestampModified="2020-07-30 09:54:05.0" version="0"/>
+      <picklistitem title="10 - Tropical Africa" value="10" ordinal="24" timestampCreated="2020-07-30 10:03:31.0" timestampModified="2020-07-30 10:03:31.0" version="0"/>
+      <picklistitem title="2C - NE Atlantic Islands" value="2C" ordinal="5" timestampCreated="2020-07-30 09:54:20.0" timestampModified="2020-07-30 09:54:20.0" version="0"/>
+      <picklistitem title="3A - Outer China incl. Tibet" value="3A" ordinal="7" timestampCreated="2020-07-30 09:54:47.0" timestampModified="2020-07-30 09:54:47.0" version="0"/>
+      <picklistitem title="6E - New Guinea" value="6E" ordinal="20" timestampCreated="2020-07-30 10:02:59.0" timestampModified="2020-07-30 10:02:59.0" version="0"/>
+      <picklistitem title="6A - Malay Peninsula" value="6A" ordinal="16" timestampCreated="2020-07-30 10:02:09.0" timestampModified="2020-07-30 10:02:09.0" version="0"/>
+      <picklistitem title="18 - Temperate South America" value="18" ordinal="33" timestampCreated="2020-07-30 10:12:50.0" timestampModified="2020-07-30 10:12:50.0" version="0"/>
+      <picklistitem title="5D - Bhutan, Sikkim &amp; Darjeeling" value="5D" ordinal="14" timestampCreated="2020-07-30 10:01:42.0" timestampModified="2020-07-30 10:01:42.0" version="0"/>
+      <picklistitem title="4A - Japan" value="4A" ordinal="9" timestampCreated="2020-07-30 09:55:22.0" timestampModified="2020-07-30 09:55:22.0" version="0"/>
+      <picklistitem title="16 - E. Tropical South America" value="16" ordinal="31" timestampCreated="2020-07-30 10:11:50.0" timestampModified="2020-07-30 10:11:50.0" version="0"/>
+      <picklistitem title="6D - Philippines" value="6D" ordinal="19" timestampCreated="2020-07-30 10:02:49.0" timestampModified="2020-07-30 10:02:49.0" version="0"/>
+      <picklistitem title="6B - Indo-China" value="6B" ordinal="17" timestampCreated="2020-07-30 10:02:26.0" timestampModified="2020-07-30 10:02:26.0" version="0"/>
+      <picklistitem title="5B - Sri Lanka" value="5B" ordinal="12" timestampCreated="2020-07-30 09:55:57.0" timestampModified="2020-07-30 09:55:57.0" version="0"/>
+      <picklistitem title="3 - Northern Asia" value="3" ordinal="6" timestampCreated="2020-07-30 09:54:37.0" timestampModified="2020-07-30 09:54:37.0" version="0"/>
+      <picklistitem title="2A Arabia - Arabian Peninsula" value="2A_ARABIA" ordinal="3" timestampCreated="2020-07-30 09:53:37.0" timestampModified="2020-07-30 10:33:13.0" version="1"/>
+      <picklistitem title="9 - Pacific Islands" value="9" ordinal="23" timestampCreated="2020-07-30 10:03:24.0" timestampModified="2020-07-30 10:03:24.0" version="0"/>
+      <picklistitem title="5A - India, Bangladesh &amp; Pakistan" value="5A" ordinal="11" timestampCreated="2020-07-30 09:55:40.0" timestampModified="2020-07-30 09:55:40.0" version="0"/>
+      <picklistitem title="12 - Southern Africa" value="12" ordinal="26" timestampCreated="2020-07-30 10:03:54.0" timestampModified="2020-07-30 10:03:54.0" version="0"/>
+      <picklistitem title="19 - Antartica" value="19" ordinal="34" timestampCreated="2020-07-30 10:13:16.0" timestampModified="2020-07-30 10:13:16.0" version="0"/>
+      <picklistitem title="5 - South Asia" value="5" ordinal="10" timestampCreated="2020-07-30 09:55:29.0" timestampModified="2020-07-30 09:55:29.0" version="0"/>
+      <picklistitem title="1A - Britain and Ireland" value="1A" ordinal="1" timestampCreated="2020-07-30 09:53:09.0" timestampModified="2020-07-30 09:53:09.0" version="0"/>
+      <picklistitem title="8 - New Zealand" value="8" ordinal="22" timestampCreated="2020-07-30 10:03:16.0" timestampModified="2020-07-30 10:03:16.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="ShipmentMethod" type="0" readonly="true" sizelimit="5" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="UPS" value="ups" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="DHL" value="dhl" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Fed Ex" value="fedex" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="USPS" value="usps" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="By Hand" value="hand" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="status" type="0" tablename="none" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-10-15 09:34:35.0" timestampModified="2020-11-10 11:36:06.0" version="1">
+    <items>
+      <picklistitem title="Unmounted" value="Unmounted" ordinal="1" timestampCreated="2020-11-10 11:36:06.0" timestampModified="2020-11-10 11:36:06.0" version="0"/>
+      <picklistitem title="Mounted" value="Mounted" ordinal="0" timestampCreated="2020-11-10 11:35:49.0" timestampModified="2020-11-10 11:35:49.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="taxon" type="0" readonly="false" sizelimit="50" issystem="false" sort="1" timestampCreated="2020-04-15 17:31:41.0" timestampModified="2020-04-15 17:31:41.0" version="0">
+    <items/>
+  </picklist>
+  <picklist name="TaxonLabelFormatter" type="0" readonly="false" sizelimit="500" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="%G %S" value="%G %S" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="%G %S (%A1 ex. %A2)" value="%G %S (%A1 ex. %A2)" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="TreatmentType" type="0" readonly="true" sizelimit="10" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="Bug Room" value="bugroom" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="CO2" value="co2" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="TypeOfAddr" type="0" tablename="address" readonly="true" sizelimit="2" issystem="true" sort="1" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="Home" value="home" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+      <picklistitem title="Work" value="work" ordinal="0" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0"/>
+    </items>
+  </picklist>
+  <picklist name="TypeStatus" type="0" readonly="true" sizelimit="-1" issystem="true" sort="2" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="Holotype" value="holotype" ordinal="4" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Isosyntype" value="isosyntype" ordinal="8" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Paralectotype" value="paralectotype" ordinal="13" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Lectotype" value="lectotype" ordinal="9" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Cotype" value="cotype" ordinal="2" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Epitype" value="epitype" ordinal="3" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Neotype" value="neotype" ordinal="10" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Isoneotype" value="isoneotype" ordinal="7" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Pictotype" value="pictotype" ordinal="12" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Paratype" value="paratype" ordinal="11" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Isolectotype" value="isolectotype" ordinal="6" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Type" value="type" ordinal="15" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Syntype" value="syntype" ordinal="14" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Isotype" value="isotype" ordinal="5" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Allotype" value="allotype" ordinal="1" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Possible type" value="possible type" ordinal="16" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+    </items>
+  </picklist>
+  <picklist name="TypeStatus" type="0" readonly="true" sizelimit="-1" issystem="true" sort="2" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="Paratype" value="paratype" ordinal="9" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Isotype" value="isotype" ordinal="5" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Holotype" value="holotype" ordinal="15" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Isoneotype" value="isoneotype" ordinal="11" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Type" value="type" ordinal="1" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Allotype" value="allotype" ordinal="14" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Isosyntype" value="isosyntype" ordinal="0" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Pictotype" value="pictotype" ordinal="2" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Possible type" value="possible type" ordinal="3" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Isolectotype" value="isolectotype" ordinal="8" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Neotype" value="neotype" ordinal="6" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Epitype" value="epitype" ordinal="12" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Syntype" value="syntype" ordinal="4" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Cotype" value="cotype" ordinal="10" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Lectotype" value="lectotype" ordinal="13" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+      <picklistitem title="Paralectotype" value="paralectotype" ordinal="7" timestampCreated="2020-12-17 15:16:23.0" timestampModified="2020-12-17 15:16:23.0" version="1"/>
+    </items>
+  </picklist>
+  <picklist name="TypeStatus" type="0" readonly="true" sizelimit="-1" issystem="true" sort="2" timestampCreated="2020-01-22 14:00:12.0" timestampModified="2020-01-22 14:00:12.0" version="0">
+    <items>
+      <picklistitem title="Allotype" value="allotype" ordinal="0" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Syntype" value="syntype" ordinal="4" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Isotype" value="isotype" ordinal="2" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Isoneotype" value="isoneotype" ordinal="9" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Epitype" value="epitype" ordinal="6" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Paralectotype" value="paralectotype" ordinal="12" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Holotype" value="holotype" ordinal="7" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Pictotype" value="pictotype" ordinal="14" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Cotype" value="cotype" ordinal="5" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Lectotype" value="lectotype" ordinal="8" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Paratype" value="paratype" ordinal="15" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Isolectotype" value="isolectotype" ordinal="11" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Possible type" value="possible type" ordinal="1" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Neotype" value="neotype" ordinal="13" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Isosyntype" value="isosyntype" ordinal="3" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+      <picklistitem title="Type" value="type" ordinal="10" timestampCreated="2020-11-13 20:33:16.0" timestampModified="2020-11-13 20:33:16.0" version="1"/>
+    </items>
+  </picklist>
+</list>
