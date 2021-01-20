@@ -767,18 +767,18 @@
 
             <rows>
                 <row>
-                    <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="accessionNumber" uitype="formattedtext"/>
+                    <!-- <cell type="label" labelfor="1"/>
+                    <cell type="field" id="1" name="accessionNumber" uitype="formattedtext"/> -->
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="type" uitype="combobox"/>
-                    <cell type="label" labelfor="2"/>
-                    <cell type="field" id="2" name="status" uitype="combobox"/>
+                    <!-- <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="status" uitype="combobox"/> -->
                 </row>
                 <!--<row>
                     <cell type="label" id="divLabel" label="4" initialize="align=right"/>
                     <cell type="field" id="4" name="divisionCBX" uitype="combobox" ignore="true"/>
                 </row>-->
-                <row>
+                <!-- <row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="dateAccessioned" uitype="formattedtext" uifieldformatter="Date" default="today"/>
                     <cell type="label" labelfor="26"/>
@@ -831,7 +831,7 @@
                     <cell type="field" id="12" name="modifiedByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
                     <cell type="label" labelfor="13"/>
                     <cell type="field" id="13" name="timestampModified" uitype="label" readonly="true"/>
-                </row>
+                </row> -->
                 <!-- <row>
                     <cell type="label" labelfor="99"/>
                     <cell type="field" id="99" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=AccessionNumber"/>
@@ -4896,8 +4896,8 @@
                     <cell type="separator" label="" colspan="14"/>    
                 </row>
                 <row>
-                    <cell type="label" labelfor="stat"/>
-                    <cell type="field" id="stat" name="status" uitype="combobox" deafult="Mounted"/>
+                    <!-- <cell type="label" labelfor="stat"/>
+                    <cell type="field" id="stat" name="status" uitype="combobox" deafult="Mounted"/> -->
                     <cell type="label" labelfor="4"/>
                     <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3" default="Main Herbarium"/>              
                 </row>
