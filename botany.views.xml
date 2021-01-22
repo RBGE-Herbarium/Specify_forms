@@ -1276,9 +1276,9 @@
                 <row>
                     <cell type="subview" viewname="AgentSpecialty" id="50" name="agentSpecialties" colspan="19"/>
                 </row>
-               <row>
+               <!-- <row>
                     <cell type="subview" viewname="AgentGeography" id="ag" name="agentGeographies" colspan="19"/>
-                </row>
+                </row> -->
                 <row>
                     <cell type="separator" label="Attachments" colspan="19"/>
                 </row>
@@ -4899,11 +4899,11 @@
                     <!-- <cell type="label" labelfor="stat"/>
                     <cell type="field" id="stat" name="status" uitype="combobox" deafult="Mounted"/> -->
                     <cell type="label" labelfor="4"/>
-                    <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3" default="Main Herbarium"/>              
+                    <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3" default="Main Herbarium"/>
                 </row>
-                <row>          
+                <row>               
                     <cell type="label" labelfor="t8"/>
-                    <cell type="field" id="t8" name="text8" uitype="text" colspan="5"/>        
+                    <cell type="field" id="t8" name="text8" uitype="label" colspan="5"/>
                     <cell type="label" labelfor="t9"/>
                     <cell type="field" id="t9" name="text9" uitype="text"/>
                 </row>
@@ -4967,7 +4967,7 @@
 		    <cell type="field" id="countAmt" name="countAmt" default="1" initialize="visible=false"/>
 		</row>-->
         <row>
-		    <cell type="field" id="countAmt" name="countAmt" default="1"/>
+		    <cell type="field" id="countAmt" name="countAmt" uitype="label" default="1"/>
 		</row>
 
                 
