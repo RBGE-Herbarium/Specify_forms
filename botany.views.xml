@@ -774,10 +774,7 @@
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="status" uitype="combobox"/>
                 </row>
-                <row>
-                    <cell type="label" id="divLabel" label="4" initialize="align=right"/>
-                    <cell type="field" id="4" name="divisionCBX" uitype="combobox" ignore="true"/>
-                </row>
+                
                <row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="dateAccessioned" uitype="formattedtext" uifieldformatter="Date" default="today"/>
@@ -803,6 +800,20 @@
                     <cell type="field" id="7" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
                 <row>
+                    <cell type="separator" label="Restrictions" colspan="5"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="t4"/>
+                    <cell type="field" id="t4" name="text4" uitype="combobox"/>
+                    <cell type="field" id="34" uitype="checkbox" name="yesNo1" label="yesNo1"/>                	
+                	<cell type="field" id="35" uitype="checkbox" name="yesNo2" label="yesNo2"/>
+                </row>
+                <row>
+                	<cell type="label" labelfor="33"/>
+                	<cell type="field" id="33" name="text3" uitype="textareabrief" rows="2" colspan="10"/>
+                </row>             
+
+                <row>
                     <cell type="subview" viewname="AccessionAgent" id="8" name="accessionAgents" desc="Agents" colspan="13" rows="3"/>
                 </row>
                 <row>
@@ -814,6 +825,10 @@
                 <!-- <row>
                     <cell type="subview" id="aor" name="addressOfRecord" viewname="AddressOfRecord" colspan="13"/>
                 </row> -->
+                <row>
+                    <cell type="label" id="divLabel" label="4" initialize="align=right"/>
+                    <cell type="field" id="4" name="divisionCBX" uitype="combobox" ignore="true"/>
+                </row>
                 <row>
                     <cell type="separator" label="Attachments" colspan="13"/>
                 </row>
@@ -4772,20 +4787,22 @@
                     <cell type="label" labelfor="6"/>
                     <cell type="field" id="6" name="renewalDate" uitype="formattedtext" uifieldformatter="Date"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="label" labelfor="status"/>
                     <cell type="field" id="status" name="status" uitype="combobox"/>
-                
                     <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
                     <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
-            
-                </row>
+                </row> -->
                 <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
                 <row>
-              <cell type="separator" label="Attachments" colspan="13"/>
+                    <cell type="label" labelfor="t1"/>
+                    <cell type="field" id="t1" name="text1" uitype="text" colspan="10"/>
+                </row>
+                <row>
+                    <cell type="separator" label="Attachments" colspan="13"/>
                 </row>
                 <row>
                     <cell type="subview" viewname="ObjectAttachment" id="10" name="permitAttachments" colspan="13" initialize="btn=true;icon=PermitAttachment"/>
