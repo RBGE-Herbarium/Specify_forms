@@ -309,9 +309,9 @@
             <desc><![CDATA[Subform within the Collection Object form.]]></desc>
             <altviews>
                 <altview name="CollectionObjectProperty View" viewdef="CollectionObjectProperty" mode="view" />
-                <altview name="CollectionObjectProperty Edit" viewdef="CollectionObjectProperty" mode="edit" default="true"/>
+                <altview name="CollectionObjectProperty Edit" viewdef="CollectionObjectProperty" mode="edit"/>
                 <altview name="CollectionObjectProperty Table View" viewdef="CollectionObjectProperty Table" mode="view"/>
-                <altview name="CollectionObjectProperty Table Edit" viewdef="CollectionObjectProperty Table" mode="edit"/>
+                <altview name="CollectionObjectProperty Table Edit" viewdef="CollectionObjectProperty Table" mode="edit" default="true"/>
             </altviews>
         </view>
         
@@ -767,18 +767,18 @@
 
             <rows>
                 <row>
-                    <!-- <cell type="label" labelfor="1"/>
+                    <cell type="label" labelfor="1"/>
                     <cell type="field" id="1" name="accessionNumber" uitype="formattedtext"/> -->
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="type" uitype="combobox"/>
-                    <!-- <cell type="label" labelfor="2"/>
-                    <cell type="field" id="2" name="status" uitype="combobox"/> -->
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="status" uitype="combobox"/>
                 </row>
-                <!--<row>
+                <row>
                     <cell type="label" id="divLabel" label="4" initialize="align=right"/>
                     <cell type="field" id="4" name="divisionCBX" uitype="combobox" ignore="true"/>
-                </row>-->
-                <!-- <row>
+                </row>
+               <row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="dateAccessioned" uitype="formattedtext" uifieldformatter="Date" default="today"/>
                     <cell type="label" labelfor="26"/>
@@ -811,9 +811,9 @@
                 <row> 
                     <cell type="subview" viewname="AccessionItems" id="25" desc="Collection Object" name="collectionObjects" colspan="13" rows="2" initialize="addsearch=true"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="subview" id="aor" name="addressOfRecord" viewname="AddressOfRecord" colspan="13"/>
-                </row>
+                </row> -->
                 <row>
                     <cell type="separator" label="Attachments" colspan="13"/>
                 </row>
@@ -831,7 +831,7 @@
                     <cell type="field" id="12" name="modifiedByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
                     <cell type="label" labelfor="13"/>
                     <cell type="field" id="13" name="timestampModified" uitype="label" readonly="true"/>
-                </row> -->
+                </row>
                 <!-- <row>
                     <cell type="label" labelfor="99"/>
                     <cell type="field" id="99" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=AccessionNumber"/>
@@ -2002,11 +2002,7 @@
                 <row>
                     <cell type="label" labelfor="vloc"/>
                     <cell type="field" id="vloc" name="verbatimLocality" uitype="textarea" colspan="10" rows="3"/>
-                </row>   
-                <row>
-                    <cell type="label" labelfor="t3"/>
-                    <cell type="field" id="t3" name="text3" uitype="text"/>
-                </row>              
+                </row>                
                 <row>
                     <cell type="label" labelfor="20"/>
                     <cell type="field" id="20" name="text1" uitype="textarea" colspan="10" rows="2"/>                    
@@ -2014,6 +2010,10 @@
                 <row>
                     <cell type="label" labelfor="t2"/>
                     <cell type="field" id="t2" name="text2" uitype="text" colspan="10"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="t3"/>
+                    <cell type="field" id="t3" name="text3" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="6"/>
@@ -2025,10 +2025,10 @@
                 <row>
                     <cell type="separator" label="" colspan="5"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="label" labelfor="10"/>
                     <cell type="field" id="10" name="collectingTrip" uitype="querycbx" initialize="name=CollectingTrip;title=CollectingTrip" colspan="10"/> 
-                </row>
+                </row> -->
                 
             </rows>
         </viewdef>    
@@ -2076,7 +2076,11 @@
                 <row>
                     <cell type="label" labelfor="t13"/>
                     <cell type="field" id="t13" name="text13" uitype="text" colspan="5"/>
-                </row>    
+                </row>  
+                <row>
+                    <cell type="label" labelfor="t3"/>
+                    <cell type="field" id="t3" name="text3" uitype="combobox" default="L" colspan="6"/>
+                </row>  
                 <row>
                     <cell type="separator" label="Altitude" colspan="5"/>
                 </row>
@@ -2148,12 +2152,10 @@
                 <row>
                     <cell type="label" labelfor="t11"/>
                     <cell type="field" id="t11" name="text11" uitype="text"/>
-                    <cell type="label" labelfor="t3"/>
-                    <cell type="field" id="t3" name="text3" uitype="combobox" colspan="6"/>
-                </row>
-                <row>
                     <cell type="label" labelfor="t1"/>
                     <cell type="field" id="t1" name="text1" uitype="combobox" colspan="5"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="t2"/>
                     <cell type="field" id="t2" name="text2" uitype="combobox" colspan="6"/>
                 </row>
@@ -2457,10 +2459,7 @@
                 <row>
                     <cell type="subview" viewname="CollectingEventSub" id="21" label="Collecting Event" name="collectingEvent" colspan="13" rows="5"/>
                 </row>
-		        <row>
-                    <cell type="label" labelfor="avail"/>
-                    <cell type="field" id="avail" name="availability" uitype="combobox" colspan ="3"/>
-                </row>
+		        <!-- S -->
                  <row>
                     <cell type="separator" label="" colspan="5"/>
                 </row>
@@ -2485,6 +2484,10 @@
                     <cell type="field" id="t2" name="text2" uitype="text"/>
                     <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
                 </row>
+                <row>
+                    <cell type="label" labelfor="int1"/>
+                    <cell type="field" id="int1" name="integer1" uitype="text"/>
+                </row>
                 <!--<row>
                     <cell type="panel" id="ContainerPanel" name="ContainerPanel" coldef="p" rowdef="p" colspan="11">
                         <rows>
@@ -2504,7 +2507,7 @@
                     <cell type="subview" id="15" viewname="BotanyAttributes" name="collectionObjectAttribute" colspan="13"/>
                 </row>
                 <row>
-                    <cell type="subview" viewname="CollectionObjectProperty" id="cop" name="collectionObjectProperties" colspan="13" rows="3"/>
+                    <cell type="subview" viewname="CollectionObjectProperty" id="cop" name="collectionObjectProperties" default="true" colspan="13" rows="3"/>
                 </row>
                 <!--<row>
                     <cell type="label" labelfor="vis"/>
@@ -4770,6 +4773,14 @@
                     <cell type="field" id="6" name="renewalDate" uitype="formattedtext" uifieldformatter="Date"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="status"/>
+                    <cell type="field" id="status" name="status" uitype="combobox"/>
+                
+                    <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
+            
+                </row>
+                <row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
@@ -5047,8 +5058,8 @@
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="prepType" uitype="combobox" picklist="PrepType"/>
                     <cell type="label" labelfor="stat"/>
-                    <cell type="field" id="stat" name="status" uitype="text"/>
-                    <cell type="label" labelfor="4"/>
+                    <!-- <cell type="field" id="stat" name="status" uitype="text"/>
+                    <cell type="label" labelfor="4"/> -->
                     <cell type="field" id="4" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3"/> 
                     <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
                 </row>
