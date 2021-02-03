@@ -804,9 +804,9 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="t4"/>
-                    <cell type="field" id="t4" name="text4" uitype="combobox"/>
-                    <cell type="field" id="34" uitype="checkbox" name="yesNo1" label="yesNo1"/>                	
-                	<cell type="field" id="35" uitype="checkbox" name="yesNo2" label="yesNo2"/>
+                    <cell type="field" id="t4" name="text4" uitype="combobox"/> 
+                    <cell type="field" id="34" uitype="checkbox" name="yesNo1"/>                	
+                	<cell type="field" id="35" uitype="checkbox" name="yesNo2"/>
                 </row>
                 <row>
                 	<cell type="label" labelfor="33"/>
