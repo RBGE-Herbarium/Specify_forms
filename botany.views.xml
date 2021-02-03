@@ -4985,6 +4985,9 @@
                     <cell type="field" id="n2" name="number2" uitype="label"/>
                 </row>
                 <row>
+                    <cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=RBGECat"/>
+                </row>
+                <row>
                     <cell type="subview" id="18" viewname="PreparationAttributes" name="preparationAttribute" colspan="13"/>
                 </row>
                 <row>
