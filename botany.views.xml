@@ -5661,7 +5661,7 @@
                         <cell type="label" labelfor="t3"/>
                         <cell type="field" id="t3" name="text3" uitype="combobox"/>		
                         <cell type="label" labelfor="t4"/>
-                        <cell type="field" id="t4" name="text4" uitype="combobox"/>	
+                        <cell type="field" id="t4" name="text4" uitype="label"/>	
                         <cell type="label" labelfor="t10"/>
                         <cell type="field" id="t10" name="text10" uitype="text"/>
                         <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
@@ -5725,8 +5725,8 @@
                         <cell type="field" id="in" name="isisNumber" uitype="text"/>
                         <cell type="label" labelfor="cs"/>
                         <cell type="field" id="cs" name="citesStatus" uitype="text"/>   
-                        <cell type="label" labelfor="t1"/>
-                        <cell type="field" id="t1" name="text1" uitype="text" readonly="true"/>	
+                        <!-- <cell type="label" labelfor="t1"/>
+                        <cell type="field" id="t1" name="text1" uitype="text" readonly="true"/>	 -->
                     </row> 
                     <row>
                         <cell type="label" labelfor="n1"/>
