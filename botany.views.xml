@@ -1020,9 +1020,9 @@
             <desc><![CDATA[The Accession form.]]></desc>
             <enableRules/>
 
-            <columnDef>105px,2px,210px,5px,110px,2px,155px,243px,p:g</columnDef>
-            <columnDef os="lnx">135px,2px,230px,5px,98px,2px,155px,290px,p:g</columnDef>
-            <columnDef os="mac">130px,2px,215px,5px,153px,2px,189px,336px,p:g</columnDef>
+            <columnDef>105px,2px,453px,5px,110px,2px,155px,p:g</columnDef>
+            <columnDef os="lnx">135px,2px,520px,5px,98px,2px,155px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,551px,5px,153px,2px,189px,p:g</columnDef>
             <columnDef os="exp">p,2px,p,5px,85px,2px,p:g(2),p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
 
