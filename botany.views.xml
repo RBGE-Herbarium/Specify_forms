@@ -2153,10 +2153,10 @@
                     <cell type="separator" label="Altitude" colspan="5"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="n7"/>
-                    <cell type="field" id="n7" name="number7" uitype="text"/>
-                    <cell type="label" labelfor="n8"/>
-                    <cell type="field" id="n8" name="number8" uitype="text"/>
+                    <cell type="label" labelfor="i1"/>
+                    <cell type="field" id="i1" name="integer1" uitype="text"/>
+                    <cell type="label" labelfor="i2"/>
+                    <cell type="field" id="i2" name="integer2" uitype="text"/>
                     <cell type="label" labelfor="t6"/>
                     <cell type="field" id="t6" name="text6" uitype="combobox"/>
                     <cell type="label" labelfor="t10"/>
@@ -2528,9 +2528,9 @@
                     <cell type="subview" viewname="CollectingEventSub" id="21" label="Collecting Event" name="collectingEvent" colspan="13" rows="5"/>
                 </row>
 		        <!-- S -->
-                 <row>
+                 <!-- <row>
                     <cell type="separator" label="" colspan="5"/>
-                </row>
+                </row> -->
                 <row>
                     <cell type="label" labelfor="t1"/>
                     <cell type="field" id="t1" name="text1" uitype="textarea" colspan="11" rows="3"/> 
