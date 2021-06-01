@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <viewset name="Botany Views" i18nresname="views" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
+<!--
+    labelfor links to id (within each form)
+    name field name in the database
+-->
+
 <!--VIEWS IN THIS FILE
     SECTION: ACCESSION ITEMS
         Accession Items
@@ -1451,49 +1456,32 @@
             
             <rows>
                 <row>
-                    <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="invoiceNumber" uitype="text"/>
+                    <cell type="label" labelfor="invoiceNumber"/>
+                    <cell type="field" id="invoiceNumber" name="invoiceNumber" uitype="text"/>
+                        <cell type="label" labelfor="status"/>     	
+                	<cell type="field" id="status" uitype="text" name="number1"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="bd"/>
-                    <cell type="field" id="bd" uitype="plugin" name="this" initialize="name=PartialDateUI;df=borrowDate;tp=borrowDatePrecision" uifieldformatter="Date" colspan="3"/>
-                    
+                    <cell type="label" labelfor="receivedDate"/>
+                    <cell type="field" id="receviedDate" name="receivedDate" uitype="formattedtext" uifieldformatter="Date" default="today"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="borrowDate"/>
+                    <cell type="field" id="borrowDate" name="borrowDate" uitype="formattedtext" uifieldformatter="Date" default="today"/>
+                    <cell type="label" labelfor="dateClosed"/>
+                    <cell type="field" id="dateClosed" name="dateClosed" uitype="formattedtext" uifieldformatter="Date"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="currentDueDate"/>
+                    <cell type="field" id="currentDueDate" name="currentDueDate" uitype="formattedtext" uifieldformatter="Date"/>
+                    <cell type="label" labelfor="originalDueDate"/>
+                    <cell type="field" id="originalDueDate" name="originalDueDate" uitype="formattedtext" uifieldformatter="Date"/> 
                 </row>
                 <row>
                     <cell type="label" labelfor="32"/>
                 	<cell type="field" id="32" name="text2" uitype="text"/>
-                    
                     <cell type="label" labelfor="31"/>
                 	<cell type="field" id="31" name="text1" uitype="label"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="30"/>
-                	<cell type="field" id="30" name="number2" uitype="text"/>
-                    <cell type="label" labelfor="noib"/>
-                    <cell type="field" id="noib" name="numberOfItemsBorrowed" uitype="text"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="receivedDate" uitype="formattedtext" uifieldformatter="Date" default="today"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="12"/>
-                    <cell type="field" id="12" name="currentDueDate" uitype="formattedtext" uifieldformatter="Date"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="21"/>
-                    <cell type="field" id="21" name="originalDueDate" uitype="formattedtext" uifieldformatter="Date"/> 
-                </row>
-                <row>                   
-                    <cell type="label" labelfor="4"/>
-                    <cell type="field" id="4" name="dateClosed" uitype="formattedtext" uifieldformatter="Date"/>
-                    <cell type="field" id="2" name="isClosed" uitype="checkbox" initialize="editable=true"/>
-                </row>
-                <row>
-                    <cell type="label"/>     	
-                	<cell type="field" id="35" uitype="checkbox" name="yesNo2" initialize="editable=true"/>
-                    <cell type="label" labelfor="n1"/>     	
-                	<cell type="field" id="n1" uitype="text" name="number1"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="5"/>
@@ -1502,6 +1490,26 @@
                 <row>
                     <cell type="subview" viewname="BorrowAgent" id="6" name="borrowAgents" rows="2" desc="Agents" colspan="15"/>
                 </row>
+
+
+                <row>
+                    <cell type="label" labelfor="30"/>
+                	<cell type="field" id="30" name="number2" uitype="text"/>
+                    <cell type="label" labelfor="noib"/>
+                    <cell type="field" id="noib" name="numberOfItemsBorrowed" uitype="text"/>
+                </row>
+               
+                <row>                   
+                    
+                    <cell type="field" id="2" name="isClosed" uitype="checkbox" initialize="editable=true"/>
+                </row>
+                <row>
+                    <cell type="label"/>     	
+                	<cell type="field" id="35" uitype="checkbox" name="yesNo2" initialize="editable=true"/>
+                
+                </row>
+               
+               
                 <row>
                     <cell type="subview" viewname="BorrowMaterial" id="10" name="borrowMaterials" colspan="15"/>
                 </row>
@@ -5006,9 +5014,9 @@
             <desc><![CDATA[Preparation for Collection Object form.]]></desc>
             <enableRules/>
 
-            <columnDef>100px,2px,168px,5px,100px,2px,163px,5px,100px,2px,163px,2px,20px,p:g</columnDef>
-            <columnDef os="lnx">115px,2px,185px,5px,115px,2px,180px,5px,115px,2px,180px,2px,9px,p:g</columnDef>
-            <columnDef os="mac">110px,2px,225px,5px,110px,2px,220px,5px,110px,2px,220px,2px,19px,p:g</columnDef>
+            <columnDef>100px,2px,178px,5px,100px,2px,163px,5px,100px,2px,163px,2px,10px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,190px,5px,115px,2px,180px,5px,115px,2px,180px,2px,4px,p:g</columnDef>
+            <columnDef os="mac">110px,2px,230px,5px,110px,2px,220px,5px,110px,2px,220px,2px,14px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g,5px:g,p,2px,p:g,10px,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
 
@@ -5074,7 +5082,11 @@
                     <cell type="label" labelfor="t7"/>
                     <cell type="field" id="t7" name="text7" uitype="combobox"/>
                 </row> 
-                    <cell type="separator" label="" colspan="14"/>    
+                    <cell type="separator" label="Destructive Sampling" colspan="14"/>    
+                </row>
+                <row>
+                    <cell type="label" labelfor="materialtype"/>
+                    <cell type="field" id="materialtype" name="description" uitype="combobox"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="2"/>
@@ -5085,8 +5097,6 @@
                 <row>
                     <cell type="label" labelfor="sn"/>
                     <cell type="field" id="sn" name="sampleNumber" uitype="text"/>
-                    <cell type="label" labelfor="materialtype"/>
-                    <cell type="field" id="materialtype" name="description" uitype="combobox"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="n2"/>
