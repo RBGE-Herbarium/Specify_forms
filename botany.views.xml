@@ -3758,7 +3758,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="taxon" label="Taxon"/>
-                    <cell type="field" id="taxon" name="preparation.collectionObject.currentDetermination.preferredTaxon.fullName" uitype="dsptextfield" colspan="5"/>
+                    <cell type="field" id="taxon" name="preparation.collectionObject.currentDetermination.preferredTaxon.fullName" uitype="dsptextfield" colspan="7"/>
                 </row>
                 <!-- <row>
                     <cell type="label" labelfor="3"/>
