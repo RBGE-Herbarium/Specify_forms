@@ -1582,9 +1582,9 @@
             <desc><![CDATA[The Agent subform for the Borrow form.]]></desc>
             <enableRules/>
             
-            <columnDef>105px,2px,200px,5px,43px,2px,130px,345px,p:g</columnDef>
-            <columnDef os="lnx">115px,2px,220px,5px,75px,2px,125px,373px,p:g</columnDef>
-            <columnDef os="mac">130px,2px,245px,5px,80px,2px,165px,413px,p:g</columnDef>
+            <columnDef>105px,2px,400px,5px,43px,2px,130px,145px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,420px,5px,75px,2px,125px,173px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,445px,5px,80px,2px,165px,213px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g(2),p:g(4)</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
             
@@ -3684,9 +3684,9 @@
             <desc><![CDATA[The gift form.]]></desc>
             <enableRules/>
 
-            <columnDef>105px,2px,250px,5px,90px,2px,126px,252px,p:g</columnDef>
-            <columnDef os="lnx">115px,2px,230px,5px,70px,2px,155px,p:g</columnDef>
-            <columnDef os="mac">130px,2px,215px,5px,80px,2px,165px,433px,p:g</columnDef>
+            <columnDef>105px,2px,400px,5px,90px,2px,126px,1022px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,330px,5px,70px,2px,55px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,415px,5px,80px,2px,165px,233px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
 
@@ -4105,9 +4105,9 @@
             <desc><![CDATA[The loan form.]]></desc>
             <enableRules/>
 
-            <columnDef>105px,2px,200px,5px,103px,2px,150px,265px,p:g</columnDef>
-            <columnDef os="lnx">115px,2px,210px,5px,73px,2px,155px,355px,p:g</columnDef>
-            <columnDef os="mac">130px,2px,240px,5px,80px,2px,165px,408px,p:g</columnDef>
+            <columnDef>105px,2px,400px,5px,103px,2px,150px,65px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,410px,5px,73px,2px,155px,155px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,440px,5px,80px,2px,165px,208px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px,100px,2px,p:g,p:g(2)</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
 
