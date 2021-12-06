@@ -1787,7 +1787,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="sample"/>
-                    <cell type="field" id="sample" name="text2" uitype="text"/>
+                    <cell type="field" id="sample" name="text2" uitype="combobox"/>
                     <cell type="label" labelfor="abundance"/>
                     <cell type="field" id="abundance" name="text3" uitype="combobox"/>
                 </row>
@@ -2183,6 +2183,10 @@
                 <row>
                     <cell type="separator" label="Altitude" colspan="5"/>
                 </row>
+                <!-- <row>
+                    <cell type="label" labelfor="5"/>
+                    <cell type="field" id="5" name="this" uitype="plugin" initialize="name=LatLonUI" colspan="11"/>
+                </row> -->
                 <row>
                     <cell type="label" labelfor="minAltitude"/>
                     <cell type="field" id="minAltitude" name="integer1" uitype="text"/>
@@ -2200,7 +2204,7 @@
                     <cell type="field" id="bgbAltitudeInM" name="number9" uitype="label"/>
                 </row>
                 <row>
-                    <cell type="separator" label="Latitude" colspan="5"/>
+                    <cell type="separator" label="Lat/Long DMS" colspan="5"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="latDegrees"/>
@@ -2213,17 +2217,6 @@
                     <cell type="field" id="latDirection" name="text7" uitype="combobox"/>
                 </row>   
                 <row>
-                    <cell type="label" labelfor="decimalLat"/>
-                    <cell type="field" id="decimalLatn" name="number12" uitype="text"/>
-                    <cell type="label" labelfor="decimalLatDirection"/>
-                    <cell type="field" id="decimalLatDirection" name="text14" uitype="combobox"/>
-                    <cell type="label" labelfor="latAsDecimal"/>
-                    <cell type="field" id="latAsDecimal" name="number10" uitype="label"/>
-                </row>  
-                <row>
-                    <cell type="separator" label="Longitude" colspan="5"/>
-                </row>
-                <row>
                     <cell type="label" labelfor="longDegrees"/>
                     <cell type="field" id="longDegrees" name="number4" uitype="text"/>
                     <cell type="label" labelfor="longMinutes"/>
@@ -2232,15 +2225,28 @@
                     <cell type="field" id="longSeconds" name="number6" uitype="text"/>
                     <cell type="label" labelfor="longDirection"/>
                     <cell type="field" id="longDirection" name="text8" uitype="combobox"/>
+                </row> 
+                <row>
+                    <cell type="separator" label="Lat/Long Decimal Degrees" colspan="5"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="decimalLat"/>
+                    <cell type="field" id="decimalLatn" name="number12" uitype="text"/>
+                    <cell type="label" labelfor="decimalLatDirection"/>
+                    <cell type="field" id="decimalLatDirection" name="text14" uitype="combobox"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="decimalLong"/>
                     <cell type="field" id="decimalLong" name="number13" uitype="text"/>
                     <cell type="label" labelfor="decimalLongDirection"/>
                     <cell type="field" id="decimalLongDirection" name="text15" uitype="combobox"/>
+                </row>  
+                <row>
                     <cell type="label" labelfor="longAsDecimal"/>
                     <cell type="field" id="longAsDecimal" name="number11" uitype="label"/>
-                </row>  
+                    <cell type="label" labelfor="latAsDecimal"/>
+                    <cell type="field" id="latAsDecimal" name="number10" uitype="label"/>
+                </row> 
                 <row>
                     <cell type="label" labelfor="GPSDatum"/>
                     <cell type="field" id="t5" name="GPSDatum" uitype="combobox" default="Unknown"/>
@@ -3230,10 +3236,10 @@
                     <cell type="field" id="IHcode" name="text3"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="dett2"/>
-                    <cell type="field" id="dett2" name="text2" uitype="text"/>
-                    <cell type="label" labelfor="dett1"/>
-                    <cell type="field" id="dett1" name="text1" uitype="text"/>
+                    <cell type="label" labelfor="verbDet"/>
+                    <cell type="field" id="verbDet" name="text2" uitype="text"/>
+                    <cell type="label" labelfor="verbDetBy"/>
+                    <cell type="field" id="verbDetBy" name="text1" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="6"/>
@@ -4537,10 +4543,10 @@
                     <cell type="label" labelfor="t3"/>
                     <cell type="field" id="t3" name="text3" uitype="text" colspan="3"/>
                 </row>-->    
-                <!--<row>
+               <!--<row>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="this" uitype="plugin" initialize="name=LatLonUI" colspan="11"/>
-                </row>
+                </row> 
                 <row>
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="datum" uitype="text" colspan="3"/>
@@ -4977,6 +4983,10 @@
                     <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
                 </row> -->
                 <row>
+                    <cell type="label" labelfor="coverage"/>
+                    <cell type="field" id="coverage" name="permittext" uitype="textareabrief" rows="2" colspan="10"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="remarks"/>
                     <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
@@ -5264,7 +5274,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="barcode"/>
-                    <cell type="field" id="barcode" name="barCode" uitype="dsptextfield"/>
+                    <cell type="field" id="barcode" name="barCode" uitype="dsptextfield" align="left"/>
                     <cell type="label" labelfor="prepType"/>
                     <cell type="field" id="prepType" name="prepType" uitype="combobox" picklist="PrepType"/>
                     <cell type="label" labelfor="storage"/>
@@ -5912,6 +5922,10 @@
                         <cell type="separator" label="" colspan="14"/>
                     </row>
                     <row>
+                        <cell type="label" labelfor="remarks"/>
+                        <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
+                    </row>
+                    <row>
                         <cell type="label" labelfor="itisNumber"/>
                         <cell type="field" id="itisNumber" name="isisNumber" uitype="text"/>
                         <cell type="label" labelfor="citesStatus"/>
@@ -5923,10 +5937,7 @@
                         <cell type="label" labelfor="legacyNumber"/>
                         <cell type="field" id="legacyNumber" name="number1" uitype="text" readonly="true"/>	
                     </row>
-                    <row>
-                        <cell type="label" labelfor="remarks"/>
-                        <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
-                    </row>   
+                       
                     <row>
                         <cell type="separator" label="ATTACHMENTS" colspan="14"/>
                     </row>
