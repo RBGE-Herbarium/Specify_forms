@@ -4958,7 +4958,7 @@
                     <cell type="label" labelfor="permitNumber"/>
                     <cell type="field" id="permitNumber" name="permitNumber" uitype="text"/>
                     <cell type="label" labelfor="type"/>
-                    <cell type="field" id="type" name="type" uitype="combobox"/>
+                    <cell type="field" id="type" name="type" uitype="combobox" colspan="3"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="issuedBy"/>
@@ -4969,7 +4969,7 @@
                     <cell type="field" id="issuedDate" name="issuedDate" uitype="formattedtext" uifieldformatter="Date"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="v"/>
+                    <cell type="label" labelfor="startDate"/>
                     <cell type="field" id="startDate" name="startDate" uitype="formattedtext" uifieldformatter="Date"/>
                     <cell type="label" labelfor="endDate"/>
                     <cell type="field" id="endDate" name="endDate" uitype="formattedtext" uifieldformatter="Date"/>
