@@ -2231,7 +2231,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="decimalLat"/>
-                    <cell type="field" id="decimalLatn" name="number12" uitype="text"/>
+                    <cell type="field" id="decimalLat" name="number12" uitype="text"/>
                     <cell type="label" labelfor="decimalLatDirection"/>
                     <cell type="field" id="decimalLatDirection" name="text14" uitype="combobox"/>
                 </row>
@@ -2249,7 +2249,7 @@
                 </row> 
                 <row>
                     <cell type="label" labelfor="GPSDatum"/>
-                    <cell type="field" id="t5" name="GPSDatum" uitype="combobox" default="Unknown"/>
+                    <cell type="field" id="GPSDatum" name="text5" uitype="combobox" default="Unknown"/>
                 </row>
                 <row>
                     <cell type="separator" label="GeoCoordinate Information" colspan="5"/>
