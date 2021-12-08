@@ -4983,12 +4983,20 @@
                     <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
                 </row> -->
                 <row>
+                    <cell type="label" labelfor="country"/>
+                    <cell type="field" id="country" name="copyright" uitype="text" colspan="10"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="coverage"/>
-                    <cell type="field" id="coverage" name="permittext" uitype="textareabrief" rows="2" colspan="10"/>
+                    <cell type="field" id="coverage" name="permitText" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="remarks"/>
                     <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="legacyNumber"/>
+                    <cell type="field" id="legacyNumber" name="text1" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="t2"/>
