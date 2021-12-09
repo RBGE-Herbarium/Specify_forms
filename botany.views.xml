@@ -304,6 +304,18 @@
                 <altview name="CollectingEventAttribute" viewdef="CollectingEventAttribute Table" mode="edit"/>
             </altviews>
         </view>
+
+        <view name="CollectingEventAuthorization"
+              objtitle="Collecting Event Authorization"
+              class="edu.ku.brc.specify.datamodel.CollectingEventAuthorization"
+              busrules="edu.ku.brc.specify.datamodel.busrules.CollectingEventAuthorizationBusRules"
+        >
+            <desc><![CDATA[Permit subform within the Accession form.]]></desc>
+            <altviews>
+                <altview name="CollectingEventAuthorization View" viewdef="CollectingEventAuthorization" mode="view" default="true"/>
+                <altview name="CollectingEventAuthorization Edit" viewdef="CollectingEventAuthorization" mode="edit"/>
+            </altviews>
+        </view>
         
         <view name="CollectionObject"
             class="edu.ku.brc.specify.datamodel.CollectionObject"
@@ -2124,6 +2136,10 @@
                 <row>
                     <cell type="separator" label="" colspan="5"/>
                 </row>
+                <row>
+                    <cell type="subview" viewname="CollectingEventAuthorization" id="ceau" desc="Authorization" name="collectingEventAuthorizations" colspan="13"/>
+                </row>
+
                 <!-- <row>
                     <cell type="label" labelfor="10"/>
                     <cell type="field" id="10" name="collectingTrip" uitype="querycbx" initialize="name=CollectingTrip;title=CollectingTrip" colspan="10"/> 
@@ -2400,6 +2416,47 @@
             <desc><![CDATA[Preparation subform table for Collecting Event Attribute form.]]></desc>
             <definition>CollectingEventAttribute</definition>
         </viewdef>
+
+        <viewdef
+                type="form"
+                name="CollectingEventAuthorization"
+                class="edu.ku.brc.specify.datamodel.CollectingEventAuthorization"
+                gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+                settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+
+            <desc><![CDATA[Permit subform for CollectingEventAuthorization.]]></desc>
+            <enableRules/>
+
+            <columnDef>105px,2px,210px,515px,p:g</columnDef>
+            <columnDef os="lnx">135px,2px,230px,550px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,215px,685px,p:g</columnDef>
+            <columnDef os="exp">p,2px,p,p:g</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+
+            <rows>
+                <row>
+                    <cell type="label" labelfor="1"/>
+                    <cell type="field" id="1" name="permit" uitype="querycbx" initialize="name=Permit"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="remarks" uitype="textareabrief" rows="2" colspan="2"/>
+                </row>
+                <!--<row>
+                    <cell type="label" labelfor="9"/>
+                    <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="10"/>
+                    <cell type="field" id="10" name="modifiedByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
+                    <cell type="label" labelfor="12"/>
+                    <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
+                </row>-->
+            </rows>
+        </viewdef>
+
 
 <!--SECTION: COLLECTING TRIP-->
 
