@@ -5019,17 +5019,25 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="issuedBy"/>
-                    <cell type="field" id="issuedBy" name="issuedBy" uitype="querycbx" initialize="name=Agent"/>
+                    <cell type="field" id="issuedBy" name="issuedBy" uitype="querycbx" initialize="name=Agent" colspan="10"/>   
+                </row>
+                <row>
                     <cell type="label" labelfor="issuedTo"/>
-                    <cell type="field" id="issuedTo" name="issuedTo" uitype="querycbx" initialize="name=Agent"/>
+                    <cell type="field" id="issuedTo" name="issuedTo" uitype="querycbx" initialize="name=Agent" colspan="10"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="issuedDate"/>
                     <cell type="field" id="issuedDate" name="issuedDate" uitype="formattedtext" uifieldformatter="Date"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="startDate"/>
-                    <cell type="field" id="startDate" name="startDate" uitype="formattedtext" uifieldformatter="Date"/>
+                    <cell type="field" id="startDate" name="startDate" uitype="formattedtext" uifieldformatter="Date"/>      
+                </row>
+                <row>           
                     <cell type="label" labelfor="endDate"/>
                     <cell type="field" id="endDate" name="endDate" uitype="formattedtext" uifieldformatter="Date"/>
+                </row>
+                <row>   
                     <cell type="label" labelfor="renewalDate"/>
                     <cell type="field" id="renewalDate" name="renewalDate" uitype="formattedtext" uifieldformatter="Date"/>
                 </row>
