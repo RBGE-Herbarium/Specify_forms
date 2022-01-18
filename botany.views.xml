@@ -1466,7 +1466,7 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             
             <desc><![CDATA[Borrow viewing form.]]></desc>
-            <columnDef>105px,2px,122px,5px,125px,2px,120px,10px,132px,5px,80px,2px,122px,0px,15px,p:g</columnDef>
+            <columnDef>105px,2px,122px,5px,125px,2px,142px,5px,132px,5px,80px,2px,105px,0px,15px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,160px,5px,141px,2px,125px,10px,140px,15px,85px,2px,115px,0px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,192px,5px,140px,2px,147px,10px,160px,5px,147px,2px,90px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),10px,p,5px:g,p,2px,p:g(2),0px,p,p:g</columnDef> 
@@ -1478,18 +1478,16 @@
                     <cell type="field" id="invoiceNumber" name="invoiceNumber" uitype="text"/>
                     <cell type="label" labelfor="borrowStatus"/>     	
                 	<cell type="field" id="borrowStatus" name="status" uitype="combobox"/>
-                    <cell type="label" labelfor="statusint"/>     	
-                	<cell type="field" id="statusint" uitype="text" name="number1"/>
+                    <!-- <cell type="label" labelfor="statusint"/>     	
+                	<cell type="field" id="statusint" uitype="text" name="number1"/> -->
                 </row>
                 <row>
-                    <cell type="label" labelfor="borrowDate"/>
-                    <cell type="field" id="borrowDate" name="borrowDate" uitype="formattedtext" uifieldformatter="Date" default="today"/>
+                    <cell type="label" labelfor="receivedDate"/>
+                    <cell type="field" id="receivedDate" name="receivedDate" uitype="formattedtext" uifieldformatter="Date" default="today"/>
                     <cell type="label" labelfor="dateClosed"/>
                     <cell type="field" id="dateClosed" name="dateClosed" uitype="formattedtext" uifieldformatter="Date"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="receivedDate"/>
-                    <cell type="field" id="receivedDate" name="receivedDate" uitype="formattedtext" uifieldformatter="Date"/>
                     <cell type="label" labelfor="numberOfParcels"/>
                 	<cell type="field" id="numberOfParcels" name="number2" uitype="text"/>
                 </row>
@@ -1532,9 +1530,9 @@
                 <row>
                     <cell type="subview" viewname="BorrowMaterial" id="10" name="borrowMaterials" colspan="15"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="subview" viewname="Shipment" id="11" name="shipments" colspan="15"/>
-                </row>
+                </row> -->
                 <row>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="borrowAttachments" colspan="13" initialize="btn=true;icon=BorrowAttachment"/>
                 </row>
@@ -1611,7 +1609,9 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="agent"/>
-                    <cell type="field" id="agent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent"/>
+                    <cell type="field" id="agent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="6"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="role"/>
                     <cell type="field" id="role" name="role" uitype="combobox"/>
                 </row>
