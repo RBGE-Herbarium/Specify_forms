@@ -1508,6 +1508,10 @@
                     <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="12"/>
                 </row>
                 <row>
+                    <cell type="label"/>     	
+                	<cell type="field" id="35" uitype="checkbox" name="yesNo2" initialize="editable=true"/>
+                </row>
+                <row>
                     <cell type="subview" viewname="BorrowAgent" id="6" name="borrowAgents" rows="2" desc="Agents" colspan="15"/>
                 </row>
                 <!-- <row>
@@ -1520,11 +1524,7 @@
                     
                     <cell type="field" id="2" name="isClosed" uitype="checkbox" initialize="editable=true"/>
                 </row> -->
-                <row>
-                    <cell type="label"/>     	
-                	<cell type="field" id="35" uitype="checkbox" name="yesNo2" initialize="editable=true"/>
                 
-                </row>
                
                
                 <row>
@@ -4187,6 +4187,8 @@
                 <row>
                     <cell type="label" labelfor="loanAgent"/>
                     <cell type="field" id="loanAgent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="loanAgentRole"/>
                     <cell type="field" id="loanAgentRole" name="role" uitype="combobox"/>
                 </row>
@@ -4356,8 +4358,8 @@
 					<cell type="field" id="taxon" name="preparation.collectionObject.currentDetermination.preferredTaxon.fullName" readonly="true" uitype="text" colspan="6"/>
 				</row>
                 <row>
-                    <cell type="label" labelfor="quantity"/>
-                    <cell type="field" id="quantity" name="quantity" uitype="spinner" initialize="max=5000"/>
+                    <!-- <cell type="label" labelfor="quantity"/>
+                    <cell type="field" id="quantity" name="quantity" uitype="spinner" initialize="max=5000"/> -->
                     <cell type="label" labelfor="quantityReturned"/>
                     <cell type="field" id="quantityReturned" name="quantityReturned" uitype="dsptextfield"/>
                     <cell type="label" labelfor="quantityResolved" colspan="3"/>
