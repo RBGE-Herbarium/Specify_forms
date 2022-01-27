@@ -4027,6 +4027,8 @@
                      <cell type="subview" viewname="LoanItems" id="LoanItems" name="loanPreparations" defaulttype="table" colspan="15" rows="4"/>
                 </row>
                 <row>
+                    <cell type="label" label="Total Preps:" initialize="align=right"/>
+                    <cell type="field" id="tp" name="totalPreps" uitype="text" readonly="true"/>
                     <cell type="label" label="Resolved Preps:" initialize="align=right"/>
                     <cell type="field" id="ri" name="resolvedPreps" uitype="text" readonly="true"/>
                     <cell type="label" label="Unresolved Preps:" initialize="align=right"/>
@@ -4365,8 +4367,8 @@
                     <cell type="field" id="quantityReturned" name="quantityReturned" uitype="dsptextfield"/>
                     <cell type="label" labelfor="quantityResolved" colspan="3"/>
                     <cell type="field" id="quantityResolved" name="quantityResolved" uitype="dsptextfield"/>
-                    <cell type="label" labelfor="ReturnDate" label="Return Date" initialize="align=right"/>
-					<cell type="field" id="ReturnDate" name="loanReturnPreparation.preparation.returnedDate" readonly="true" uitype="text"/>
+                    <!-- <cell type="label" labelfor="ReturnDate" label="Return Date" initialize="align=right"/>
+					<cell type="field" id="ReturnDate" name="loanReturnPreparation.preparation.returnedDate" readonly="true" uitype="text"/> -->
                    <!-- <cell type="subview" id="loanReturnPreparations" viewname="LoanReturnPreparation" name="loanReturnPreparations" initialize="btn=true;icon=LoanReturnPreparation"/> -->
                 </row>
                 <!-- <row>
