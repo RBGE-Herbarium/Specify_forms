@@ -454,7 +454,7 @@
             </altviews>
         </view>
 
-        <view name="ExchangeOut"
+        <!-- <view name="ExchangeOut"
             class="edu.ku.brc.specify.datamodel.ExchangeOut"
             >
             <desc><![CDATA[Exchange Out display form]]></desc>
@@ -474,7 +474,7 @@
                 <altview name="ExchangeOutPrep View" viewdef="ExchangeOutPrep" mode="view" default="true"/>
                 <altview name="ExchangeOutPrep Edit" viewdef="ExchangeOutPrep" mode="edit"/>
             </altviews>
-        </view>
+        </view> -->
         
         <view name="Exsiccata"
             class="edu.ku.brc.specify.datamodel.Exsiccata"
@@ -3449,7 +3449,7 @@
 
 <!--SECTION: EXCHANGE OUT-->
 
-<viewdef
+<!-- <viewdef
             type="form"
             name="ExchangeOut"
             class="edu.ku.brc.specify.datamodel.ExchangeOut"
@@ -3491,7 +3491,7 @@
                 </row>
                 <row>
                     <cell type="subview" id="8" name="shipments" viewname="Shipment" colspan="13"/>
-                </row>
+                </row> -->
 
                 
                 <!-- <row>
@@ -3535,7 +3535,7 @@
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
                 </row>-->
-            </rows>
+            <!-- </rows>
         </viewdef>
         
         <viewdef
@@ -3575,7 +3575,7 @@
                 <row>
                     <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="descriptionOfMaterial" uitype="text" colspan="11"/>
-                </row>
+                </row> -->
                 <!--<row>
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" uitype="text"/>
@@ -3600,8 +3600,8 @@
                     <cell type="label" labelfor="12"/>
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
                 </row>-->
-            </rows>
-        </viewdef>
+            <!-- </rows>
+        </viewdef>  -->
 
 <!--SECTION: EXSICCATA-->
 
