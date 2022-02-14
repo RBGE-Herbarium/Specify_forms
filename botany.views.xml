@@ -1566,7 +1566,7 @@
                 	<cell type="field" id="35" uitype="checkbox" name="yesNo2" initialize="editable=true"/>
                 </row> -->
                 <row>
-                    <cell type="subview" viewname="BorrowAgent" id="6" name="borrowAgents" rows="2" desc="Agents" colspan="15"/>
+                    <cell type="subview" viewname="BorrowAgent" id="6" name="borrowAgents" defaulttype="table" rows="2" desc="Agents" colspan="15"/>
                 </row>
                 <!-- <row>
                     
@@ -3498,18 +3498,24 @@
 
             <rows>
                 <row>
-                    <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="exchangeOutNumber" uitype="formattedtext"/>
-                    <cell type="label" labelfor="7"/>
-                    <cell type="field" id="7" name="quantityExchanged" uitype="text"/>
-                    <cell type="label" labelfor="9"/>
-                    <cell type="field" id="9" name="exchangeDate" uitype="formattedtext" uifieldformatter="Date"  default="Today"/>
+                    <cell type="label" labelfor="exchangeOutNumber"/>
+                    <cell type="field" id="exchangeOutNumber" name="exchangeOutNumber" uitype="formattedtext"/>
+                    <cell type="label" labelfor="kind"/>
+                    <cell type="field" id="kind" name="descriptionOfMaterial" uitype="combobox"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="quantityExchanged"/>
+                    <cell type="field" id="quantityExchanged" name="quantityExchanged" uitype="text"/>
+                    <cell type="label" labelfor="exchangeDate"/>
+                    <cell type="field" id="exchangeDate" name="exchangeDate" uitype="formattedtext" uifieldformatter="Date"  default="Today"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="2"/>
-                    <cell type="field" id="2" name="agentCatalogedBy" uitype="querycbx" initialize="name=Agent" colspan="3"/>
+                    <cell type="field" id="2" name="agentCatalogedBy" uitype="querycbx" initialize="name=Agent" colspan="9"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="agentSentTo" uitype="querycbx" initialize="name=Agent" colspan="3"/>
+                    <cell type="field" id="3" name="agentSentTo" uitype="querycbx" initialize="name=Agent" colspan="9"/>
                 </row>
                 <!-- <row>
                     <cell type="label" label="Total Preps:" initialize="align=right"/>
@@ -3526,12 +3532,18 @@
                     <cell type="field" id="divcbx" name="divisionCBX" uitype="combobox" ignore="true" initialize="visible=false"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="4"/>
-                    <cell type="field" id="4" name="descriptionOfMaterial" uitype="text" colspan="9"/>
+                    <cell type="label" labelfor="legacyNum"/>
+                    <cell type="field" id="legacyNum" name="text1" uitype="text"/>
+                    <cell type="label" labelfor="theirNum"/>
+                    <cell type="field" id="theirNum" name="text2" uitype="text"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="5"/>
-                    <cell type="field" id="5" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
+                    <cell type="label" labelfor="contents"/>
+                    <cell type="field" id="contents" name="contents" uitype="text" colspan="9"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="remarks"/>
+                    <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
                 <!-- <row>
                     <cell type="subview" id="6" name="addressOfRecord" viewname="AddressOfRecord" colspan="13"/>
@@ -4039,7 +4051,7 @@
                     <cell type="field" id="intMisc" name="text4" uitype="textareabrief" rows="2" colspan="12"/>
                 </row>
                 <row>
-                    <cell type="subview" viewname="GiftAgent" id="GiftAgent" name="giftAgents" desc="Agents" colspan="15" rows="7"/>
+                    <cell type="subview" viewname="GiftAgent" id="GiftAgent" name="giftAgents" defaulttype="table" desc="Agents" colspan="15" rows="7"/>
                 </row>
                 
                 <row>
@@ -4452,7 +4464,7 @@
                     <cell type="field" id="receivedComments" name="receivedComments" uitype="text" colspan = "12"/>
                 </row>
                 <row>
-                    <cell type="subview" viewname="LoanAgent" id="8" name="loanAgents" colspan="15" rows=""/>
+                    <cell type="subview" viewname="LoanAgent" id="8" name="loanAgents" defaulttype="table" colspan="15" rows=""/>
                 </row>
                 <!-- <row>
                     <cell type="separator" label="Digital Information" colspan="15"/>
@@ -4480,6 +4492,12 @@
                     <!-- <cell type="label" label="Unresolved Items:" initialize="align=right"/>
                     <cell type="field" id="uq" name="unresolvedItems" uitype="text" readonly="true"/> -->
                 </row>
+                <!-- <row>
+                    <cell type="separator" label="Returned Items" colspan="15"/>
+                </row>
+                <row>
+                    <cell type="subview" viewname="LoanReturnPreparation" id="LoanReturnPreparation" name="LoanReturnPreparation" defaulttype="table" colspan="15" rows="4"/>
+                </row> -->
                  <row>
                     <cell type="separator" label="" colspan="15"/>
                 </row>
