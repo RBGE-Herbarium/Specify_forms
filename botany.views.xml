@@ -2248,9 +2248,9 @@
                 </row> -->
                 <row>
                     <cell type="label" labelfor="minAltitude"/>
-                    <cell type="field" id="minAltitude" name="integer1" uitype="text"/>
+                    <cell type="field" id="minAltitude" name="integer5" uitype="text"/>
                     <cell type="label" labelfor="maxAltitude"/>
-                    <cell type="field" id="maxAltitude" name="integer2" uitype="text"/>
+                    <cell type="field" id="maxAltitude" name="integer6" uitype="text"/>
                     <cell type="label" labelfor="altitudeUnit"/>
                     <cell type="field" id="altitudeUnit" name="text6" uitype="combobox"/>
                     <cell type="label" labelfor="altitudeQual"/>
@@ -2259,15 +2259,15 @@
                 <row>
                     <cell type="label" labelfor="bgbAltitude"/>
                     <cell type="field" id="bgbAltitude" name="text9" uitype="label"/>
-                    <cell type="label" labelfor="bgbAltitudeInM"/>
-                    <cell type="field" id="bgbAltitudeInM" name="number9" uitype="label"/>
+                    <!-- <cell type="label" labelfor="bgbAltitudeInM"/>
+                    <cell type="field" id="bgbAltitudeInM" name="number9" uitype="label"/> -->
                 </row>
                 <row>
                     <cell type="separator" label="Lat/Long DMS" colspan="5"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="latDegrees"/>
-                    <cell type="field" id="latDegrees" name="number1" uitype="text"/>
+                    <cell type="field" id="latDegrees" name="integer1" uitype="text"/>
                     <cell type="label" labelfor="latMinutes"/>
                     <cell type="field" id="latMinutes" name="number2" uitype="text"/>
                     <cell type="label" labelfor="latSeconds"/>
@@ -2277,7 +2277,7 @@
                 </row>   
                 <row>
                     <cell type="label" labelfor="longDegrees"/>
-                    <cell type="field" id="longDegrees" name="number4" uitype="text"/>
+                    <cell type="field" id="longDegrees" name="integer2" uitype="text"/>
                     <cell type="label" labelfor="longMinutes"/>
                     <cell type="field" id="longMinutes" name="number5" uitype="text"/>
                     <cell type="label" labelfor="longSeconds"/>
@@ -2300,12 +2300,12 @@
                     <cell type="label" labelfor="decimalLongDirection"/>
                     <cell type="field" id="decimalLongDirection" name="text15" uitype="combobox"/>
                 </row>  
-                <row>
+                <!-- <row>
                     <cell type="label" labelfor="longAsDecimal"/>
-                    <cell type="field" id="longAsDecimal" name="number11" uitype="label"/>
+                    <cell type="field" id="longAsDecimal" name="integer4" uitype="label"/>
                     <cell type="label" labelfor="latAsDecimal"/>
-                    <cell type="field" id="latAsDecimal" name="number10" uitype="label"/>
-                </row> 
+                    <cell type="field" id="latAsDecimal" name="integer3" uitype="label"/>
+                </row>  -->
                 <row>
                     <cell type="label" labelfor="GPSDatum"/>
                     <cell type="field" id="GPSDatum" name="text5" uitype="combobox" default="Unknown"/>
@@ -2606,13 +2606,17 @@
                     <cell type="field" id="4" name="cataloger" uitype="querycbx" initialize="name=Agent;title=Catalog Agent" isrequired="true"/>
                     <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" uitype="plugin" name="this" initialize="name=PartialDateUI;df=catalogedDate;tp=catalogedDatePrecision" uifieldformatter="Date"/>
-                </row>-->                
+                </row>--> 
+                <row>
+		            <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="accession" uitype="querycbx" initialize="name=AccessionCO;title=AccessionCO" isrequired="false"/>
+                </row>               
                 <row>
                     <cell type="subview" viewname="Preparation" id="8" name="preparations" defaulttype="table" colspan="13"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="subview" viewname="ConservDescription" id="cd" name="conservDescriptions" initialize="btn=true"/>
-                </row>
+                </row> -->
                 <row>
                     <cell type="subview" viewname="Determination" id="6" name="determinations" defaulttype="table" colspan="13" rows="5"/>
                 </row>
@@ -2623,10 +2627,7 @@
 		        <row>
 		             <cell type="separator" label="" colspan="5"/>
 		        </row>
-		        <row>
-		            <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="accession" uitype="querycbx" initialize="name=AccessionCO;title=AccessionCO" isrequired="false"/>
-                </row> 
+		       
                 <row>
                     <cell type="subview" viewname="CollectingEventSub" id="21" label="Collecting Event" name="collectingEvent" colspan="13" rows="5"/>
                 </row>
@@ -2660,7 +2661,7 @@
                     <cell type="label" labelfor="int1"/>
                     <cell type="field" id="int1" name="integer1" uitype="text"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="panel" id="ContainerPanel" name="ContainerPanel" coldef="p" rowdef="p" colspan="11">
                         <rows>
                             <row>
@@ -2674,7 +2675,7 @@
                             </row>
                         </rows> 
                     </cell>
-                </row>
+                </row> -->
                 <row>
                     <cell type="subview" id="15" viewname="BotanyAttributes" name="collectionObjectAttribute" colspan="13"/>
                 </row>
@@ -4481,11 +4482,11 @@
                 </row>
                 <row>
                     <cell type="label" label="Total Preps:" initialize="align=right"/>
-                    <cell type="field" id="tp" name="totalPreps" uitype="text" readonly="true"/>
+                    <cell type="field" id="tp" name="totalPreps" uitype="label" readonly="true"/>
                     <cell type="label" label="Resolved Preps:" initialize="align=right"/>
-                    <cell type="field" id="ri" name="resolvedPreps" uitype="text" readonly="true"/>
+                    <cell type="field" id="ri" name="resolvedPreps" uitype="label" readonly="true"/>
                     <cell type="label" label="Unresolved Preps:" initialize="align=right"/>
-                    <cell type="field" id="ui" name="unresolvedPreps" uitype="text" readonly="true"/>
+                    <cell type="field" id="ui" name="unresolvedPreps" uitype="label" readonly="true"/>
 
                     <!-- <cell type="label" label="Resolved Items:" initialize="align=right"/>
                     <cell type="field" id="rq" name="resolvedItems" uitype="text" readonly="true"/> -->
