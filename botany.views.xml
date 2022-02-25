@@ -4035,10 +4035,10 @@
                     <cell type="field" id="giftStatusint" name="integer1" uitype="text"/> -->
                 </row>
                 <row>
-                    <cell type="label" labelfor="text3"/>
-                    <cell type="field" id="text3" name="text3" uitype="combobox"/> 
-                    <cell type="label" labelfor="purposeOfGift"/>
-                    <cell type="field" id="purposeOfGift" name="purposeOfGift" uitype="combobox"/>   
+                    <cell type="label" labelfor="justification"/>
+                    <cell type="field" id="justification" name="text3" uitype="combobox"/> 
+                    <!-- <cell type="label" labelfor="purposeOfGift"/>
+                    <cell type="field" id="purposeOfGift" name="purposeOfGift" uitype="combobox"/>    -->
                     <cell type="label" labelfor="contents"/>
                     <cell type="field" id="contents" name="contents"  uitype="combobox"/> 
                 </row>
@@ -4061,7 +4061,9 @@
                 <row>
                     <cell type="subview" viewname="GiftAgent" id="GiftAgent" name="giftAgents" defaulttype="table" desc="Agents" colspan="15" rows="7"/>
                 </row>
-                
+                <row>
+                    <cell type="field" id="CBDform" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
+                </row>
                 <row>
                     <cell type="subview" viewname="GiftItems" id="GiftItems" name="giftPreparations" defaulttype="table" colspan="15" rows="4"/>
                 </row>
@@ -6336,7 +6338,7 @@
                     </row>
                     <row>
                         <cell type="label" labelfor="acceptedParent"/>
-                        <cell type="field" id="acceptedParent"  uitype="querycbx" initialize="name=Taxon;title=Taxon;editbtn=false;newbtn=false" name="acceptedParent" colspan="7"/>
+                        <cell type="field" id="acceptedParent" name="acceptedparent" uitype="querycbx" initialize="name=Taxon;title=Taxon;editbtn=false;newbtn=false" colspan="7"/>
                     </row>
                     <row>
                         <cell type="label" labelfor="status" colspan="3"/>
