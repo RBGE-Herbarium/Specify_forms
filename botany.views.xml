@@ -3423,7 +3423,14 @@
                     <!-- <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="addendum" uitype="combobox"/>         -->
                 </row>
-                <!-- <row>
+                <row>
+                    <cell type="label" labelfor="familyNumber" label="Family No."/>
+                    <cell type="field" id="familyNumber" name="taxon.text11"/>
+                    <cell type="label" labelfor="genusNumber" label="Genus No."/>
+                    <cell type="field" id="genusNumber" name="taxon.text12"/>
+                </row>
+
+                                <!-- <row>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" uitype="plugin" name="this" initialize="name=PartialDateUI;df=determinedDate;tp=determinedDatePrecision" uifieldformatter="Date"/>
                     <cell type="label" labelfor="5"/>
@@ -4031,24 +4038,28 @@
                     <cell type="field" id="giftNumber" name="giftNumber" uitype="formattedtext"/>
                     <cell type="label" labelfor="giftStatus"/>
                     <cell type="field" id="giftStatus" name="status" uitype="combobox"/>
+                    <cell type="label" labelfor="kind"/>
+                    <cell type="field" id="kind" name="purposeOfGift" uitype="combobox"/>
                     <!-- <cell type="label" labelfor="giftStatusint"/>
                     <cell type="field" id="giftStatusint" name="integer1" uitype="text"/> -->
                 </row>
                 <row>
                     <cell type="label" labelfor="justification"/>
-                    <cell type="field" id="justification" name="text3" uitype="combobox"/> 
-                    <!-- <cell type="label" labelfor="purposeOfGift"/>
-                    <cell type="field" id="purposeOfGift" name="purposeOfGift" uitype="combobox"/>    -->
-                    <cell type="label" labelfor="contents"/>
-                    <cell type="field" id="contents" name="contents"  uitype="combobox"/> 
+                    <cell type="field" id="justification" name="text3" uitype="combobox"/>
+                    <cell type="label" labelfor="purpose"/>
+                    <cell type="field" id="purpose" name="text5"  uitype="combobox"/> 
                 </row>
                 <row>
-                    <cell type="label" labelfor="legacyNumber"/>
-                    <cell type="field" id="legacyNumber" name="text1" uitype="label"/>
-                    <cell type="label" labelfor="theirNumber"/>
-                    <cell type="field" id="theirNumber" name="text2" uitype="text"/>
+                    <cell type="label" labelfor="description"/>
+                    <cell type="field" id="description" name="contents"  uitype="textareabrief" rows="2" colspan="12"/> 
+                </row>
+                <row>
                     <cell type="label" labelfor="loanNumber"/>
                     <cell type="field" id="loanNumber" name="integer3" uitype="text"/>
+                    <cell type="label" labelfor="theirNumber"/>
+                    <cell type="field" id="theirNumber" name="text2" uitype="text"/>
+                    <cell type="label" labelfor="legacyNumber"/>
+                    <cell type="field" id="legacyNumber" name="text1" uitype="label"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="remarks"/>
@@ -4073,10 +4084,10 @@
                     <!-- <cell type="label" label="Total Items:" initialize="align=right"/>
                     <cell type="field" id="tq" name="totalItems" uitype="text" readonly="true"/> -->
                 </row>
-                <row>
+                <!-- <row>
                 <cell type="field" id="CBDform" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
                 <cell type="field" id="requestDenied" name="yesNo1" uitype="checkbox" initialize="editable=true" colspan="3"/>
-                </row>
+                </row> -->
                 <row>
                     <cell type="label" labelfor="specialConditions"/>
                     <cell type="field" id="specialConditions" name="specialConditions" uitype="textareabrief" rows="2" colspan="12"/>
@@ -4084,16 +4095,14 @@
                 <row>
                     <cell type="label" labelfor="giftDate"/>
                     <cell type="field" id="giftDate" name="giftDate" uitype="formattedtext" uifieldformatter="Date"  default="today"/>
-                    <cell type="label" labelfor="numberSent"/>
-                    <cell type="field" id="numberSent" name="number1" uitype="text"/>
-                    <cell type="label" labelfor="numberParcels"/>
-                    <cell type="field" id="numberParcels" name="number2" uitype="text"/>
-                </row>
-                <row>
                     <cell type="label" labelfor="dateReceived"/>
                     <cell type="field" id="dateReceived" name="dateReceived" uitype="formattedtext" uifieldformatter="Date"/>  
+                    <!-- <cell type="label" labelfor="numberSent"/>
+                    <cell type="field" id="numberSent" name="number1" uitype="text"/>
+                    <cell type="label" labelfor="numberParcels"/>
+                    <cell type="field" id="numberParcels" name="number2" uitype="text"/> -->
                 </row>
-                <row>    
+                 <row>    
                     <cell type="label" labelfor="receivedComments"/>
                     <cell type="field" id="receivedComments" name="receivedComments" uitype="textareabrief" rows="2" colspan="12"/>
                 </row>
@@ -5612,8 +5621,6 @@
                 <row>               
                     <cell type="label" labelfor="physicallyLinked"/>
                     <cell type="field" id="physicallyLinked" name="text8" uitype="label" colspan="5"/>
-                    <cell type="label" labelfor="derivedFrom"/>
-                    <cell type="field" id="derivedFrom" name="text9" uitype="text"/>
                 </row>
                 <row>
                     <cell type="separator" label="" colspan="14"/>    
@@ -5652,10 +5659,12 @@
                 <row>
                     <cell type="label" labelfor="materialtype"/>
                     <cell type="field" id="materialtype" name="description" uitype="combobox"/>
+                    <cell type="label" labelfor="derivedFrom"/>
+                    <cell type="field" id="derivedFrom" name="text9" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="preparedBy"/>
-                    <cell type="field" id="preparderBy" name="preparedByAgent" uitype="querycbx" initialize="name=Agent" colspan="3"/>                    
+                    <cell type="field" id="preparedBy" name="preparedByAgent" uitype="querycbx" initialize="name=Agent" colspan="3"/>                    
                     <cell type="label" labelfor="preparedDate"/>
                     <cell type="field" id="preparedDate" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date" colspan="3"/>
                 </row>
