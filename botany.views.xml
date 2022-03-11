@@ -2649,9 +2649,13 @@
                 <row>
                     <cell type="separator" label="" colspan="5"/>
                 </row> 
-                <row>
+                <!-- <row>
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" uitype="text"/>
+                </row> -->
+                <row>
+                    <cell type="label" labelfor="int1"/>
+                    <cell type="field" id="int1" name="integer1" uitype="text"/>
                 </row>
 		        <row>
                     <cell type="separator" label="Cultivated Information" colspan="5"/>
@@ -2665,9 +2669,11 @@
                     <!-- <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/> -->
                 </row>
                 <row>
-                    <cell type="label" labelfor="int1"/>
-                    <cell type="field" id="int1" name="integer1" uitype="text"/>
+                    <cell type="label" labelfor="cultivatedFrom"/>
+                    <cell type="field" id="cultivatedFrom" name="integer2" uitype="text"/>
                 </row>
+
+                
                 <!-- <row>
                     <cell type="panel" id="ContainerPanel" name="ContainerPanel" coldef="p" rowdef="p" colspan="11">
                         <rows>
