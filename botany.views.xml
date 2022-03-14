@@ -2280,7 +2280,7 @@
                     <cell type="label" labelfor="latSeconds"/>
                     <cell type="field" id="latSeconds" name="number3" uitype="text"/>
                     <cell type="label" labelfor="latDirection"/>
-                    <cell type="field" id="latDirection" name="text7" uitype="combobox"/>
+                    <cell type="field" id="latDirection" name="text8" uitype="combobox"/>
                 </row>   
                 <row>
                     <cell type="label" labelfor="longDegrees"/>
@@ -2290,7 +2290,7 @@
                     <cell type="label" labelfor="longSeconds"/>
                     <cell type="field" id="longSeconds" name="number6" uitype="text"/>
                     <cell type="label" labelfor="longDirection"/>
-                    <cell type="field" id="longDirection" name="text8" uitype="combobox"/>
+                    <cell type="field" id="longDirection" name="text7" uitype="combobox"/>
                 </row> 
                 <row>
                     <cell type="separator" label="Lat/Long Decimal Degrees" colspan="5"/>
@@ -4458,7 +4458,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="DSNumber"/>
-                    <cell type="field" id="DSNumber" name="integer3" uitype="text"/>
+                    <cell type="field" id="DSNumber" name="integer2" uitype="text"/>
                     <!-- <cell type="label" labelfor="ifr"/> -->
                     <cell type="field" id="DSOK" name="isFinancialResponsibility" uitype="checkbox" initialize="editable=true"/>                    
                 </row>
@@ -4528,7 +4528,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="numberParcels"/>
-                    <cell type="field" id="numberParcels" name="number2" uitype="text"/>
+                    <cell type="field" id="numberParcels" name="integer3" uitype="text"/>
                 </row>
                 
                 <row>
