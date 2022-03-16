@@ -1862,6 +1862,10 @@
                     <cell type="label" labelfor="areaOfOccupancyUnit"/>
                     <cell type="field" id="areaOfOccupancyUnit" name="text7" uitype="combobox"/>
                 </row>
+                <row>
+                    <cell type="label" labelfor="hrpNum"/>
+                    <cell type="field" id="hrpNum" name="text16" uitype="text"/>
+                </row>
                 <!--<row>
                     <cell type="label" labelfor="22"/>
                     <cell type="field" id="22" name="remarks" uitype="textareabrief" rows="2" colspan="14"/>
@@ -2674,22 +2678,7 @@
                 </row>
 
                 
-                <!-- <row>
-                    <cell type="panel" id="ContainerPanel" name="ContainerPanel" coldef="p" rowdef="p" colspan="11">
-                        <rows>
-                            <row>
-                                <cell type="panel" id="CPInner" name="CPInner" coldef="p" rowdef="p" initialize="border=line;bordercolor=200,200,200;bgcolor=240,240,240">
-                                <rows>
-                                    <row>
-                                        <cell type="field" id="ContainerPlugin" uitype="plugin" name="this" initialize="name=ContainerPlugin"/>
-                                    </row>
-                                </rows>
-                            </cell>
-                            </row>
-                        </rows> 
-                    </cell>
-                </row> -->
-                <row>
+               <row>
                     <cell type="subview" id="15" viewname="BotanyAttributes" name="collectionObjectAttribute" colspan="13"/>
                 </row>
                 <row>
@@ -3307,7 +3296,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="IHcode"/>
-                    <cell type="field" id="IHcode" name="text3" uitype="text"/>
+                    <cell type="field" id="IHcode" name="text4" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="verbDet"/>
@@ -3324,7 +3313,17 @@
                     <cell type="field" id="12" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>  
                 <row>
+                    <cell type="label" labelfor="detCitation"/>
+                    <cell type="field" id="detCitation" name="text3" uitype="text" colspan="10"/>
+                </row> 
+                <row>
                     <cell type="subview" id="detcit" name="determinationCitations" viewname="DeterminationCitation" colspan="13"/>                    
+                </row>
+                <row>
+                    <cell type="label" labelfor="familyNumber" label="Family No."/>
+                    <cell type="field" id="familyNumber" name="taxon.text11" uitype="label"/>
+                    <cell type="label" labelfor="genusNumber" label="Genus No."/>
+                    <cell type="field" id="genusNumber" name="taxon.text12" uitype="label"/>
                 </row>
                 <row>
                     <cell type="label"/>
