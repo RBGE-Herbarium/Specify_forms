@@ -2240,10 +2240,6 @@
                     <cell type="field" id="countryAsGiven" name="text13" uitype="text" colspan="5"/>
                 </row>  
                 <row>
-                    <cell type="label" labelfor="geoRefSource"/>
-                    <cell type="field" id="geoRefSource" name="text3" uitype="combobox" default="L" colspan="6"/>
-                </row>  
-                <row>
                     <cell type="separator" label="Altitude" colspan="5"/>
                 </row>
                 <!-- <row>
@@ -2325,19 +2321,23 @@
                     <cell type="separator" label="GeoCoordinate Information" colspan="5"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="geoRefSource"/>
+                    <cell type="field" id="geoRefSource" name="text3" uitype="combobox" default="L" colspan="6"/>
+                </row>  
+                <row>
                     <cell type="label" labelfor="nationalGrid"/>
                     <cell type="field" id="nationalGrid" name="text11" uitype="text"/>
                     <cell type="label" labelfor="accuracy"/>
                     <cell type="field" id="accuracy" name="text1" uitype="combobox" colspan="5"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="t4"/>
-                    <cell type="field" id="t4" name="text4" uitype="combobox" colspan="8"/>
-                </row>
-                <row>
                     <cell type="label" labelfor="certainty"/>
-                    <cell type="field" id="certainty" name="text2" uitype="combobox" colspan="8"/>
+                    <cell type="field" id="certainty" name="text4" uitype="combobox" colspan="8"/>
                 </row>
+                <!-- <row>
+                    <cell type="label" labelfor="transcribedLocality"/>
+                    <cell type="field" id="transcribedLocality" name="text2" uitype="combobox" colspan="8"/>
+                </row> -->
 
                 <!--<row>
                     <cell type="label" labelfor="d1"/>
@@ -4529,7 +4529,10 @@
                     <cell type="label" labelfor="numberParcels"/>
                     <cell type="field" id="numberParcels" name="integer3" uitype="text"/>
                 </row>
-                
+                <row>
+                    <cell type="label" labelfor="destructiveSamplingNumber"/>
+                    <cell type="field" id="destructiveSamplingNumber" name="integer1" uitype="text"/>
+                </row>
                 <row>
                     <cell type="label" labelfor="overdueNotiSentDate"/>
                     <cell type="field" id="overdueNotiSentDate" name="overdueNotiSentDate" uitype="formattedtext" uifieldformatter="Date"/> 
