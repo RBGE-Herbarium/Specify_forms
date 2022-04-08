@@ -856,9 +856,9 @@
                     <cell type="label" labelfor="dateReceived"/>
                     <cell type="field" id="dateReceived" name="dateReceived" uitype="formattedtext" uifieldformatter="Date"/>
                     <cell type="label" labelfor="numberSent"/>
-                    <cell type="field" id="numberSent" name="number1" uitype="text"/>
+                    <cell type="field" id="numberSent" name="integer1" uitype="text"/>
                     <cell type="label" labelfor="numberParcels"/>
-                    <cell type="field" id="numberParcels" name="number2" uitype="text"/>
+                    <cell type="field" id="numberParcels" name="integer2" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="theirNumber"/>
