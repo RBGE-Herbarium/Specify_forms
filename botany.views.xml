@@ -4292,7 +4292,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="taxon" label="Taxon"/>
-                    <cell type="field" id="taxon" name="preparation.collectionObject.currentDetermination.preferredTaxon.fullName" uitype="dsptextfield" colspan="7"/>
+                    <cell type="field" id="taxon" name="preparation.collectionObject.currentDetermination.preferredTaxon" uitype="dsptextfield" colspan="7" readonly="true"/>
                 </row>
                 <!-- <row>
                     <cell type="label" labelfor="3"/>
@@ -4749,7 +4749,7 @@
                     <!-- <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="preparation.countAmt" uitype="dsptextfield"/> -->
                     <cell type="label" labelfor="taxon" label="Taxon Full Name:" initialize="align=right"/>
-					<cell type="field" id="taxon" name="preparation.collectionObject.currentDetermination.preferredTaxon.fullName" readonly="true" uitype="text" colspan="6"/>
+					<cell type="field" id="taxon" name="preparation.collectionObject.currentDetermination.preferredTaxon" readonly="true" uitype="text" colspan="6"/>
 				</row>
                 <row>
                 </row>
@@ -4844,7 +4844,7 @@
                     <!-- <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="preparation.countAmt" uitype="dsptextfield"/> -->
                     <cell type="label" labelfor="taxon" label="Taxon" initialize="align=right"/>
-					<cell type="field" id="taxon" name="preparation.collectionObject.currentDetermination.preferredTaxon.fullName" readonly="true" uitype="text" colspan="6"/>
+					<cell type="field" id="taxon" name="preparation.collectionObject.currentDetermination.preferredTaxon" readonly="true" uitype="text" colspan="6"/>
 				</row>
                 <row>
                     <!-- <cell type="label" labelfor="quantity"/>
@@ -4983,7 +4983,7 @@
                     <cell type="label" labelfor="prepCountAmt"/>
                     <cell type="field" id="prepCountAmt" name="preparation.countAmt" uitype="dsptextfield"/>
                     <cell type="label" labelfor="taxon" label="Taxon" initialize="align=right"/>
-					<cell type="field" id="taxon" name="preparation.collectionObject.currentDetermination.preferredTaxon.fullName" readonly="true" uitype="text" colspan="6"/>
+					<cell type="field" id="taxon" name="preparation.collectionObject.currentDetermination.preferredTaxon" readonly="true" uitype="text" colspan="6"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="quantity"/>
