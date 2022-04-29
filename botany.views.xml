@@ -6355,7 +6355,7 @@
                     </row>
                     <row>
                         <cell type="label" labelfor="acceptedParent"/>
-                        <cell type="field" id="acceptedParent" name="acceptedparent" uitype="querycbx" initialize="name=Taxon;title=Taxon;editbtn=false;newbtn=false" colspan="7"/>
+                        <cell type="field" id="acceptedParent" name="acceptedParent" uitype="querycbx" initialize="name=Taxon;title=Taxon;editbtn=false;newbtn=false" colspan="7"/>
                     </row>
                     <row>
                         <cell type="label" labelfor="status" colspan="3"/>
