@@ -3287,22 +3287,24 @@
                     <cell type="field" id="9" name="addendum" uitype="combobox"/>        
                 </row>
                 <row>
-                    <cell type="label" labelfor="7"/>
-                    <cell type="field" id="7" uitype="plugin" name="this" initialize="name=PartialDateUI;df=determinedDate;tp=determinedDatePrecision" uifieldformatter="Date"/>
                     <cell type="label" labelfor="5"/>
-                    <cell type="field" id="5" name="determiner" uitype="querycbx" initialize="name=Agent"/>
-                    <cell type="label" labelfor="fob"/>
-                    <cell type="field" id="fob" name="featureOrBasis" uitype="text"/>  
-                </row>
-                <row>
+                    <cell type="field" id="5" name="determiner" uitype="querycbx" initialize="name=Agent" colspan="5"/>
                     <cell type="label" labelfor="IHcode"/>
                     <cell type="field" id="IHcode" name="text4" uitype="combobox"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="7"/>
+                    <cell type="field" id="7" uitype="plugin" name="this" initialize="name=PartialDateUI;df=determinedDate;tp=determinedDatePrecision" uifieldformatter="Date"/>
+                    <cell type="label" labelfor="fob"/>
+                    <cell type="field" id="fob" name="featureOrBasis" uitype="text"/>  
+                </row>
+                <row>
                     <cell type="label" labelfor="verbDet"/>
-                    <cell type="field" id="verbDet" name="text2" uitype="text"/>
+                    <cell type="field" id="verbDet" name="text2" uitype="text" colspan="5"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="verbDetBy"/>
-                    <cell type="field" id="verbDetBy" name="text1" uitype="text"/>
+                    <cell type="field" id="verbDetBy" name="text1" uitype="text" colspan="5"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="6"/>
@@ -6436,7 +6438,8 @@
                     </row> 
                     <row>
                         <cell type="label" labelfor="legacyNumber"/>
-                        <cell type="field" id="legacyNumber" name="number1" uitype="text" readonly="true"/>	
+                        <cell type="field" id="legacyNumber" name="number1" uitype="text"/>	
+                        <!-- <cell type="field" id="legacyNumber" name="number1" uitype="text" readonly="true"/>	 -->
                     </row>
                        
                     <row>
