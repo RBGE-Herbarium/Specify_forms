@@ -2657,6 +2657,10 @@
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" uitype="text"/>
                 </row> -->
+                <!-- <row>
+                    <cell type="label" labelfor="remarks"/>
+                    <cell type="field" id="remarks" name="remarks" uitype="text"/>
+                </row> -->
                 <row>
                     <cell type="label" labelfor="int1"/>
                     <cell type="field" id="int1" name="integer1" uitype="text"/>
@@ -2676,8 +2680,6 @@
                     <cell type="label" labelfor="cultivatedFrom"/>
                     <cell type="field" id="cultivatedFrom" name="integer2" uitype="text"/>
                 </row>
-
-                
                <row>
                     <cell type="subview" id="15" viewname="BotanyAttributes" name="collectionObjectAttribute" colspan="13"/>
                 </row>
@@ -6393,6 +6395,10 @@
                      
                     <row>
                         <cell type="separator" label="Hybrid Information" colspan="14"/>
+                    </row>
+                    <row>
+                        <cell type="label" labelfor="hybridKind"/>
+                        <cell type="field" id="hybridKind" name="text13" uitype="combobox"/>
                     </row>
                     <row>
                         <cell type="label" labelfor="hybridParent1"/>
