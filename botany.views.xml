@@ -913,11 +913,11 @@
 
                 <!-- <row>
                     <cell type="subview" id="aor" name="addressOfRecord" viewname="AddressOfRecord" colspan="13"/>
-                </row> -->
+                </row> 
                 <row>
                     <cell type="label" id="divLabel" label="4" initialize="align=right"/>
                     <cell type="field" id="4" name="divisionCBX" uitype="combobox" ignore="true"/>
-                </row>
+                </row>-->
                 <row>
                     <cell type="separator" label="Attachments" colspan="13"/>
                 </row>
