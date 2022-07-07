@@ -2657,10 +2657,10 @@
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" uitype="text"/>
                 </row> -->
-                <!-- <row>
+                <row>
                     <cell type="label" labelfor="remarks"/>
                     <cell type="field" id="remarks" name="remarks" uitype="text"/>
-                </row> -->
+                </row>
                 <row>
                     <cell type="label" labelfor="int1"/>
                     <cell type="field" id="int1" name="integer1" uitype="text"/>
