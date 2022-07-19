@@ -1198,8 +1198,9 @@
 		  
               <rows>
                 <row>
-                    <cell type="label" labelfor="catalogNumber"/>
-                    <cell type="field" id="catalogNumber" name="catalogNumber" uitype="formattedtext"/>
+                    <cell type="label" labelfor="barcode" label="Barcode"/>
+                    <cell type="field" id="barcode" name="preparation.barCode" uitype="dsptextfield"/>
+
                     <cell type="label" labelfor="altCatalogNumber"/>
                     <cell type="field" id="altCatalogNumber" name="altCatalogNumber" uitype="text"/>
                     <cell type="label" labelfor="collectionName"/>
@@ -1866,6 +1867,10 @@
                 <row>
                     <cell type="label" labelfor="hrpNum"/>
                     <cell type="field" id="hrpNum" name="text16" uitype="text"/>
+                </row>
+                 <row>
+                    <cell type="label" labelfor="treeNum"/>
+                    <cell type="field" id="treeNum" name="text1" uitype="text"/>
                 </row>
                 <!--<row>
                     <cell type="label" labelfor="22"/>
@@ -2632,10 +2637,10 @@
                 <row>
                     <cell type="subview" viewname="Determination" id="6" name="determinations" defaulttype="table" colspan="13" rows="5"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="label" labelfor="2"/>
                     <cell type="field" id="2" name="text3" uitype="text" colspan="5"/>
-                </row>
+                </row> -->
 		        <row>
 		             <cell type="separator" label="" colspan="5"/>
 		        </row>
@@ -2662,6 +2667,10 @@
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" uitype="text"/>
                 </row> -->
+                <row>
+                    <cell type="label" labelfor="remarks"/>
+                    <cell type="field" id="remarks" name="remarks" uitype="text" colspan="11" rows="3"/>
+                </row>
                 <row>
                     <cell type="label" labelfor="int1"/>
                     <cell type="field" id="int1" name="integer1" uitype="text"/>
