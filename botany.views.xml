@@ -1588,7 +1588,8 @@
                     <cell type="subview" viewname="Shipment" id="11" name="shipments" colspan="15"/>
                 </row> -->
                 <row>
-                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="borrowAttachments" colspan="13" initialize="btn=true;icon=BorrowAttachment"/>
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="borrowAttachments" colspan="7" initialize="btn=true;icon=BorrowAttachment"/>
+                    <cell type="field" id="generateInvoiceOnSave" uitype="checkbox" name="generateInvoice" label="Generate Invoice on Save" ignore="true" default="true" initialize="vis=false"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="createdByAgent"/>
@@ -2651,15 +2652,15 @@
                     <cell type="field" id="description" name="description" uitype="textarea" colspan="11" rows="3"/> 
                 </row>
                 <row>
+                    <cell type="label" labelfor="remarks"/>
+                    <cell type="field" id="remarks" name="remarks" uitype="textarea" colspan="11" rows="3"/> 
+                </row>
+                <row>
                     <cell type="separator" label="" colspan="5"/>
                 </row> 
                 <!-- <row>
                     <cell type="label" labelfor="n1"/>
                     <cell type="field" id="n1" name="number1" uitype="text"/>
-                </row> -->
-                <!-- <row>
-                    <cell type="label" labelfor="remarks"/>
-                    <cell type="field" id="remarks" name="remarks" uitype="text"/>
                 </row> -->
                 <row>
                     <cell type="label" labelfor="int1"/>
