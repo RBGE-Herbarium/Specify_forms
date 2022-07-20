@@ -813,6 +813,18 @@
                 <altview name="Taxon Edit" viewdef="Taxon" mode="edit" default="true"/>
             </altviews>
         </view>
+
+        <view name="TaxonSubform"
+            class="edu.ku.brc.specify.datamodel.Taxon"
+            busrules="edu.ku.brc.specify.datamodel.busrules.TaxonBusRules"
+            resourcelabels="false">
+            <desc><![CDATA[Taxon data entry form.]]></desc>
+            <altviews>
+                <altview name="Taxon Children View" viewdef="TaxonSubform" mode="view"/>
+                <altview name="Taxon Children Table View" viewdef="TaxonSubform Table" mode="view"/>
+            </altviews>
+        </view>
+
         
     </views>
     
@@ -1740,7 +1752,7 @@
                     <cell type="field" id="outComments" name="outComments" uitype="text" colspan="12"/>
                 </row>
                 <row>
-                    <cell type="subview" id="5" viewname="BorrowReturnMaterial" name="borrowReturnMaterials" colspan="14"/>
+                    <cell type="subview" id="5" viewname="BorrowReturnMaterial" name="borrowReturnMaterials" defaulttype="table" colspan="14"/>
                    <!-- <cell type="subview" id="5" viewname="BorrowReturnMaterial" name="borrowReturnMaterials" initialize="btn=true;align=right"/> -->
                 </row>
                 <!--<row>
@@ -3419,7 +3431,7 @@
             <desc><![CDATA[Determination subform for Collection Object form.]]></desc>
             <enableRules/>
             
-            <columnDef>100px,2px,210px,5px,80px,2px,195px,5px,86px,2px,140px,0px,p:g</columnDef>
+            <columnDef>100px,2px,200px,2px,50px,2px,50px,2px,50px,2px,50px,2px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,210px,5px,110px,2px,205px,5px,105px,2px,156px,0px,p:g</columnDef>
             <columnDef os="mac">130px,2px,260px,5px,130px,2px,238px,5px,108px,2px,150px,0px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g,5px:g,p,2px,p:g(2),0px</columnDef>
@@ -3432,7 +3444,7 @@
 		</row>
                 <row>
                     <cell type="label" labelfor="1"/>
-                    <cell type="field" id="1" name="taxon" uitype="querycbx" initialize="name=Taxon" colspan="7"/>
+                    <cell type="field" id="1" name="taxon" uitype="querycbx" initialize="name=Taxon" colspan="1"/>
                    <cell type="field" id="3" name="isCurrent" uitype="checkbox"/>
                 </row>
                 
@@ -6319,12 +6331,6 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
             useresourcelabels="true">
             <desc><![CDATA[New Taxon Node Form]]></desc>
-           <enableRules>
-                <!-- <rule id="acceptedParent"><![CDATA[!isAccepted.isSelected()]]></rule> -->
-                <rule id="hybridParent1"><![CDATA[isHybrid.isSelected()]]></rule>
-                <rule id="hybridParent2"><![CDATA[isHybrid.isSelected()]]></rule>
-                <rule id="definitionItem"><![CDATA[parent.getValue() != null]]></rule>
-            </enableRules> 
             
             <columnDef>100px,2px,109px,5px,100px,2px,109px,5px,133px,2px,155px,10px,95px,15px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,127px,5px,115px,2px,162px,5px,143px,2px,160px,10px,105px,15px,p:g</columnDef>
@@ -6394,15 +6400,8 @@
                         <cell type="subview" viewname="TaxonSubform" id="acceptedChildren" name="acceptedChildren" colspan="14"/>
                     </row>
                     <row>
-                        <cell type="subview" viewname="TaxonSubform" id="children" name="children" colspan="14"/>
-                    </row>            
-                    <!-- <row>
-                        <cell type="label" labelfor="cn"/>
-                        <cell type="field" id="cn" name="cultivarName" uitype="text" colspan="3"/>
-                        <cell type="label" labelfor="t5"/>
-                        <cell type="field" id="t5" name="text5" uitype="text"/>
-                    </row> -->
-                     
+                        <cell type="subview" viewname="TaxonSubform" id="children" name="children" colspan="14" defaulttype="table"/>
+                    </row>                                 
                     <row>
                         <cell type="separator" label="Hybrid Information" colspan="14"/>
                     </row>
@@ -6616,6 +6615,43 @@
                     </row>-->
             </rows>
         </viewdef>
+
+        <viewdef
+            name="TaxonSubform"
+            type="form"
+            class="edu.ku.brc.specify.datamodel.Taxon"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[New Taxon Node Form]]></desc>
+            
+            <columnDef>100px,2px,390px,5px,118px,2px,210px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,425px,5px,110px,2px,261px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,492px,5px,140px,2px,268px,p:g</columnDef>
+            <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2)</columnDef>
+            <rowDef auto="true" cell="p" sep="2dlu"/>
+            
+            <rows>
+                <row>
+                    <cell type="label" labelfor="fullName"/>
+                    <cell type="field" id="fullName" uitype="text" name="fullName"/> 
+                    <cell type="label" labelfor="commonName"/>
+                    <cell type="field" id="commonName" uitype="text" name="commonName"/>
+                </row>
+            </rows>
+        </viewdef>
+
+        <viewdef
+            type="formtable"
+            name="TaxonSubform Table"
+            class="edu.ku.brc.specify.datamodel.Taxon"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            
+            <desc><![CDATA[Taxon subform table for Taxon form.]]></desc>
+            <definition>TaxonSubform</definition>
+        </viewdef>
+
+    
 
 
     <!--##################################################################################################
