@@ -420,13 +420,6 @@
             resourcelabels="false">
             <desc><![CDATA[Subform within the Collection Object form.]]></desc>
             <altviews>
-                <!-- <altview name="Determination Table View" viewdef="Determination Table" mode="view"/>
-                <altview name="Determination Table Edit" viewdef="Determination Table" mode="edit"/> -->
-                <!-- <altview name="Determination View"       viewdef="Determination" mode="view" default="true"/>
-                <altview name="Determination Edit"       viewdef="Determination" mode="edit"/>
-            </altviews> -->
-
-            
 				<altview name="Determination Table View" viewdef="Determination Abridged Table" mode="view"/>
 				<altview name="Determination Table Edit" viewdef="Determination Abridged Table" mode="edit"/>
 				<altview name="Determination View" viewdef="Determination" mode="view"/>
@@ -1370,7 +1363,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="agentType"/>
-                    <cell type="field" id="agentType" name="agentType" uitype="combobox"/>
+                    <cell type="field" id="agentType" name="agentType" uitype="combobox" default="Person"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="lastName"/>
@@ -1602,7 +1595,7 @@
                 </row> -->
                 <row>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="borrowAttachments" colspan="7" initialize="btn=true;icon=BorrowAttachment"/>
-                    <cell type="field" id="generateInvoiceOnSave" uitype="checkbox" name="generateInvoice" label="Generate Invoice on Save" ignore="true" default="true" initialize="vis=false"/>
+                    <cell type="command" id="generateInv" name="generateLabelBtn" label="Generate Invoice" ignore="true" default="true" initialize="visible=false"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="createdByAgent"/>
@@ -1709,7 +1702,7 @@
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             
-            <desc><![CDATA[Preparation subform table for Collection Object form.]]></desc>
+            <desc><![CDATA[BorrowAgent subform table for Collection Object form.]]></desc>
             <definition>BorrowAgent</definition>
         </viewdef>
         
@@ -2630,12 +2623,6 @@
             <rowDef auto="true" cell="p" sep="2px"/>
 
             <rows>
-                <!--<row>
-                    <cell type="label" labelfor="4"/>
-                    <cell type="field" id="4" name="cataloger" uitype="querycbx" initialize="name=Agent;title=Catalog Agent" isrequired="true"/>
-                    <cell type="label" labelfor="5"/>
-                    <cell type="field" id="5" uitype="plugin" name="this" initialize="name=PartialDateUI;df=catalogedDate;tp=catalogedDatePrecision" uifieldformatter="Date"/>
-                </row>--> 
                 <row>
 		            <cell type="label" labelfor="3"/>
                     <cell type="field" id="3" name="accession" uitype="querycbx" initialize="name=AccessionCO;title=AccessionCO" isrequired="false"/>
@@ -2647,12 +2634,8 @@
                     <cell type="subview" viewname="ConservDescription" id="cd" name="conservDescriptions" initialize="btn=true"/>
                 </row> -->
                 <row>
-                    <cell type="subview" viewname="Determination" id="6" name="determinations" defaulttype="table" colspan="13" rows="5"/>
+                    <cell type="subview" viewname="Determination" id="6" name="determinations" defaulttype="table" colspan="13" rows="5" sortField="Filed As"/>
                 </row>
-                <!-- <row>
-                    <cell type="label" labelfor="2"/>
-                    <cell type="field" id="2" name="text3" uitype="text" colspan="5"/>
-                </row> -->
 		        <row>
 		             <cell type="separator" label="" colspan="5"/>
 		        </row>
@@ -2660,10 +2643,6 @@
                 <row>
                     <cell type="subview" viewname="CollectingEventSub" id="21" label="Collecting Event" name="collectingEvent" colspan="13" rows="5"/>
                 </row>
-                <!-- S -->
-                <!-- <row>
-                    <cell type="separator" label="" colspan="5"/>
-                </row> -->
                 <row>
                     <cell type="label" labelfor="description"/>
                     <cell type="field" id="description" name="description" uitype="textarea" colspan="11" rows="3"/> 
@@ -2675,14 +2654,6 @@
                 <row>
                     <cell type="separator" label="" colspan="5"/>
                 </row> 
-                <!-- <row>
-                    <cell type="label" labelfor="n1"/>
-                    <cell type="field" id="n1" name="number1" uitype="text"/>
-                </row> -->
-                <row>
-                    <cell type="label" labelfor="remarks"/>
-                    <cell type="field" id="remarks" name="remarks" uitype="text" colspan="11" rows="3"/>
-                </row>
                 <row>
                     <cell type="label" labelfor="int1"/>
                     <cell type="field" id="int1" name="integer1" uitype="text"/>
@@ -2696,7 +2667,6 @@
                     <cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=RBGELivingCat"/>
                     <cell type="label" labelfor="t2"/>
                     <cell type="field" id="t2" name="text2" uitype="text"/>
-                    <!-- <cell type="field" id="yn1" name="yesNo1" uitype="checkbox" initialize="editable=true"/> -->
                 </row>
                 <row>
                     <cell type="label" labelfor="cultivatedFrom"/>
@@ -2733,11 +2703,6 @@
                     <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
                 </row>
                 <row>
-                    <cell type="label" label=""/>
-                    <cell type="field" id="113" uitype="checkbox" name="generateLabelChk" label="Generate Label on Save" ignore="true" default="true" initialize="visible=false"/>
-                </row>
-                <row>
-                    <cell type="label" label=""/>
                     <cell type="command" id="114" name="generateLabelBtn" label="Generate Label" ignore="true" default="true" initialize="visible=false"/>
                 </row>
                 <row>
@@ -3573,10 +3538,10 @@
                     <cell type="label" labelfor="ldqx"/>
                     <cell type="field" id="ldqx" name="deaccession" uitype="querycbx" initialize="name=Deaccession;title=Deaccession" colspan="5"/>
                 </row> -->
-               <row>    
-                    <!-- <cell type="label" id="divLabel" label=" " initialize="align=right"/> -->
+               <!-- <row>    
+                    <cell type="label" id="divLabel" label=" " initialize="align=right"/>
                     <cell type="field" id="divcbx" name="divisionCBX" uitype="combobox" ignore="true" initialize="visible=false"/>
-                </row>
+                </row> -->
                 <row>
                     <cell type="label" labelfor="legacyNum"/>
                     <cell type="field" id="legacyNum" name="text1" uitype="text"/>
@@ -4144,7 +4109,7 @@
                     <cell type="panel" id="16" name="outerPanel" coldef="p,f:p:g" rowdef="p,4px,p" colspan="15">
                         <rows>
                             <row>
-                                <cell type="field" id="13" uitype="checkbox" name="generateInvoice" label="Generate Invoice on Save" ignore="true" default="true" initialize="vis=false"/>
+                                <cell type="command" id="generateInv" name="generateLabelBtn" label="Generate Invoice" ignore="true" default="true" initialize="visible=false"/>
                             </row>
                         </rows>
                     </cell>
@@ -4477,7 +4442,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="currentDueDate"/>
-                    <cell type="field" id="currentDueDate" name="currentDueDate" uitype="formattedtext" uifieldformatter="Date"/>
+                    <cell type="field" id="currentDueDate" name="currentDueDate" uitype="formattedtext" uifieldformatter="Date" default="today + 1 year"/>
                     <cell type="label" labelfor="originalDueDate"/>
                     <cell type="field" id="originalDueDate" name="originalDueDate" uitype="formattedtext" uifieldformatter="Date"/>   
                 </row>
@@ -4603,7 +4568,7 @@
                             <row>
                                 <cell type="subview" id="attachments" viewname="ObjectAttachment" name="loanAttachments" initialize="btn=true;icon=LoanAttachment"/>
                                 <cell type="command" id="14" name="ReturnLoan" label="Return Loan" commandtype="Interactions" action="ReturnLoan" ignore="true" initialize="vis=false"/>
-                                <cell type="field" id="13" uitype="checkbox" name="generateInvoice" label="Generate Invoice on Save" ignore="true" default="true" initialize="vis=false"/>
+                                <cell type="command" id="generateInv" name="generateLabelBtn" label="Generate Invoice" ignore="true" default="true" initialize="visible=false"/>
                             </row>
                         </rows>
                     </cell>
