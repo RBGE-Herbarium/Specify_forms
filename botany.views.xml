@@ -182,22 +182,24 @@
             >
             <desc><![CDATA[The  --> Form.]]></desc>
             <altviews>
-                <altview name="AgentGeography View" viewdef="AgentGeography" mode="view" validated="false" default="true"/>                
-                <altview name="AgentGeography Edit" viewdef="AgentGeography" mode="edit" validated="true"/>               
+                <altview name="AgentGeography View" viewdef="AgentGeography" mode="view" validated="false" default="true"/>
+                <altview name="AgentGeography Edit" viewdef="AgentGeography" mode="edit" validated="true"/>
+                <altview name="AgentGeography Table View" viewdef="AgentGeography Table"    label="Table View" mode="view" />
+                <altview name="AgentGeography Table Edit" viewdef="AgentGeography Table"    label="Table Edit" mode="edit"/>
             </altviews>
         </view>
 
-        <!-- <view name="AgentVariant"
-            class="edu.ku.brc.specify.datamodel.AgentVariant"
-            resourcelabels="false">
-            <desc><![CDATA[AgentVariant subform within the Agent form.]]></desc>
-            <altviews defaultmode="view">
-                <altview name="AgentVariant View" title="AgentVariant" viewdef="AgentVariant" mode="view" validated="false"/>
-                <altview name="AgentVariant Edit" title="AgentVariant" viewdef="AgentVariant" mode="edit" validated="true" default="true"/>
-                <altview name="AgentVariant Table View" viewdef="AgentVariant Table"    label="Table View" mode="view" />
-                <altview name="AgentVariant Table Edit" viewdef="AgentVariant Table"    label="Table Edit" mode="edit"/>
+        <view name="AgentSpecialty"
+            class="edu.ku.brc.specify.datamodel.AgentSpecialty"
+            >
+            <desc><![CDATA[The  --> Form.]]></desc>
+            <altviews>
+                <altview name="AgentSpecialty View" viewdef="AgentSpecialty" mode="view" validated="false" default="true"/>                
+                <altview name="AgentSpecialty Edit" viewdef="AgentSpecialty" mode="edit" validated="true"/>                
+                <altview name="AgentSpecialty Table View" viewdef="AgentSpecialty Table" label="Table View" mode="view" />                
+                <altview name="AgentSpecialty Table Edit" viewdef="AgentSpecialty Table" label="Table Edit" mode="edit"/>                
             </altviews>
-        </view> -->
+        </view>
 
         <view name="Borrow"
             class="edu.ku.brc.specify.datamodel.Borrow"
@@ -1422,16 +1424,13 @@
                     <cell type="subview" viewname="GroupPersons" id="31" name="groups" defaulttype="table" colspan="19" /> <!-- initialize="addsearch=true"/> -->
                 </row>
                 <row>
-                    <cell type="subview" viewname="AgentVariant" id="10" name="variants" colspan="19"/>
+                    <cell type="subview" viewname="AgentVariant" id="10" name="variants" defaulttype="table" colspan="19"/>
                 </row>
                 <row>
-                    <cell type="subview" viewname="AgentSpecialty" id="50" name="agentSpecialties" colspan="19"/>
+                    <cell type="subview" viewname="AgentSpecialty" id="50" name="agentSpecialties" defaulttype="table" colspan="19"/>
                 </row>
-               <!-- <row>
-                    <cell type="subview" viewname="AgentGeography" id="ag" name="agentGeographies" colspan="19"/>
-                </row> -->
                 <row> 
-                    <cell type="subview" viewname="AgentGeography" id="60" name="agentGeographies" colspan="19" rows="3"/>
+                    <cell type="subview" viewname="AgentGeography" id="60" name="agentGeographies" defaulttype="table" colspan="19" rows="3"/>
                 </row>
 
                 <row>
@@ -1506,15 +1505,52 @@
             <rows>
          <row>
                     <cell type="label" labelfor="geography"/>
-                    <cell type="field" id="geography" name="geography" uitype="querycbx" initialize="name=Geography"/>
+                    <cell type="field" id="geography" name="geography" uitype="querycbx" initialize="name=Geography" colspan="4"/>
                   <!-- <cell type="label" labelfor="2"/>
                   <cell type="field" id="2" name="role" uitype="text"/> -->
                 </row>
             </rows>
         </viewdef>
 
+        <viewdef
+            type="formtable"
+            name="AgentGeography Table"
+            class="edu.ku.brc.specify.datamodel.AgentGeography"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[The AgentGeography formtable.]]></desc>
+            <definition>AgentGeography</definition>
+        </viewdef>
 
+        <viewdef
+            type="form"
+            name="AgentSpecialty"
+            class="edu.ku.brc.specify.datamodel.AgentSpecialty"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[The AgentSpecialty form ]]></desc>
+            <enableRules/>
 
+            <columnDef>p,5dlu,p:g,5dlu,p</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+
+            <rows>
+                <row>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="specialtyName" uitype="text" colspan="3"/>
+                </row>
+            </rows>
+        </viewdef>
+
+        <viewdef
+            type="formtable"
+            name="AgentSpecialty Table"
+            class="edu.ku.brc.specify.datamodel.AgentSpecialty"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[AgentSpecialty grid view for Agent form.]]></desc>
+            <definition>AgentSpecialty</definition>
+        </viewdef>
 
 <!--SECTION: BORROW-->
 
@@ -1726,9 +1762,6 @@
                     <cell type="field" id="materialNumber" name="materialNumber" uitype="text"/>
                     <cell type="label" labelfor="quantity"/>
                     <cell type="field" id="quantity" name="quantity" uitype="text"/>
-                    <!-- <cell type="field" id="quantity" name="quantity" uitype="spinner" initialize="max=2000"/> -->
-                    <cell type="label" labelfor="quantityReturned"/>
-                    <cell type="field" id="quantityReturned" name="quantityReturned" uitype="text"/>
                     <cell type="label" labelfor="quantityResolved"/>
                     <cell type="field" id="quantityResolved" name="quantityResolved" uitype="text"/>
                 </row>
@@ -4664,7 +4697,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="loanAgent"/>
-                    <cell type="field" id="loanAgent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent"/>
+                    <cell type="field" id="loanAgent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="6"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="loanAgentRole"/>
@@ -5584,6 +5617,7 @@
                     <cell type="field" id="prepType" name="prepType" uitype="combobox" picklist="PrepType" default="Herbarium specimen/sheet"/>
                     <cell type="label" labelfor="barcode"/>
                     <cell type="field" id="barcode" name="barCode" uitype="text"/>
+                    <cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=RBGECat"/>
                     <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
                     <!--<cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/>-->
                 </row>    
@@ -5661,9 +5695,6 @@
                 <row>
                     <cell type="label" labelfor="BGBASENum"/>
                     <cell type="field" id="BGBASENum" name="number2" uitype="label"/>
-                </row>
-                <row>
-                    <cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=RBGECat"/>
                 </row>
                 <row>
                     <cell type="subview" id="PreparationAttributes" viewname="PreparationAttributes" name="preparationAttribute" colspan="13"/>
