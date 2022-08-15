@@ -125,6 +125,9 @@
             <altviews>
                 <altview name="AccessionAuthorization View" viewdef="AccessionAuthorization" mode="view" default="true"/>
                 <altview name="AccessionAuthorization Edit" viewdef="AccessionAuthorization" mode="edit"/>
+                <altview name="AccessionAuthorization Table View" viewdef="AccessionAuthorization Table" mode="view" default="true"/>
+                <altview name="AccessionAuthorization Table Edit" viewdef="AccessionAuthorization Table" mode="edit"/>
+
             </altviews>
         </view>
         
@@ -899,7 +902,7 @@
                     <cell type="subview" viewname="AccessionAgent" id="8" name="accessionAgents" desc="Agents"  defaulttype="table" colspan="13" rows="3"/>
                 </row>
                 <row>
-                    <cell type="subview" viewname="AccessionAuthorization" id="9" desc="Authorization" name="accessionAuthorizations" colspan="13"/>
+                    <cell type="subview" viewname="AccessionAuthorization" id="9" desc="Authorization" name="accessionAuthorizations" defaulttype="table" colspan="13"/>
                 </row>
                 <row> 
                     <cell type="subview" viewname="AccessionItems" id="25" desc="Collection Object" name="collectionObjects" colspan="13" rows="2" initialize="addsearch=true"/>
@@ -1064,7 +1067,7 @@
                     <cell type="subview" viewname="AccessionAgent" id="8" name="accessionAgents" desc="Agents" colspan="13" rows="3"/>
                 </row>
                 <row>
-                    <cell type="subview" viewname="AccessionAuthorization" id="9" desc="Authorization" name="accessionAuthorizations" colspan="13"/>
+                    <cell type="subview" viewname="AccessionAuthorization" id="9" desc="Authorization" name="accessionAuthorizations" defaulttype="table" colspan="13"/>
                 </row>
                 <row> 
                     <cell type="subview" viewname="AccessionItems" id="25" desc="Collection Object" name="collectionObjects" colspan="13" rows="2" initialize="addsearch=true"/>
@@ -1168,6 +1171,7 @@
                 <row>
                     <cell type="label" labelfor="permit"/>
                     <cell type="field" id="permit" name="permit" uitype="querycbx" initialize="name=Permit"/>
+                    <cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=RBGEPermit"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="remarks"/>
@@ -1186,6 +1190,16 @@
                     <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
                 </row>-->
             </rows>
+        </viewdef>
+
+        <viewdef
+            type="formtable"
+            name="AccessionAuthorization Table"
+            class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[Permit subform for AccessionAuthorization]]></desc>
+            <definition>AccessionAuthorization</definition>
         </viewdef>
 
         <viewdef
@@ -5461,9 +5475,12 @@
                 <row>
                     <cell type="label" labelfor="permitNumber"/>
                     <cell type="field" id="permitNumber" name="permitNumber" uitype="text"/>
+                    <cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=RBGEPermit2"/>
+
                     <cell type="label" labelfor="type"/>
                     <cell type="field" id="type" name="type" uitype="combobox" colspan="3"/>
                 </row>
+                <!--
                 <row>
                     <cell type="label" labelfor="issuedBy"/>
                     <cell type="field" id="issuedBy" name="issuedBy" uitype="querycbx" initialize="name=Agent"/>
@@ -5480,12 +5497,6 @@
                     <cell type="label" labelfor="renewalDate"/>
                     <cell type="field" id="renewalDate" name="renewalDate" uitype="formattedtext" uifieldformatter="Date"/>
                 </row>
-                <!-- <row>
-                    <cell type="label" labelfor="status"/>
-                    <cell type="field" id="status" name="status" uitype="combobox"/>
-                    <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
-                    <cell type="field" id="yn2" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
-                </row> -->
                 <row>
                     <cell type="label" labelfor="country"/>
                     <cell type="field" id="country" name="copyright" uitype="text" colspan="10"/>
@@ -5507,6 +5518,7 @@
                     <cell type="field" id="t2" name="text2" uitype="text" colspan="10"/>
                     <cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=Repo"/>
                 </row>
+                -->
                 <!-- <row>
                     <cell type="separator" label="Attachments" colspan="13"/>
                 </row>
