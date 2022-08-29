@@ -4494,8 +4494,6 @@
                 <row>
                     <cell type="label" labelfor="DSNumber"/>
                     <cell type="field" id="DSNumber" name="integer2" uitype="text"/>
-                    <!-- <cell type="label" labelfor="ifr"/> -->
-                    <cell type="field" id="DSOK" name="isFinancialResponsibility" uitype="checkbox" initialize="editable=true"/>                    
                 </row>
                 <row>
                     <cell type="label" labelfor="legacyNumber"/>
