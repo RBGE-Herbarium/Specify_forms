@@ -2681,7 +2681,7 @@
                     <cell type="subview" viewname="ConservDescription" id="cd" name="conservDescriptions" initialize="btn=true"/>
                 </row> -->
                 <row>
-                    <cell type="subview" viewname="Determination" id="6" name="determinations" defaulttype="table" colspan="13" rows="5" initialize="sortField=isCurrent"/>
+                    <cell type="subview" viewname="Determination" id="6" name="determinations" defaulttype="table" colspan="13" rows="5" initialize="sortField=-isCurrent"/>
                 </row>
 		        <row>
 		             <cell type="separator" label="" colspan="5"/>
@@ -6393,7 +6393,7 @@
                         <cell type="subview" viewname="TaxonSubform" id="acceptedChildren" name="acceptedChildren" colspan="14" defaulttype="table"/>
                     </row>
                     <row>
-                        <cell type="subview" viewname="TaxonSubform" id="children" name="children" colspan="14"/>
+                        <cell type="subview" viewname="TaxonSubform" id="children" name="children" colspan="14" defaulttype="table"/>
                     </row>                                 
                     <row>
                         <cell type="separator" label="Hybrid Information" colspan="14"/>
