@@ -2667,7 +2667,7 @@
                     <cell type="subview" viewname="ConservDescription" id="cd" name="conservDescriptions" initialize="btn=true"/>
                 </row> -->
                 <row>
-                    <cell type="subview" viewname="Determination" id="6" name="determinations" defaulttype="table" colspan="13" rows="5" initialize="sortField=isCurrent"/>
+                    <cell type="subview" viewname="Determination" id="6" name="determinations" defaulttype="table" colspan="13" rows="5" initialize="sortField=-isCurrent"/>
                 </row>
 		        <row>
 		             <cell type="separator" label="" colspan="5"/>
