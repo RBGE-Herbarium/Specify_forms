@@ -6445,10 +6445,6 @@
                         <cell type="subview" id="attachments" viewname="ObjectAttachment" name="taxonAttachments" colspan="10" initialize="btn=true;icon=TaxonAttachment"/>
                     </row>
                     <row>
-                        <cell type="label" labelfor="guid"/>
-                        <cell type="field" id="guid" uitype="text" name="guid" colspan="7" readonly="true"/>
-                    </row>
-                    <row>
                         <cell type="label" labelfor="createdByAgent"/>
                         <cell type="field" id="createdByAgent" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
                         <cell type="label" labelfor="timestampCreated"/>
