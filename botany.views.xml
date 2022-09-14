@@ -6443,6 +6443,10 @@
                     </row>
                     <row>
                         <cell type="subview" id="attachments" viewname="ObjectAttachment" name="taxonAttachments" colspan="10" initialize="btn=true;icon=TaxonAttachment"/>
+                    </row>                    
+                    <row>
+                        <cell type="label" labelfor="taxonid"/>
+                        <cell type="field" id="taxonid" name="taxonId" uitype="label" readonly="true"/>
                     </row>
                     <row>
                         <cell type="label" labelfor="createdByAgent"/>
