@@ -2688,8 +2688,10 @@
                     <cell type="separator" label="" colspan="5"/>
                 </row> 
                 <row>
-                    <cell type="label" labelfor="int1"/>
-                    <cell type="field" id="int1" name="integer1" uitype="text"/>
+                    <cell type="label" labelfor="numDuplicates"/>
+                    <cell type="field" id="numDuplicates" name="integer1" uitype="text"/>
+                    <cell type="label" labelfor="duplicates"/>
+                    <cell type="field" id="duplicates" name="text6" uitype="text"/>
                 </row>
 		        <row>
                     <cell type="separator" label="Cultivated Information" colspan="5"/>
