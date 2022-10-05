@@ -6414,15 +6414,17 @@
                     <row>			
                         <cell type="label" labelfor="parentage"/>
                         <cell type="field" id="parentage" name="text8" uitype="text" colspan="7" readonly="true"/>					   
-                    </row>  
-                                                
-                    
+                    </row>                        
                     <row>
                         <cell type="label"/>
                     </row>
                     <row>
                         <cell type="subview" viewname="TaxonCitation" id="taxonCitations" name="taxonCitations" colspan="14"/>
                     </row> 
+                     <row>			
+                        <cell type="label" labelfor="taxonCit"/>
+                        <cell type="field" id="taxonCit" name="text9" uitype="text" colspan="7"/>					   
+                    </row>  
                     <row>
                         <cell type="subview" viewname="CommonNameTx" id="commonNames" name="commonNames" colspan="14"/>
                     </row>
