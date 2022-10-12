@@ -2704,8 +2704,8 @@
                     <cell type="label" labelfor="14"/>
                     <cell type="field" id="14" name="altCatalogNumber" uitype="text"/>
                     <cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=RBGELivingCat"/>
-                    <cell type="label" labelfor="t2"/>
-                    <cell type="field" id="t2" name="text2" uitype="text"/>
+                    <cell type="label" labelfor="cultivatedSource"/>
+                    <cell type="field" id="t2" name="cultivatedSource" uitype="text" colspan="5"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="cultivatedFrom"/>
