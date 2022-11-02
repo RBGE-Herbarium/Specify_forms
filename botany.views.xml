@@ -3323,8 +3323,8 @@
                 <row>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" uitype="plugin" name="this" initialize="name=PartialDateUI;df=determinedDate;tp=determinedDatePrecision" uifieldformatter="Date"/>
-                    <cell type="label" labelfor="fob"/>
-                    <cell type="field" id="fob" name="featureOrBasis" uitype="text"/>  
+                    <cell type="label" labelfor="detBarcode"/>
+                    <cell type="field" id="detBarcode" name="featureOrBasis" uitype="text"/>  
                 </row>
                 <row>
                     <cell type="label" labelfor="verbDet"/>
@@ -3453,8 +3453,8 @@
                 </row>
                 
                 <row>
-                    <cell type="label" labelfor="8"/>
-                    <cell type="field" id="8" name="qualifier" uitype="combobox"/>
+                    <cell type="label" labelfor="detBarcode"/>
+                    <cell type="field" id="detBarcode" name="featureOrBasis" uitype="text"/>  
                 </row>
                 <row>
                     <cell type="label" labelfor="familyNumber" label="Family No."/>
