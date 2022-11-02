@@ -2179,7 +2179,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="verbatimCollector"/>
-                    <cell type="field" id="verbatimCollector" name="text5" uitype="text" colspan="10" readonly="true"/>
+                    <cell type="field" id="verbatimCollector" name="text5" uitype="text" colspan="10"/>
                 </row>    
                 <row>
                     <cell type="label" labelfor="collectorNumber"/>
