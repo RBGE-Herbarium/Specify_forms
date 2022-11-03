@@ -5634,6 +5634,9 @@
                     <cell type="field" id="intMisc" name="text12" uitype="textareabrief" rows="2" colspan="11"/>
                 </row> 
                 <row>
+                    <cell type="subview" id="PreparationAttributes" viewname="PreparationAttributes" name="preparationAttribute" colspan="13"/>
+                </row>
+                <row>
                     <cell type="separator" label="Destructive Sampling" colspan="14"/>    
                 </row>
                 <row>
@@ -5658,9 +5661,6 @@
                 <row>
                     <cell type="label" labelfor="BGBASENum"/>
                     <cell type="field" id="BGBASENum" name="number2" uitype="label"/>
-                </row>
-                <row>
-                    <cell type="subview" id="PreparationAttributes" viewname="PreparationAttributes" name="preparationAttribute" colspan="13"/>
                 </row>
                 <row>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
