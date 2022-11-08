@@ -5579,7 +5579,8 @@
                     <cell type="field" id="barcode" name="barCode" uitype="text"/>
                     <cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=RBGECat"/>
                     <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
-                    <!--<cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/>-->
+                    <!--<cell type="subview" id="giftPreparations" name="giftPreparations" viewname="giftPeps" initialize="btn=true;align=left"/>-->
+                    <cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="Show Interactions" ignore="true"/>
                 </row>    
                 <row>
                     <cell type="label" labelfor="labelStatus"/>
