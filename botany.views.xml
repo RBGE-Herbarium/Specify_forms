@@ -2193,7 +2193,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="verbatimCollector"/>
-                    <cell type="field" id="verbatimCollector" name="text5" uitype="text" colspan="10" readonly="true"/>
+                    <cell type="field" id="verbatimCollector" name="text5" uitype="text" colspan="10"/>
                 </row>    
                 <row>
                     <cell type="label" labelfor="collectorNumber"/>
@@ -3337,8 +3337,8 @@
                 <row>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" uitype="plugin" name="this" initialize="name=PartialDateUI;df=determinedDate;tp=determinedDatePrecision" uifieldformatter="Date"/>
-                    <cell type="label" labelfor="fob"/>
-                    <cell type="field" id="fob" name="featureOrBasis" uitype="text"/>  
+                    <cell type="label" labelfor="detBarcode"/>
+                    <cell type="field" id="detBarcode" name="featureOrBasis" uitype="text"/>  
                 </row>
                 <row>
                     <cell type="label" labelfor="verbDet"/>
@@ -3467,8 +3467,8 @@
                 </row>
                 
                 <row>
-                    <cell type="label" labelfor="8"/>
-                    <cell type="field" id="8" name="qualifier" uitype="combobox"/>
+                    <cell type="label" labelfor="detBarcode"/>
+                    <cell type="field" id="detBarcode" name="featureOrBasis" uitype="text"/>  
                 </row>
                 <row>
                     <cell type="label" labelfor="familyNumber" label="Family No."/>
@@ -3542,7 +3542,7 @@
             </rows>
         </viewdef>
 
-<!--SECTION: EXCHANGE OUT-->
+<!--SECTION: EXCHANGE OUT (GIFT)-->
 
 <viewdef
                 type="form"
@@ -3607,53 +3607,9 @@
                     <cell type="label" labelfor="remarks"/>
                     <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
-                <!-- <row>
-                    <cell type="subview" id="6" name="addressOfRecord" viewname="AddressOfRecord" colspan="13"/>
-                </row> -->
-                <!-- <row>
-                    <cell type="subview" id="8" name="shipments" viewname="Shipment" colspan="13"/>
-                </row> -->
-                <!-- <row>
-                     <cell type="subview" viewname="ExchangeOutPrep" id="10" name="exchangeOutPreps" defaulttype="table" colspan="13" rows="4"/>
-                </row> -->
-                <!--row>
-                    <cell type="label" labelfor="dom"/>
-                    <cell type="field" id="dom" name="descriptionOfMaterial" uitype="text" colspan="10"/>
-                </row>
                 <row>
-			              <cell type="label" labelfor="18"/>
-			              <cell type="field" id="18" name="srcGeography" uitype="text"/>
-			              <cell type="label" labelfor="19"/>
-			              <cell type="field" id="19" name="srcTaxonomy" uitype="text"/>
+                    <cell type="command" id="generateInv" name="generateLabelBtn" label="Generate Invoice" ignore="true" default="true" initialize="visible=false"/>
                 </row>
-                <row>
-                    <cell type="label" labelfor="n1"/>
-                    <cell type="field" id="n1" name="number1" uitype="text"/>
-                    <cell type="label" labelfor="n2"/>
-                    <cell type="field" id="n2" name="number2" uitype="text"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="t1"/>
-                    <cell type="field" id="t1" name="text1" uitype="text"/>
-                    <cell type="label" labelfor="t2"/>
-                    <cell type="field" id="t2" name="text2" uitype="text"/>
-                </row>
-                <row>
-                    <cell type="field" id="20" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
-                    <cell type="field" id="20" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="9"/>
-                    <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
-                    <cell type="label" labelfor="10"/>
-                    <cell type="field" id="10" name="modifiedByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="11"/>
-                    <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
-                    <cell type="label" labelfor="12"/>
-                    <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
-                </row>-->
             </rows>
         </viewdef>
 
@@ -5635,7 +5591,8 @@
                     <cell type="field" id="barcode" name="barCode" uitype="text"/>
                     <cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=RBGECat"/>
                     <cell type="field" id="isOnLoan" name="isOnLoan" uitype="checkbox" label="IS_ON_LOAN" readonly="true"/>
-                    <!--<cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="SHOW_INTERACTIONS" ignore="true"/>-->
+                    <!--<cell type="subview" id="giftPreparations" name="giftPreparations" viewname="giftPeps" initialize="btn=true;align=left"/>-->
+                    <cell type="command" id="ShowLoansBtn" name="ShowLoansBtn" label="Show Interactions" ignore="true"/>
                 </row>    
                 <row>
                     <cell type="label" labelfor="labelStatus"/>
@@ -5690,6 +5647,9 @@
                     <cell type="field" id="intMisc" name="text12" uitype="textareabrief" rows="2" colspan="11"/>
                 </row> 
                 <row>
+                    <cell type="subview" id="PreparationAttributes" viewname="PreparationAttributes" name="preparationAttribute" colspan="13"/>
+                </row>
+                <row>
                     <cell type="separator" label="Destructive Sampling" colspan="14"/>    
                 </row>
                 <row>
@@ -5714,9 +5674,6 @@
                 <row>
                     <cell type="label" labelfor="BGBASENum"/>
                     <cell type="field" id="BGBASENum" name="number2" uitype="label"/>
-                </row>
-                <row>
-                    <cell type="subview" id="PreparationAttributes" viewname="PreparationAttributes" name="preparationAttribute" colspan="13"/>
                 </row>
                 <row>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
