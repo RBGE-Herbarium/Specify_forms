@@ -3610,6 +3610,7 @@
                     <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
                 <row>
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="exchangeOutAttachments" colspan="7" initialize="btn=true;icon=ExchangeOutAttachment"/>
                     <cell type="command" id="generateInv" name="generateLabelBtn" label="Generate Invoice" ignore="true" default="true" initialize="visible=false"/>
                 </row>
             </rows>
