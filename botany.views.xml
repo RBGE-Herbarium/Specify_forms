@@ -889,13 +889,13 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="restrictionType"/>
-                    <cell type="field" id="restrictionType" name="text4" uitype="combobox" colspan="5"/> 
-                    <cell type="field" id="DNAExtraction" uitype="checkbox" name="yesNo1"/>                	
-                	<cell type="field" id="transferPermitted" uitype="checkbox" name="yesNo2"/>
+                    <cell type="field" id="restrictionType" name="text4" uitype="combobox" colspan="10"/> 
+                    <!-- <cell type="field" id="DNAExtraction" uitype="checkbox" name="yesNo1"/>                	
+                	<cell type="field" id="transferPermitted" uitype="checkbox" name="yesNo2"/> -->
                 </row>
                 <row>
                 	<cell type="label" labelfor="restrictionText"/>
-                	<cell type="field" id="restrictionText" name="text3" uitype="textareabrief" rows="2" colspan="10"/>
+                	<cell type="field" id="restrictionText" name="text3" uitype="textareabrief" rows="3" colspan="10"/>
                 </row>             
 
                 <row>
@@ -1128,7 +1128,9 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="agent"/>
-                    <cell type="field" id="agent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent"/>
+                    <cell type="field" id="agent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="10"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="role"/>
                     <cell type="field" id="role" name="role" uitype="combobox"/>
                 </row>
@@ -1720,7 +1722,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="agent"/>
-                    <cell type="field" id="agent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="6"/>
+                    <cell type="field" id="agent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="10"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="role"/>
@@ -3608,6 +3610,7 @@
                     <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>
                 <row>
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="exchangeOutAttachments" colspan="7" initialize="btn=true;icon=ExchangeOutAttachment"/>
                     <cell type="command" id="generateInv" name="generateLabelBtn" label="Generate Invoice" ignore="true" default="true" initialize="visible=false"/>
                 </row>
             </rows>
@@ -4221,7 +4224,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="giftAgent"/>
-                    <cell type="field" id="giftAgent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent"/> 
+                    <cell type="field" id="giftAgent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="10"/> 
                 </row>
                 <row>
                  <cell type="label" labelfor="giftAgentRole"/>
@@ -4671,7 +4674,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="loanAgent" label="Agent"/>
-                    <cell type="field" id="loanAgent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="6"/>
+                    <cell type="field" id="loanAgent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="10"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="loanAgentRole"/>
@@ -5617,7 +5620,7 @@
                     <!-- <cell type="label" labelfor="stat"/>
                     <cell type="field" id="stat" name="status" uitype="combobox" deafult="Mounted"/> -->
                     <cell type="label" labelfor="storage"/>
-                    <cell type="field" id="storage" name="storage" uitype="querycbx" initialize="name=Storage" colspan="3" default="Main Herbarium"/>
+                    <cell type="field" id="storage" name="storage" uitype="querycbx" initialize="name=Storage" colspan="11" default="Main Herbarium"/>
                 </row>
                 <row>               
                     <cell type="label" labelfor="physicallyLinked"/>
