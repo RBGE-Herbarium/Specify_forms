@@ -1128,7 +1128,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="agent"/>
-                    <cell type="field" id="agent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="10"/>
+                    <cell type="field" id="agent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="6"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="role"/>
@@ -1722,7 +1722,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="agent"/>
-                    <cell type="field" id="agent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="10"/>
+                    <cell type="field" id="agent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="6"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="role"/>
@@ -4224,7 +4224,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="giftAgent"/>
-                    <cell type="field" id="giftAgent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="10"/> 
+                    <cell type="field" id="giftAgent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="6"/> 
                 </row>
                 <row>
                  <cell type="label" labelfor="giftAgentRole"/>
@@ -4674,7 +4674,7 @@
             <rows>
                 <row>
                     <cell type="label" labelfor="loanAgent" label="Agent"/>
-                    <cell type="field" id="loanAgent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="10"/>
+                    <cell type="field" id="loanAgent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="6"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="loanAgentRole"/>
@@ -5620,7 +5620,7 @@
                     <!-- <cell type="label" labelfor="stat"/>
                     <cell type="field" id="stat" name="status" uitype="combobox" deafult="Mounted"/> -->
                     <cell type="label" labelfor="storage"/>
-                    <cell type="field" id="storage" name="storage" uitype="querycbx" initialize="name=Storage" colspan="11" default="Main Herbarium"/>
+                    <cell type="field" id="storage" name="storage" uitype="querycbx" initialize="name=Storage" colspan="5" default="Main Herbarium"/>
                 </row>
                 <row>               
                     <cell type="label" labelfor="physicallyLinked"/>
