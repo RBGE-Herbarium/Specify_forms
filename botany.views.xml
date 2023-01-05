@@ -1605,7 +1605,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="currentDueDate"/>
-                    <cell type="field" id="currentDueDate" name="currentDueDate" uitype="formattedtext" uifieldformatter="Date"/>
+                    <cell type="field" id="currentDueDate" name="currentDueDate" uitype="formattedtext" uifieldformatter="Date" default="today + 1 year"/>
                     <cell type="label" labelfor="originalDueDate"/>
                     <cell type="field" id="originalDueDate" name="originalDueDate" uitype="formattedtext" uifieldformatter="Date"/> 
                 </row>
