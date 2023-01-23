@@ -1132,7 +1132,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="role"/>
-                    <cell type="field" id="role" name="role" uitype="combobox"/>
+                    <cell type="field" id="role" name="role" uitype="combobox" colspan="6"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="remarks"/>
@@ -1726,7 +1726,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="role"/>
-                    <cell type="field" id="role" name="role" uitype="combobox"/>
+                    <cell type="field" id="role" name="role" uitype="combobox" colspan="6"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="remarks"/>
@@ -4228,7 +4228,7 @@
                 </row>
                 <row>
                  <cell type="label" labelfor="giftAgentRole"/>
-                    <cell type="field" id="giftAgentRole" name="role" uitype="combobox"/>
+                    <cell type="field" id="giftAgentRole" name="role" uitype="combobox" colspan="6"/>
                     <cell type="label" labelfor="GiftAgentDate"/>
                     <cell type="field" id="GiftAgentDate" name="date1" uitype="formattedtext" uifieldformatter="Date" default="today"/>
                 </row>
