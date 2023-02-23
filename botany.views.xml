@@ -192,6 +192,18 @@
             </altviews>
         </view>
 
+        <view name="AgentVariant"
+            class="edu.ku.brc.specify.datamodel.AgentVariant"
+            >
+            <desc><![CDATA[The  --> Form.]]></desc>
+            <altviews>
+                <altview name="AgentVariant View" viewdef="AgentVariant" mode="view" validated="false" default="true"/>                
+                <altview name="AgentVariant Edit" viewdef="AgentVariant" mode="edit" validated="true"/>                
+                <altview name="AgentVariant Table View" viewdef="AgentVariant Table" label="Table View" mode="view" />                
+                <altview name="AgentVariant Table Edit" viewdef="AgentVariant Table" label="Table Edit" mode="edit"/>                
+            </altviews>
+        </view>
+
         <view name="AgentSpecialty"
             class="edu.ku.brc.specify.datamodel.AgentSpecialty"
             >
@@ -201,6 +213,18 @@
                 <altview name="AgentSpecialty Edit" viewdef="AgentSpecialty" mode="edit" validated="true"/>                
                 <altview name="AgentSpecialty Table View" viewdef="AgentSpecialty Table" label="Table View" mode="view" />                
                 <altview name="AgentSpecialty Table Edit" viewdef="AgentSpecialty Table" label="Table Edit" mode="edit"/>                
+            </altviews>
+        </view>
+
+        <view name="AgentIdentifiers"
+              class="edu.ku.brc.specify.datamodel.AgentIdentifier"
+        >
+            <desc><![CDATA[Subform within the agent form.]]></desc>
+            <altviews>
+                <altview name="AgentIdentifiers Table View" viewdef="AgentIdentifiers Table" mode="view"/>
+                <altview name="AgentIdentifiers Table Edit" viewdef="AgentIdentifiers Table" mode="edit"/>
+                <altview name="AgentIdentifiers View" viewdef="AgentIdentifiers" mode="view"/>
+                <altview name="AgentIdentifiers Edit" viewdef="AgentIdentifiers" mode="edit" default="true"/>
             </altviews>
         </view>
 
@@ -1445,10 +1469,10 @@
                     <cell type="label" labelfor="abbreviation"/>
                     <cell type="field" id="abbreviation" name="abbreviation" uitype="text" colspan="7"/>
                 </row>    
-                <row>
+                <!-- <row>
                     <cell type="label" labelfor="peopleIdentifier"/>
                     <cell type="field" id="peopleIdentifier" name="text1" uitype="text" colspan="15"/>
-                </row>
+                </row> -->
                 <row>
                     <cell type="label" labelfor="Citation"/>
                     <cell type="field" id="Citation" name="text3" uitype="text" colspan="15"/>
@@ -1472,7 +1496,9 @@
                 <row> 
                     <cell type="subview" viewname="AgentGeography" id="60" name="agentGeographies" defaulttype="table" colspan="19" rows="3"/>
                 </row>
-
+                 <row>
+                    <cell type="subview" id="agentIdentifiers" viewname="AgentIdentifiers" name="identifiers" colspan="18"/>
+                </row>
                 <row>
                     <cell type="separator" label="Attachments" colspan="19"/>
                 </row>
@@ -1564,6 +1590,40 @@
 
         <viewdef
             type="form"
+            name="AgentVariant"
+            class="edu.ku.brc.specify.datamodel.AgentVariant"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[The AgentVariant form ]]></desc>
+            <enableRules/>
+
+            <columnDef>p,5dlu,p:g,5dlu,p</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+
+            <rows>
+                <row>
+                    <cell type="label" labelfor="varType"/>
+                    <cell type="field" id="varType" name="varType" uitype="text" colspan="3"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="variant"/>
+                    <cell type="field" id="variant" name="variant" uitype="text" colspan="9"/>
+                </row>
+            </rows>
+        </viewdef>
+
+        <viewdef
+            type="formtable"
+            name="AgentVariant Table"
+            class="edu.ku.brc.specify.datamodel.AgentVariant"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[AgentVariant grid view for Agent form.]]></desc>
+            <definition>AgentVariant</definition>
+        </viewdef>
+
+        <viewdef
+            type="form"
             name="AgentSpecialty"
             class="edu.ku.brc.specify.datamodel.AgentSpecialty"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -1591,6 +1651,59 @@
             <desc><![CDATA[AgentSpecialty grid view for Agent form.]]></desc>
             <definition>AgentSpecialty</definition>
         </viewdef>
+
+         <viewdef
+                type="formtable"
+                name="AgentIdentifiers Table"
+                class="edu.ku.brc.specify.datamodel.AgentIdentifier"
+                gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+                settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+
+            <desc><![CDATA[AgentIdentifiers subform table for Agent form.]]></desc>
+            <definition>AgentIdentifiers</definition>
+        </viewdef>
+        
+        <viewdef
+                type="form"
+                name="AgentIdentifiers"
+                class="edu.ku.brc.specify.datamodel.AgentIdentifier"
+                gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+                settable="edu.ku.brc.af.ui.forms.DataSetterForObj"
+                useresourcelabels="true">
+            <desc><![CDATA[subform on the Agent form.]]></desc>
+            <enableRules/>
+
+            <columnDef>100px,2px,473px,5px,120px,2px,125px,0px,15px,p:g</columnDef>
+            <columnDef os="lnx">115px,2px,510px,5px,120px,2px,198px,0px,15px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,530px,5px,105px,2px,218px,0px,15px,p:g</columnDef>
+            <columnDef os="exp">p,2px,473px,5px:g,p,2px,125px,0px,15px,p:g</columnDef>
+            <rowDef auto="true" cell="p" sep="2dlu"/>
+
+            <rows>
+                <row>
+                    <cell type="label" labelfor="1"/>
+                    <cell type="field" id="1" name="identifier" uitype="text"/>
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="identifierType" uitype="combobox"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="7"/>
+                    <cell type="field" id="7" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
+                </row>
+                <!--<row>
+                    <cell type="label" labelfor="9"/>
+                    <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="10"/>
+                    <cell type="field" id="10" name="modifiedByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
+                    <cell type="label" labelfor="12"/>
+                    <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
+                </row>-->
+            </rows>
+        </viewdef>   
 
 <!--SECTION: BORROW-->
 
@@ -6248,13 +6361,11 @@
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The ReferenceWork form]]></desc>
-
             <columnDef>100px,2px,170px,5px,90px,2px,150px,5px,140px,2px,161px,15px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,176px,5px,100px,2px,175px,5px,160px,2px,175px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,208px,5px,100px,2px,208px,5px,175px,2px,195px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
-
             <rows>
                 <row>
                     <cell type="label" labelfor="referenceWorkType"/>
@@ -6265,32 +6376,38 @@
                     <cell type="field" id="title" name="title" uitype="text" colspan="9"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="subtitle"/>
+                    <cell type="field" id="subtitle" name="text1" uitype="text" colspan="9"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="publisher"/>
-                    <cell type="field" id="publisher" name="publisher" uitype="text" colspan="5"/>
+                    <cell type="field" id="publisher" name="publisher" uitype="text" colspan="9"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="placeOfPublication"/>
-                    <cell type="field" id="placeOfPublication" name="placeOfPublication" uitype="text"/>
+                    <cell type="field" id="placeOfPublication" name="placeOfPublication" uitype="text" colspan="9"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="workDate"/>
                     <cell type="field" id="workDate" name="workDate" uitype="text"/>
                     <cell type="label" labelfor="volume"/>
                     <cell type="field" id="volume" name="volume" uitype="text"/>
+                    <cell type="label" labelfor="issue"/>
+                    <cell type="field" id="issue" name="text2" uitype="text"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="pages"/>
                     <cell type="field" id="pages" name="pages" uitype="text"/>
+                    <cell type="label" labelfor="edition"/>
+                    <cell type="field" id="edition" name="number2" uitype="text"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="journal"/>
-                    <cell type="field" id="journal" name="journal" uitype="querycbx" initialize="name=Journal;title=Journal" colspan="5"/>
-                    <cell type="label" labelfor="libraryNumber"/>
-                    <cell type="field" id="libraryNumber" name="libraryNumber" uitype="text"/>
+                    <cell type="field" id="journal" name="journal" uitype="querycbx" initialize="name=Journal;title=Journal" colspan="9"/>
+<!--                     <cell type="label" labelfor="libraryNumber"/>
+                    <cell type="field" id="libraryNumber" name="libraryNumber" uitype="text"/> -->
                 </row>
                 <row>
-                    <cell type="label" labelfor="t1"/>
-                    <cell type="field" id="t1" name="text1" uitype="text" colspan="9"/>
-                </row>
-                <row>
-                    <cell type="label" labelfor="t2"/>
-                    <cell type="field" id="t2" name="text2" uitype="text"/>
                     <cell type="label" labelfor="isbn"/>
                     <cell type="field" id="isbn" name="isbn" uitype="text"/>
                     <cell type="field" id="isPublished" name="isPublished" uitype="checkbox"/>
@@ -6305,6 +6422,10 @@
                 <row>
                     <cell type="label" labelfor="remarks"/>
                     <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="11"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="legacyNumber"/>
+                    <cell type="field" id="legacyNumber" name="number1" uitype="text"/>
                 </row>
                 <row>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="referenceWorkAttachments" colspan="6" initialize="btn=true;icon=ReferenceWorkAttachment"/>
