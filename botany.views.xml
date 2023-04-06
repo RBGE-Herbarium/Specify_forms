@@ -4284,8 +4284,8 @@
                     <cell type="field" id="giftStatusint" name="integer1" uitype="text"/> -->
                 </row>
                 <row>
-                    <cell type="label" labelfor="justification"/>
-                    <cell type="field" id="justification" name="text3" uitype="combobox"/>
+                    <!-- <cell type="label" labelfor="justification"/>
+                    <cell type="field" id="justification" name="text3" uitype="combobox"/> -->
                     <cell type="label" labelfor="purpose"/>
                     <cell type="field" id="purpose" name="text5"  uitype="combobox"/> 
                 </row>
@@ -4337,8 +4337,8 @@
                     <cell type="field" id="dateRequestReceived" name="date1" uitype="formattedtext" uifieldformatter="Date"  default="today"/>
                     <cell type="label" labelfor="giftDate"/>
                     <cell type="field" id="giftDate" name="giftDate" uitype="formattedtext" uifieldformatter="Date"/>
-                    <cell type="label" labelfor="dateReceived"/>
-                    <cell type="field" id="dateReceived" name="dateReceived" uitype="formattedtext" uifieldformatter="Date"/>  
+                    <!-- <cell type="label" labelfor="dateReceived"/>
+                    <cell type="field" id="dateReceived" name="dateReceived" uitype="formattedtext" uifieldformatter="Date"/>   -->
                     <!-- <cell type="label" labelfor="numberSent"/>
                     <cell type="field" id="numberSent" name="number1" uitype="text"/>
                     <cell type="label" labelfor="numberParcels"/>
