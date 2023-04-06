@@ -4333,8 +4333,10 @@
                     <cell type="field" id="specialConditions" name="specialConditions" uitype="textareabrief" rows="2" colspan="12"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="dateRequestReceived"/>
+                    <cell type="field" id="dateRequestReceived" name="date1" uitype="formattedtext" uifieldformatter="Date"  default="today"/>
                     <cell type="label" labelfor="giftDate"/>
-                    <cell type="field" id="giftDate" name="giftDate" uitype="formattedtext" uifieldformatter="Date"  default="today"/>
+                    <cell type="field" id="giftDate" name="giftDate" uitype="formattedtext" uifieldformatter="Date"/>
                     <cell type="label" labelfor="dateReceived"/>
                     <cell type="field" id="dateReceived" name="dateReceived" uitype="formattedtext" uifieldformatter="Date"/>  
                     <!-- <cell type="label" labelfor="numberSent"/>
@@ -5918,7 +5920,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="BGBASENum"/>
-                    <cell type="field" id="BGBASENum" name="number2" uitype="label"/>
+                    <cell type="field" id="BGBASENum" name="number2" uitype="label" readonly="true"/>
                 </row>
                 <row>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="preparationAttachments" initialize="align=right;btn=true;icon=PreparationAttachment"/>
