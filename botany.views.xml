@@ -5688,6 +5688,10 @@
                     <cell type="field" id="country" name="copyright" uitype="text" colspan="10"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="remarks"/>
+                    <cell type="field" id="remarks" name="remarks" uitype="text" colspan="10" rows="3"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="legacyNumber"/>
                     <cell type="field" id="legacyNumber" name="text1" uitype="text"/>
                 </row>
