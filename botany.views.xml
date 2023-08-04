@@ -2864,6 +2864,10 @@
                     <cell type="field" id="t2" name="cultivatedSource" uitype="text" colspan="5"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="wildData"/>
+                    <cell type="field" id="wildData" name="text8" uitype="text" colspan="7"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="cultivatedFrom"/>
                     <cell type="field" id="cultivatedFrom" name="integer2" uitype="text"/>
                 </row>
@@ -4312,9 +4316,7 @@
                 <row>
                     <cell type="subview" viewname="GiftAgent" id="GiftAgent" name="giftAgents" defaulttype="table" desc="Agents" colspan="15" rows="7"/>
                 </row>
-                <row>
-                    <cell type="field" id="CBDform" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
-                </row>
+                
                 <row>
                     <cell type="subview" viewname="GiftItems" id="GiftItems" name="giftPreparations" defaulttype="table" colspan="15" rows="4"/>
                 </row>
@@ -4361,7 +4363,8 @@
                     </cell>
                 </row>
                 <row>
-                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="giftAttachments" colspan="15" initialize="btn=true;icon=GiftAttachment"/>
+                    <cell type="subview" id="attachments" viewname="ObjectAttachment" name="giftAttachments" initialize="btn=true;icon=GiftAttachment"/>
+                    <cell type="field" id="CBDform" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="createdByAgent"/>
