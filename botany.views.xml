@@ -116,9 +116,9 @@
             <desc><![CDATA[Permit subform within the Accession form.]]></desc>
             <altviews>
                 <altview name="AccessionAuthorization View" viewdef="AccessionAuthorization" mode="view"/>
-                <altview name="AccessionAuthorization Edit" viewdef="AccessionAuthorization" mode="edit"/>
-                <altview name="AccessionAuthorization Table View" viewdef="AccessionAuthorization Abridged Table" mode="view" default="true"/>
-                <altview name="AccessionAuthorization Table Edit" viewdef="AccessionAuthorization Abridged Table" mode="edit"/>
+                <altview name="AccessionAuthorization Edit" viewdef="AccessionAuthorization" mode="edit" default="true"/>
+                <altview name="AccessionAuthorization Table View" viewdef="AccessionAuthorization Abridged Table" mode="view" />
+                <altview name="AccessionAuthorization Table Edit" viewdef="AccessionAuthorization Abridged Table" mode="edit" />
             </altviews>
         </view>
         
@@ -145,19 +145,7 @@
                   <altview name="COS Table View" viewdef="AccessionItems Table" mode="view"/>
               </altviews>      
          </view>
-<view name="AccessionAuthorization"
-            objtitle="Accession Authorization"
-            class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
-            busrules="edu.ku.brc.specify.datamodel.busrules.AccessionAuthorizationBusRules"
-            >
-            <desc><![CDATA[Permit subform within the Accession form.]]></desc>
-            <altviews>
-                <altview name="AccessionAuthorization View" viewdef="AccessionAuthorization Abridged Table" mode="view"/>
-                <altview name="AccessionAuthorization Edit" viewdef="AccessionAuthorization Abridged Table" mode="edit"/>
-                <altview name="AccessionAuthorization Table View" viewdef="AccessionAuthorization Table" mode="view"/>
-                <altview name="AccessionAuthorization Table Edit" viewdef="AccessionAuthorization Table" mode="edit" default="true"/>
-            </altviews>
-        </view>
+
       
         <view name="Address"
             class="edu.ku.brc.specify.datamodel.Address"
@@ -914,7 +902,7 @@
                     <cell type="subview" viewname="AccessionAgent" id="8" name="accessionAgents" desc="Agents"  defaulttype="table" colspan="13" rows="3"/>
                 </row>
                 <row>
-                    <cell type="subview" viewname="AccessionAuthorization" id="9" desc="Authorization" name="accessionAuthorizations" defaulttype="table" colspan="13"/>
+                    <cell type="subview" viewname="AccessionAuthorization" id="9" desc="Authorization" name="accessionAuthorizations" defaulttype="table" colspan="13" rows="3"/>
                 </row>
                 <row> 
                     <cell type="subview" viewname="AccessionItems" id="25" desc="Collection Object" name="collectionObjects" colspan="13" rows="2" initialize="addsearch=true"/>
@@ -1118,6 +1106,7 @@
             <desc><![CDATA[The Agent subform for the accession form.]]></desc>
             <definition>AccessionAgent</definition>
         </viewdef>
+
         <viewdef
             type="form"
             name="AccessionAgent"
@@ -1159,7 +1148,7 @@
             </rows>
         </viewdef>
        
-       <viewdef
+<viewdef
     type="formtable"
     name="AccessionAuthorization Table"
     class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
@@ -1168,15 +1157,25 @@
     <desc><![CDATA[Permit subform for AccessionAuthorization]]></desc>
     <definition>AccessionAuthorization</definition>
 </viewdef>
-                            
+
 <viewdef
     type="formtable"
+    name="AccessionAuthorization Abridged Table"
+    class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
+    gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+    settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+    <desc><![CDATA[Permit subform for AccessionAuthorization]]></desc>
+    <definition>AccessionAuthorization Abridged</definition>
+</viewdef>
+                            
+<viewdef
+    type="form"
     name="AccessionAuthorization Abridged"
     class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
     gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
     settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
     <desc><![CDATA[Permit subform for AccessionAuthorization]]></desc>
-    <definition>AccessionAuthorization</definition>
+    
     <columnDef>100px,2px,133px,5px,91px,2px,210px,5px,87px,2px,123px,2px,70px,p:g</columnDef>
     <columnDef os="lnx">115px,2px,150px,5px,110px,2px,223px,5px,100px,2px,126px,2px,75px,p:g</columnDef>
     <columnDef os="mac">130px,2px,165px,5px,110px,2px,260px,5px,105px,2px,174px,2px,70px,p:g</columnDef>
@@ -1185,27 +1184,67 @@
 <rows>
         <row>
             <cell type="label" labelfor="permitNumber"/>
-            <cell type="field" id="permitNumber" name="permitNumber" uitype="text"/>
+            <cell type="field" id="permitNumber" name="permit.permitNumber" uitype="text"/>
             <cell type="label" labelfor="type"/>
-            <cell type="field" id="type" name="type" uitype="combobox" colspan="3"/>
+            <cell type="field" id="type" name="permit.type" uitype="combobox" colspan="3"/>
             <cell type="label" labelfor="restrictions"/>
-            <cell type="field" id="restrictions" name="statusQualifier" uitype="combobox"/>
+            <cell type="field" id="restrictions" name="permit.statusQualifier" uitype="combobox"/>
         </row>
-        <row>
+        <!-- <row>
             <cell type="label" labelfor="restrictionText"/>
-            <cell type="field" id="restrictionText" name="text2" uitype="text" colspan="10"/>
-        </row>
+            <cell type="field" id="restrictionText" name="permit.text2" uitype="text" colspan="10"/>
+        </row> -->
 </rows>
 </viewdef>
+
 <viewdef
-    type="formtable"
-    name="AccessionAuthorization Abridged Table"
-    class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
-    gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
-    settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
-    <desc><![CDATA[Permit subform for AccessionAuthorization]]></desc>
-    <definition>AccessionAuthorization</definition>
-</viewdef>
+            type="form"
+            name="AccessionAuthorization"
+            class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[Permit subform for AccessionAuthorization.]]></desc>
+            <enableRules/>
+            <columnDef>105px,2px,210px,515px,p:g</columnDef>
+            <columnDef os="lnx">135px,2px,230px,550px,p:g</columnDef>
+            <columnDef os="mac">130px,2px,215px,685px,p:g</columnDef>
+            <columnDef os="exp">p,2px,p,p:g</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+            <rows>
+                <row>
+                    <cell type="label" labelfor="permit"/>
+                    <cell type="field" id="permit" name="permit" uitype="querycbx" initialize="name=Permit"/>
+                    <!--<cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=RBGEPermit"/>-->
+                </row>
+                <row>
+                    <cell type="label" labelfor="type"/>
+                    <cell type="field" id="type" name="permit.type" uitype="combobox" colspan="3"/>
+                    <cell type="label" labelfor="restrictions"/>
+                    <cell type="field" id="restrictions" name="permit.statusQualifier" uitype="combobox"/>
+                </row>
+                <!-- <row>
+                    <cell type="label" labelfor="remarks"/>
+                    <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="2"/>
+                </row> -->
+                <row>
+            <cell type="label" labelfor="restrictionText"/>
+            <cell type="field" id="restrictionText" name="permit.text2" uitype="textareabrief" colspan="10" rows="3"/>
+        </row>
+                <!--<row>
+                    <cell type="label" labelfor="9"/>
+                    <cell type="field" id="9" name="createdByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="10"/>
+                    <cell type="field" id="10" name="modifiedByAgent" uitype="label" readonly="true"  uifieldformatter="Agent"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="11"/>
+                    <cell type="field" id="11" name="timestampModified" uitype="label" readonly="true"/>
+                    <cell type="label" labelfor="12"/>
+                    <cell type="field" id="12" name="timestampCreated" uitype="label" readonly="true"/>
+                </row>-->
+            </rows>
+        </viewdef>
+
   
         <viewdef
               type="form"
@@ -1224,16 +1263,14 @@
 		  
               <rows>
                 <row>
-                    <cell type="label" labelfor="permitNumber"/>
-                    <cell type="field" id="permitNumber" name="permitNumber" uitype="text"/>
-                    <cell type="label" labelfor="type"/>
-                    <cell type="field" id="type" name="type" uitype="combobox" colspan="3"/>
-                    <cell type="label" labelfor="restrictions"/>
-                    <cell type="field" id="restrictions" name="statusQualifier" uitype="combobox"/>
-                </row>
-              <row>
-                    <cell type="label" labelfor="restrictionText"/>
-                    <cell type="field" id="restrictionText" name="text2" uitype="text" colspan="10"/>
+                    <!-- <cell type="label" labelfor="barcode" label="Barcode"/>
+                    <cell type="field" id="barcode" name="preparation.barCode" uitype="dsptextfield"/> -->
+                    <cell type="label" labelfor="altCatalogNumber"/>
+                    <cell type="field" id="altCatalogNumber" name="altCatalogNumber" uitype="text"/>
+                    <cell type="label" labelfor="collectionName"/>
+                    <cell type="field" id="collectionName" name="collection.collectionName" uitype="dsptextfield"/>
+                    <cell type="label" labelfor="projectNumber"/>
+                    <cell type="field" id="projectNumber" name="projectNumber" uitype="text"/>
                 </row>
              </rows>
         </viewdef>
