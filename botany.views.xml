@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <viewset name="Botany Views" i18nresname="views" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
 <!--
     labelfor links to id (within each form)
     name field name in the database
 -->
+
 <!--VIEWS IN THIS FILE
     SECTION: ACCESSION ITEMS
         Accession Items
@@ -77,9 +79,13 @@
         Reference Work Sub
     SECTION: TAXON
         Taxon
+
 ###########################################################################
+
         NOT CURRENTLY MODIFIED FOR RBGE
+
 ###########################################################################
+
     SECTION: MATERIAL SAMPLE
         Material Sample
 -->
@@ -95,6 +101,7 @@
                 <altview name="Accession Edit" viewdef="Accession" mode="edit"/>
             </altviews>
         </view>
+
         <view name="AccessionAgent"
               objtitle="Accession Agent"
               class="edu.ku.brc.specify.datamodel.AccessionAgent"
@@ -108,6 +115,7 @@
                 <altview name="AccessionAgent Table Edit" viewdef="AccessionAgent Table" mode="edit"/>
             </altviews>
         </view>
+
         <view name="AccessionAuthorization"
             objtitle="Accession Authorization"
             class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
@@ -119,6 +127,7 @@
                 <altview name="AccessionAuthorization Edit" viewdef="AccessionAuthorization" mode="edit"/>
                 <altview name="AccessionAuthorization Table View" viewdef="AccessionAuthorization Table" mode="view" default="true"/>
                 <altview name="AccessionAuthorization Table Edit" viewdef="AccessionAuthorization Table" mode="edit"/>
+
             </altviews>
         </view>
         
@@ -145,6 +154,7 @@
                   <altview name="COS Table View" viewdef="AccessionItems Table" mode="view"/>
               </altviews>      
          </view>
+
         <view name="Address"
             class="edu.ku.brc.specify.datamodel.Address"
              busrules="edu.ku.brc.specify.datamodel.busrules.AddressBusRules"
@@ -169,6 +179,7 @@
                 <altview name="Agent Edit"        title="Agent"        viewdef="Agent"        mode="edit" validated="true" default="true"/>
             </altviews>
         </view>
+
         <view name="AgentGeography"
             class="edu.ku.brc.specify.datamodel.AgentGeography"
             >
@@ -180,6 +191,19 @@
                 <altview name="AgentGeography Table Edit" viewdef="AgentGeography Table"    label="Table Edit" mode="edit"/>
             </altviews>
         </view>
+
+        <view name="AgentVariant"
+            class="edu.ku.brc.specify.datamodel.AgentVariant"
+            >
+            <desc><![CDATA[The  --> Form.]]></desc>
+            <altviews>
+                <altview name="AgentVariant View" viewdef="AgentVariant" mode="view" validated="false" default="true"/>                
+                <altview name="AgentVariant Edit" viewdef="AgentVariant" mode="edit" validated="true"/>                
+                <altview name="AgentVariant Table View" viewdef="AgentVariant Table" label="Table View" mode="view" />                
+                <altview name="AgentVariant Table Edit" viewdef="AgentVariant Table" label="Table Edit" mode="edit"/>                
+            </altviews>
+        </view>
+
         <view name="AgentSpecialty"
             class="edu.ku.brc.specify.datamodel.AgentSpecialty"
             >
@@ -191,20 +215,8 @@
                 <altview name="AgentSpecialty Table Edit" viewdef="AgentSpecialty Table" label="Table Edit" mode="edit"/>                
             </altviews>
         </view>
-      
-<view name="AgentVariant"
-            class="edu.ku.brc.specify.datamodel.AgentVariant"
-            >
-            <desc><![CDATA[The  --> Form.]]></desc>
-            <altviews>
-                <altview name="AgentVariant View" viewdef="AgentVariant" mode="view" validated="false" default="true"/>                
-                <altview name="AgentVariant Edit" viewdef="AgentVariant" mode="edit" validated="true"/>                
-                <altview name="AgentVariant Table View" viewdef="AgentVariant Table" label="Table View" mode="view" />                
-                <altview name="AgentVariant Table Edit" viewdef="AgentVariant Table" label="Table Edit" mode="edit"/>                
-            </altviews>
-        </view>
-      
-<view name="AgentIdentifiers"
+
+        <view name="AgentIdentifiers"
               class="edu.ku.brc.specify.datamodel.AgentIdentifier"
         >
             <desc><![CDATA[Subform within the agent form.]]></desc>
@@ -215,7 +227,7 @@
                 <altview name="AgentIdentifiers Edit" viewdef="AgentIdentifiers" mode="edit" default="true"/>
             </altviews>
         </view>
-      
+
         <view name="Borrow"
             class="edu.ku.brc.specify.datamodel.Borrow"
             busrules="edu.ku.brc.specify.datamodel.busrules.BorrowBusRules"
@@ -226,6 +238,7 @@
                 <altview name="Borrow Edit" viewdef="Borrow" mode="edit"/>
             </altviews>
         </view>
+
         <view name="BorrowAgent"
             Objtitle="Borrow Agent"
             class="edu.ku.brc.specify.datamodel.BorrowAgent"
@@ -250,6 +263,7 @@
                 <altview name="BorrowMaterial Edit" viewdef="BorrowMaterial" mode="edit"/>
             </altviews>
         </view>
+
         <view name="BorrowReturnMaterial"
             class="edu.ku.brc.specify.datamodel.BorrowReturnMaterial"
             >
@@ -271,6 +285,7 @@
                 <altview name="BotanyAttributes Edit" viewdef="BotanyAttributes" mode="edit" default="true"/>
             </altviews>
         </view>
+
         <view name="CollectingEvent"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             busrules="edu.ku.brc.specify.datamodel.busrules.CollectingEventBusRules"
@@ -293,6 +308,7 @@
                 <altview name="CollectingEventSub Edit" viewdef="CollectingEventSub" mode="edit"/>
             </altviews>
         </view>    
+
         <view name="CollectingEventSubform"
             class="edu.ku.brc.specify.datamodel.CollectingEvent"
             busrules="edu.ku.brc.specify.datamodel.busrules.CollectingEventBusRules"
@@ -303,6 +319,7 @@
                 <altview name="CollectingEventSubform Edit" viewdef="CollectingEventSubform" mode="edit"/>
             </altviews>
         </view>
+
         <view name="CollectingEventAttribute"
             class="edu.ku.brc.specify.datamodel.CollectingEventAttribute"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -367,6 +384,7 @@
                   <altview name="COS Table View" viewdef="CollectionObjectSub Table" mode="view"/>
               </altviews>      
         </view> 
+
         <view name="CollectingTrip"
             class="edu.ku.brc.specify.datamodel.CollectingTrip"
             busrules="edu.ku.brc.specify.datamodel.busrules.CollectingTripBusRules"
@@ -377,6 +395,7 @@
                 <altview name="CollectingTrip Edit" viewdef="CollectingTrip" mode="edit"/>
             </altviews>
         </view>
+
         <view name="CollectingTripForm"
             class="edu.ku.brc.specify.datamodel.CollectingTrip"
             busrules="edu.ku.brc.specify.datamodel.busrules.CollectingTripBusRules"
@@ -388,6 +407,7 @@
                 <altview name="CollectingTripForm Edit" viewdef="CollectingTripForm" mode="edit"/>
             </altviews>
         </view>
+
         <view name="Collector"
             class="edu.ku.brc.specify.datamodel.Collector"
             busrules="edu.ku.brc.specify.datamodel.busrules.CollectorBusRules"
@@ -411,6 +431,7 @@
                 <altview name="Collectors Table Edit" viewdef="Collectors Table"   mode="edit" default="true"/>
             </altviews>
         </view>
+
         <view name="CommonNameTx"
             class="edu.ku.brc.specify.datamodel.CommonNameTx"
             >
@@ -434,7 +455,8 @@
 				<altview name="Determination Edit" viewdef="Determination" mode="edit" default="true"/>
 			</altviews>
         </view>
-       <view name="Determiner"
+
+         <view name="Determiner"
               class="edu.ku.brc.specify.datamodel.Determiner"
               busrules="edu.ku.brc.specify.datamodel.busrules.DeterminerBusRules"
         >
@@ -444,6 +466,7 @@
                 <altview name="Determiner Edit" viewdef="Determiner" mode="edit" validated="true"/>
             </altviews>
         </view>
+
         <view name="Determiners"
               class="edu.ku.brc.specify.datamodel.Determiner"
               busrules="edu.ku.brc.specify.datamodel.busrules.DeterminerBusRules"
@@ -456,7 +479,7 @@
                 <altview name="Determiners Table Edit" viewdef="Determiners Table"   mode="edit" default="true"/>
             </altviews>
         </view>
-      
+
         <view name="DeterminationCitation"
             class="edu.ku.brc.specify.datamodel.DeterminationCitation"
             >
@@ -476,6 +499,7 @@
                 <altview name="Determination View"       viewdef="Determination" mode="view" default="true"/>
             </altviews>
         </view>
+
        <view name="ExchangeOut"
               class="edu.ku.brc.specify.datamodel.ExchangeOut"
               busrules="edu.ku.brc.specify.datamodel.busrules.ExchangeOutBusRules"
@@ -486,6 +510,7 @@
                 <altview name="ExchangeOut Edit" viewdef="ExchangeOut" mode="edit"/>
             </altviews>
         </view>
+
         <view name="ExchangeOutSub"
               class="edu.ku.brc.specify.datamodel.ExchangeOut"
               busrules="edu.ku.brc.specify.datamodel.busrules.ExchangeOutBusRules"
@@ -496,6 +521,7 @@
                 <altview name="ExchangeOutSub Edit" viewdef="ExchangeOutSub" mode="edit"/>
             </altviews>
         </view>
+
         <view name="ExchangeOutPrep"
               class="edu.ku.brc.specify.datamodel.ExchangeOutPrep"
               busrules="edu.ku.brc.specify.datamodel.busrules.ExchangeOutPrepBusRules"
@@ -508,6 +534,7 @@
                 <altview name="ExchangeOutPrep Edit" viewdef="ExchangeOutPrep" mode="edit"/>
             </altviews>
         </view>
+
         <view name="ExchangeOutDeaccSub"
               class="edu.ku.brc.specify.datamodel.ExchangeOut"
         >
@@ -516,6 +543,7 @@
                 <altview name="ExchangeOutDeaccSub View" viewdef="ExchangeOutDeaccSub" mode="view" default="true"/>
             </altviews>
         </view>
+
         <view name="ExchangeOutDeaccPrep"
               class="edu.ku.brc.specify.datamodel.ExchangeOutPrep"
         >
@@ -547,6 +575,7 @@
                 <altview name="ExsiccataItem Edit" viewdef="ExsiccataItem" mode="edit" default="true"/>
             </altviews>
         </view>
+
 <view name="GeoCoordDetail"
             class="edu.ku.brc.specify.datamodel.GeoCoordDetail"
             isinternal="true"
@@ -594,6 +623,7 @@
                 <altview name="GiftItems Edit" viewdef="GiftItems" mode="edit"/>
             </altviews>
         </view>
+
         <view name="Journal"
             class="edu.ku.brc.specify.datamodel.Journal"
             resourcelabels="false">
@@ -603,6 +633,7 @@
                 <altview name="Journal Edit" viewdef="Journal" mode="edit" validated="true"/>                
             </altviews>
         </view>
+
         <view name="JournalForm"
             class="edu.ku.brc.specify.datamodel.Journal"
             isinternal="false"
@@ -613,6 +644,7 @@
                 <altview name="JournalForm Edit" viewdef="JournalForm" mode="edit" validated="true"/>                
             </altviews>
         </view>
+
         <view name="Loan"
             class="edu.ku.brc.specify.datamodel.Loan"
             busrules="edu.ku.brc.specify.datamodel.busrules.LoanBusRules"
@@ -623,6 +655,7 @@
                 <altview name="Loan Edit" viewdef="Loan" mode="edit"/>
             </altviews>
         </view>
+
         <view name="LoanAgent"
               objtitle="Loan Agent"
               class="edu.ku.brc.specify.datamodel.LoanAgent"
@@ -670,6 +703,7 @@
                 <altview name="Locality Edit" viewdef="Locality" mode="edit" default="true"/>
             </altviews>
         </view>
+
         <view name="LocalityCitation"
             class="edu.ku.brc.specify.datamodel.LocalityCitation"
             >
@@ -699,6 +733,7 @@
                 <altview name="LocalityMapper View" viewdef="LocalityMapper" mode="view" default="true"/>
            </altviews>
         </view>
+
         <view name="LocalitySubForm"
             class="edu.ku.brc.specify.datamodel.Locality"
             busrules="edu.ku.brc.specify.datamodel.busrules.LocalityBusRules"
@@ -709,6 +744,7 @@
                 <altview name="Locality SubForm Edit" viewdef="LocalitySubForm" mode="edit" default="true"/>
             </altviews>
         </view>
+
         <view name="LocalityNameAliass"
             class="edu.ku.brc.specify.datamodel.LocalityNameAlias"
             resourcelabels="false">
@@ -718,6 +754,7 @@
                 <altview name="LocalityNameAlias Edit" viewdef="LocalityNameAliass" mode="edit" default="true"/>
             </altviews>
         </view>
+
         <view name="MaterialSample"
               class="edu.ku.brc.specify.datamodel.MaterialSample"
               isexternal="true"
@@ -730,6 +767,7 @@
                 <altview name="MaterialSample Table Edit" viewdef="MaterialSample Table" mode="edit"/>
             </altviews>
         </view>
+
         <view name="Permit"
             class="edu.ku.brc.specify.datamodel.Permit"
             busrules="edu.ku.brc.specify.datamodel.busrules.PermitBusRules"
@@ -740,6 +778,7 @@
                 <altview name="Permit Edit" viewdef="Permit" mode="edit"/>
             </altviews>
         </view>
+
         <view name="PermitForAccessions"
             class="edu.ku.brc.specify.datamodel.Permit"
             busrules="edu.ku.brc.specify.datamodel.busrules.PermitBusRules"
@@ -773,6 +812,7 @@
                 <altview name="PreparationAttributes Edit" viewdef="PreparationAttributes" mode="edit" default="true"/>
             </altviews>
         </view>
+
         <view name="PreparationProperty"
             class="edu.ku.brc.specify.datamodel.PreparationProperty"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
@@ -786,6 +826,7 @@
                 <altview name="PreparationProperty Table Edit" viewdef="PreparationProperty Table" mode="edit"/>
             </altviews>
         </view>
+
         <view name="ReferenceWork"
             class="edu.ku.brc.specify.datamodel.ReferenceWork"
             isinternal="false"
@@ -818,6 +859,7 @@
                 <altview name="Taxon Edit" viewdef="Taxon" mode="edit" default="true"/>
             </altviews>
         </view>
+
         <view name="TaxonSubform"
             class="edu.ku.brc.specify.datamodel.Taxon"
             busrules="edu.ku.brc.specify.datamodel.busrules.TaxonBusRules"
@@ -828,6 +870,7 @@
                 <altview name="Taxon Children Table View" viewdef="TaxonSubform Table" mode="view"/>
             </altviews>
         </view>
+
         
     </views>
     
@@ -835,6 +878,7 @@
     <viewdefs>
                
 <!-- SECTION: ACCESSION-->
+
         <viewdef
             type="form"
             name="Accession"
@@ -843,11 +887,13 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Accession form.]]></desc>
             <enableRules/>
+
             <columnDef>p,10px,190px,5px,130px,2px,141px,5px,110px,2px,140px,0px,15px,p:g</columnDef>
             <columnDef os="lnx">135px,2px,200px,5px,135px,2px,153px,5px,125px,2px,153px,0px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,220px,5px,153px,2px,189px,5px,133px,2px,189px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),0px,p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="1px"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="registrationNumber"/>
@@ -891,14 +937,15 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="restrictionType"/>
-                    <cell type="field" id="restrictionType" name="text4" uitype="combobox" colspan="10" rows="2"/> 
-                 <!--   <cell type="field" id="DNAExtraction" uitype="checkbox" name="yesNo1"/>                	-->
-                	<!--<cell type="field" id="transferPermitted" uitype="checkbox" name="yesNo2"/>-->
+                    <cell type="field" id="restrictionType" name="text4" uitype="combobox" colspan="10"/> 
+                    <!-- <cell type="field" id="DNAExtraction" uitype="checkbox" name="yesNo1"/>                	
+                	<cell type="field" id="transferPermitted" uitype="checkbox" name="yesNo2"/> -->
                 </row>
                 <row>
                 	<cell type="label" labelfor="restrictionText"/>
-                	<cell type="field" id="restrictionText" name="text3" uitype="textareabrief" rows="2" colspan="10"/>
+                	<cell type="field" id="restrictionText" name="text3" uitype="textareabrief" rows="3" colspan="10"/>
                 </row>             
+
                 <row>
                     <cell type="subview" viewname="AccessionAgent" id="8" name="accessionAgents" desc="Agents"  defaulttype="table" colspan="13" rows="3"/>
                 </row>
@@ -908,6 +955,7 @@
                 <row> 
                     <cell type="subview" viewname="AccessionItems" id="25" desc="Collection Object" name="collectionObjects" colspan="13" rows="2" initialize="addsearch=true"/>
                 </row>
+
                 <row>
                     <cell type="label" label="Total Count:" initialize="align=right"/>
                     <cell type="field" id="tca" name="totalCountAmt" uitype="text" readonly="true"/>
@@ -920,6 +968,7 @@
                     <cell type="label" label="Preparation Count:" initialize="align=right"/>
                     <cell type="field" id="pc" name="preparationCount" uitype="text" readonly="true"/>
                 </row>
+
                 <!-- <row>
                     <cell type="subview" id="aor" name="addressOfRecord" viewname="AddressOfRecord" colspan="13"/>
                 </row> 
@@ -1061,6 +1110,7 @@
                 	<cell type="label" labelfor="restrictionText"/>
                 	<cell type="field" id="restrictionText" name="text3" uitype="textareabrief" rows="2" colspan="10"/>
                 </row>             
+
                 <row>
                     <cell type="subview" viewname="AccessionAgent" id="8" name="accessionAgents" desc="Agents" colspan="13" rows="3"/>
                 </row>
@@ -1107,6 +1157,7 @@
             <desc><![CDATA[The Agent subform for the accession form.]]></desc>
             <definition>AccessionAgent</definition>
         </viewdef>
+
         <viewdef
             type="form"
             name="AccessionAgent"
@@ -1115,15 +1166,17 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Accession form.]]></desc>
             <enableRules/>
+
             <columnDef>105px,2px,453px,5px,110px,2px,155px,p:g</columnDef>
             <columnDef os="lnx">135px,2px,520px,5px,98px,2px,155px,p:g</columnDef>
             <columnDef os="mac">130px,2px,551px,5px,153px,2px,189px,p:g</columnDef>
             <columnDef os="exp">p,2px,p,5px,85px,2px,p:g(2),p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="agent"/>
-                    <cell type="field" id="agent" name="agent" uitype="querycbx" colspan="6" initialize="name=Agent;title=Agent"/>
+                    <cell type="field" id="agent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="6"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="role"/>
@@ -1154,13 +1207,16 @@
             class="edu.ku.brc.specify.datamodel.AccessionAuthorization"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+
             <desc><![CDATA[Permit subform for AccessionAuthorization.]]></desc>
             <enableRules/>
+
             <columnDef>105px,2px,210px,515px,p:g</columnDef>
             <columnDef os="lnx">135px,2px,230px,550px,p:g</columnDef>
             <columnDef os="mac">130px,2px,215px,685px,p:g</columnDef>
             <columnDef os="exp">p,2px,p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="permit"/>
@@ -1185,6 +1241,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="AccessionAuthorization Table"
@@ -1194,6 +1251,7 @@
             <desc><![CDATA[Permit subform for AccessionAuthorization]]></desc>
             <definition>AccessionAuthorization</definition>
         </viewdef>
+
         <viewdef
               type="form"
               name="AccessionItems"
@@ -1213,6 +1271,7 @@
                 <row>
                     <cell type="label" labelfor="barcode" label="Barcode"/>
                     <cell type="field" id="barcode" name="preparation.barCode" uitype="dsptextfield"/>
+
                     <cell type="label" labelfor="altCatalogNumber"/>
                     <cell type="field" id="altCatalogNumber" name="altCatalogNumber" uitype="text"/>
                     <cell type="label" labelfor="collectionName"/>
@@ -1222,6 +1281,7 @@
                 </row>
              </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="AccessionItems Table"
@@ -1231,7 +1291,9 @@
             <desc><![CDATA[Accession Items]]></desc>
             <definition>AccessionItems</definition>
         </viewdef>
+
 <!--SECTION: ADDRESS-->
+
         <viewdef
             type="form"
             name="Address"
@@ -1337,6 +1399,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="Address Table"
@@ -1346,7 +1409,9 @@
             <desc><![CDATA[Address grid view.]]></desc>
             <definition>Address</definition>
          </viewdef>
+
 <!--SECTION: AGENT-->
+
         <viewdef
             type="form"
             name="Agent"
@@ -1354,11 +1419,13 @@
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Agent subform for Acessions.]]></desc>
+
             <columnDef>100px,2px,125px,5px,75px,2px,128px,5px,80px,2px,140px,5px,70px,2px,49px,2px,35px,0px,15px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,146px,5px,85px,2px,140px,5px,90px,2px,149px,5px,80px,2px,55px,2px,35px,0px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,150px,5px,85px,2px,160px,5px,105px,2px,164px,5px,100px,2px,65px,2px,48px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g,5px:g,p,2px,p:g,5px:g,p,2px,p:g,2px,p,0px,p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="agentType"/>
@@ -1402,7 +1469,7 @@
                     <cell type="label" labelfor="abbreviation"/>
                     <cell type="field" id="abbreviation" name="abbreviation" uitype="text" colspan="7"/>
                 </row>    
-<!--                 <row>
+                <!-- <row>
                     <cell type="label" labelfor="peopleIdentifier"/>
                     <cell type="field" id="peopleIdentifier" name="text1" uitype="text" colspan="15"/>
                 </row> -->
@@ -1429,9 +1496,9 @@
                 <row> 
                     <cell type="subview" viewname="AgentGeography" id="60" name="agentGeographies" defaulttype="table" colspan="19" rows="3"/>
                 </row>
-               <row>
-      <cell type="subview" id="agentIdentifiers" viewname="AgentIdentifiers" name="identifiers" colspan="18"/>
-</row>
+                 <row>
+                    <cell type="subview" id="agentIdentifiers" viewname="AgentIdentifiers" name="identifiers" colspan="18"/>
+                </row>
                 <row>
                     <cell type="separator" label="Attachments" colspan="19"/>
                 </row>
@@ -1477,6 +1544,7 @@
                     <cell type="field" id="23" name="timestampModified" uitype="label" readonly="true"/>
                     <cell type="label" labelfor="24"/>
                     <cell type="field" id="24" name="timestampCreated" uitype="label" readonly="true"/>
+
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" name="email" uitype="text" colspan="9"/>
                     <cell type="field" id="mailto" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=MailTo;icon=EMail;watch=7"/>
@@ -1509,6 +1577,7 @@
                 </row>
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="AgentGeography Table"
@@ -1518,34 +1587,8 @@
             <desc><![CDATA[The AgentGeography formtable.]]></desc>
             <definition>AgentGeography</definition>
         </viewdef>
+
         <viewdef
-            type="form"
-            name="AgentSpecialty"
-            class="edu.ku.brc.specify.datamodel.AgentSpecialty"
-            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
-            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
-            <desc><![CDATA[The AgentSpecialty form ]]></desc>
-            <enableRules/>
-            <columnDef>p,5dlu,p:g,5dlu,p</columnDef>
-            <rowDef auto="true" cell="p" sep="2px"/>
-            <rows>
-                <row>
-                    <cell type="label" labelfor="3"/>
-                    <cell type="field" id="3" name="specialtyName" uitype="text" colspan="3"/>
-                </row>
-            </rows>
-        </viewdef>
-      <viewdef
-            type="formtable"
-            name="AgentSpecialty Table"
-            class="edu.ku.brc.specify.datamodel.AgentSpecialty"
-            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
-            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
-            <desc><![CDATA[AgentSpecialty grid view for Agent form.]]></desc>
-            <definition>AgentSpecialty</definition>
-        </viewdef>
-      
-       <viewdef
             type="form"
             name="AgentVariant"
             class="edu.ku.brc.specify.datamodel.AgentVariant"
@@ -1553,22 +1596,25 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The AgentVariant form ]]></desc>
             <enableRules/>
+
             <columnDef>100px,2px,473px,5px,120px,2px,125px,0px,15px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,510px,5px,120px,2px,198px,0px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,530px,5px,105px,2px,218px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,473px,5px:g,p,2px,125px,0px,15px,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="varType"/>
-                    <cell type="field" id="varType" name="varType" uitype="combobox" colspan="3"/>
+                    <cell type="field" id="varType" name="varType" uitype="text" colspan="3"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="variant"/>
-                    <cell type="field" id="variant" name="variant" uitype="text" colspan="8"/>
+                    <cell type="field" id="variant" name="variant" uitype="text" colspan="9"/>
                 </row>
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="AgentVariant Table"
@@ -1578,14 +1624,44 @@
             <desc><![CDATA[AgentVariant grid view for Agent form.]]></desc>
             <definition>AgentVariant</definition>
         </viewdef>
-      
-        
-      <viewdef
+
+        <viewdef
+            type="form"
+            name="AgentSpecialty"
+            class="edu.ku.brc.specify.datamodel.AgentSpecialty"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[The AgentSpecialty form ]]></desc>
+            <enableRules/>
+
+            <columnDef>p,5dlu,p:g,5dlu,p</columnDef>
+            <rowDef auto="true" cell="p" sep="2px"/>
+
+            <rows>
+                <row>
+                    <cell type="label" labelfor="3"/>
+                    <cell type="field" id="3" name="specialtyName" uitype="text" colspan="3"/>
+                </row>
+            </rows>
+        </viewdef>
+
+        <viewdef
+            type="formtable"
+            name="AgentSpecialty Table"
+            class="edu.ku.brc.specify.datamodel.AgentSpecialty"
+            gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
+            settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+            <desc><![CDATA[AgentSpecialty grid view for Agent form.]]></desc>
+            <definition>AgentSpecialty</definition>
+        </viewdef>
+
+         <viewdef
                 type="formtable"
                 name="AgentIdentifiers Table"
                 class="edu.ku.brc.specify.datamodel.AgentIdentifier"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+
             <desc><![CDATA[AgentIdentifiers subform table for Agent form.]]></desc>
             <definition>AgentIdentifiers</definition>
         </viewdef>
@@ -1599,21 +1675,23 @@
                 useresourcelabels="true">
             <desc><![CDATA[subform on the Agent form.]]></desc>
             <enableRules/>
+
             <columnDef>100px,2px,473px,5px,120px,2px,125px,0px,15px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,510px,5px,120px,2px,198px,0px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,530px,5px,105px,2px,218px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,473px,5px:g,p,2px,125px,0px,15px,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
+
             <rows>
                 <row>
-                    <cell type="label" labelfor="identifier"/>
-                    <cell type="field" id="identifier" name="identifier" uitype="text"/>
-                    <cell type="label" labelfor="identifierType"/>
-                    <cell type="field" id="identifierType" name="identifierType" uitype="combobox"/>
+                    <cell type="label" labelfor="1"/>
+                    <cell type="field" id="1" name="identifier" uitype="text"/>
+                    <cell type="label" labelfor="2"/>
+                    <cell type="field" id="2" name="identifierType" uitype="combobox"/>
                 </row>
                 <row>
-                    <cell type="label" labelfor="remarks"/>
-                    <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
+                    <cell type="label" labelfor="7"/>
+                    <cell type="field" id="7" name="remarks" uitype="textareabrief" rows="2" colspan="6"/>
                 </row>
                 <!--<row>
                     <cell type="label" labelfor="9"/>
@@ -1629,7 +1707,9 @@
                 </row>-->
             </rows>
         </viewdef>   
+
 <!--SECTION: BORROW-->
+
 <viewdef
             type="form"
             name="Borrow"
@@ -1763,6 +1843,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="form"
             name="BorrowAgent"
@@ -1805,6 +1886,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="BorrowAgent Table"
@@ -1836,8 +1918,6 @@
                     <cell type="field" id="materialNumber" name="materialNumber" uitype="text"/>
                     <cell type="label" labelfor="quantity"/>
                     <cell type="field" id="quantity" name="quantity" uitype="text"/>
-                    <cell type="label" labelfor="quantityReturned"/>
-                    <cell type="field" id="quantityReturned" name="quantityReturned" uitype="text"/>
                     <cell type="label" labelfor="quantityResolved"/>
                     <cell type="field" id="quantityResolved" name="quantityResolved" uitype="text"/>
                 </row>
@@ -1879,6 +1959,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="BorrowMaterial Table"
@@ -1889,6 +1970,7 @@
             <desc><![CDATA[Preparation subform table for Collection Object form.]]></desc>
             <definition>BorrowMaterial</definition>
         </viewdef>
+
         <viewdef
             type="form"
             name="BorrowReturnMaterial"
@@ -1902,6 +1984,7 @@
             <columnDef os="mac">130px,2px,165px,5px,85px,2px,100px,5px,155px,2px,109px,0px,5px,155px,2px,110px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),0px,5px:g,p,2px,p:g(2)</columnDef>>
             <rowDef auto="true" cell="p" sep="1dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="returnedDate"/>
@@ -1928,6 +2011,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="BorrowReturnMaterial Table"
@@ -1938,7 +2022,9 @@
             <desc><![CDATA[Preparation subform table for Collection Object form.]]></desc>
             <definition>BorrowReturnMaterial</definition>
         </viewdef>
+
 <!--SECTION: BOTANY ATTRIBUTES-->
+
         <viewdef
             type="form"
             name="BotanyAttributes"
@@ -1952,6 +2038,7 @@
             <columnDef os="mac">130px,2px,215px,5px,126px,2px,215px,5px,115px,2px,215px,0px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),0px</columnDef>
             <rowDef auto="true" sep="2px" cell="p"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="sample"/>
@@ -2142,7 +2229,9 @@
                 </row>-->
             </rows>
         </viewdef>
+
 <!--SECTION: COLLECTING EVENT-->
+
         <viewdef
             type="form"
             name="CollectingEvent"
@@ -2225,6 +2314,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="form"
             name="CollectingEventSub"
@@ -2304,6 +2394,7 @@
                 
             </rows>
         </viewdef>    
+
         <viewdef
             type="form"
             name="CollectingEventSubform"
@@ -2329,6 +2420,7 @@
                 </row>
             </rows>
         </viewdef>
+
         <viewdef
             type="form"
             name="CollectingEventAttribute"
@@ -2446,6 +2538,7 @@
                     <cell type="label" labelfor="transcribedLocality"/>
                     <cell type="field" id="transcribedLocality" name="text2" uitype="combobox" colspan="8"/>
                 </row> -->
+
                 <!--<row>
                     <cell type="label" labelfor="d1"/>
                     <cell type="field" id="d1" name="date1" uitype="formattedtext" uifieldformatter="Date"/>
@@ -2566,6 +2659,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="CollectingEventAttribute Table"
@@ -2576,7 +2670,9 @@
             <desc><![CDATA[Preparation subform table for Collecting Event Attribute form.]]></desc>
             <definition>CollectingEventAttribute</definition>
         </viewdef>
+
 <!--SECTION: COLLECTING TRIP-->
+
         <viewdef
             type="form"
             name="CollectingTrip"
@@ -2590,6 +2686,7 @@
             <columnDef os="mac">130px,2px,421px,5px,105px,2px,130px,5px,100px,2px,130px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(4),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),0px</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
+
             <rows>
                 <row> 
                     <cell type="label" labelfor="1"/>
@@ -2624,6 +2721,7 @@
                 </row>
             </rows>
         </viewdef>
+
         <viewdef
             type="form"
             name="CollectingTripForm"
@@ -2637,6 +2735,7 @@
             <columnDef os="mac">130px,2px,421px,5px,105px,2px,130px,5px,100px,2px,130px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(4),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),0px,p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
+
             <rows>
                 <row> 
                     <cell type="label" labelfor="1"/>
@@ -2694,7 +2793,9 @@
                 </row>-->
             </rows>
         </viewdef>
+
 <!--SECTION: COLLECTION OBJECT-->
+
         <viewdef
             type="form"
             name="Collection Object"
@@ -2709,6 +2810,7 @@
             <columnDef os="mac">130px,2px,215px,5px,128px,2px,260px,5px,138px,2px,145px,0px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,min(p;250px),5px:g,p,2px,p:g,5px:g,p,2px,p:g(2),0px,p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
+
             <rows>
                 <row>
 		            <cell type="label" labelfor="3"/>
@@ -2761,17 +2863,14 @@
                     <cell type="label" labelfor="cultivatedSource"/>
                     <cell type="field" id="t2" name="cultivatedSource" uitype="text" colspan="5"/>
                 </row>
-              <row>
-                <cell type="label" labelfor="wildData"/>
-                    <cell type="field" id="wildData" name="text8" uitype="text" colspan="7"/>
-                    </row>
                 <row>
-                    
-                    <cell type="label" labelfor="cultivatedFrom"/>
-                    <cell type="field" id="cultivatedFrom" name="fieldNumber" uitype="text"/>
-                    <cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=WildCollectionObject"/>
+                    <cell type="label" labelfor="wildData"/>
+                    <cell type="field" id="wildData" name="text8" uitype="text" colspan="7"/>
                 </row>
-                
+                <row>
+                    <cell type="label" labelfor="cultivatedFrom"/>
+                    <cell type="field" id="cultivatedFrom" name="catalogedDateVerbatim" uitype="text"/>
+                </row>
                <row>
                     <cell type="subview" id="15" viewname="BotanyAttributes" name="collectionObjectAttribute" colspan="13"/>
                 </row>
@@ -2811,6 +2910,7 @@
                     <cell type="label" labelfor="guid"/>
                     <cell type="field" id="guid" name="guid" uitype="text" readonly="true"/>
                 </row>
+
                 <!--<row>
 					<cell type="subview" id="exsiccataitem" viewname="ExsiccataItem" name="exsiccataItems" initialize="align=right;btn=true"/>
                     <cell type="label" label="RELNAMEHERE:" initialize="align=right;"/>
@@ -2952,6 +3052,7 @@
                 </row>
              </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="CollectionObjectSub Table"
@@ -3107,6 +3208,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="CollectionObjectProperty Table"
@@ -3117,6 +3219,7 @@
             <desc><![CDATA[Preparation subform table for Collection Object form.]]></desc>
             <definition>CollectionObjectProperty</definition>
         </viewdef>
+
          <viewdef 
             type="form" 
             name="CollectionObjectCitation" 
@@ -3124,11 +3227,13 @@
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" 
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Form For CollectionObjectCitation]]></desc>
+
             <columnDef>100px,2px,610px,25px,90px,0px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,685px,25px,95px,0px,p:g</columnDef>
             <columnDef os="mac">130px,2px,705px,25px,95px,0px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(4),p:g,p,0px</columnDef>
             <rowDef auto="true" sep="2px" cell="p"/>
+
             <rows>
               <row>
                     <cell type="label" labelfor="6"/>
@@ -3186,6 +3291,7 @@
         </viewdef>
         
 <!--SECTION: COLLECTOR-->
+
         <viewdef
             type="form"
             name="Collector"
@@ -3228,6 +3334,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="Collectors Table"
@@ -3246,6 +3353,7 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Collectors Icon Viewer]]></desc>
         </viewdef>
+
         <viewdef
             type="form"
             name="Collectors"
@@ -3254,8 +3362,10 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Collectors form - UNKNOWN use in database.]]></desc>
             <enableRules/>
+
             <columnDef>p,5dlu,p:g,5dlu,p</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="3"/>
@@ -3270,7 +3380,9 @@
                 </row>-->
             </rows>
         </viewdef>
+
 <!--SECTION: COMMON NAMES-->        
+
         <viewdef 
             type="form"
             name="CommonNameTx"
@@ -3279,6 +3391,7 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Common Name form]]></desc>
             <enableRules/>
+
             <columnDef>110px,2px,390px,325px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,425px,385px,p:g</columnDef>
             <columnDef os="mac">130px,2px,492px,408px,p:g</columnDef>
@@ -3286,6 +3399,7 @@
             
             <!--<columnDef>200px,2px,p,10px,p,2px,p,2px,p,2px,200px,p:g</columnDef>-->
             <rowDef auto="true" cell="p" sep="2px"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
@@ -3322,6 +3436,7 @@
                 </row> -->
             </rows>
         </viewdef> 
+
 <!--SECTION: DETERMINATIONS-->
                 
         <viewdef
@@ -3338,6 +3453,7 @@
             <columnDef os="mac">130px,2px,260px,5px,130px,2px,238px,5px,108px,2px,150px,0px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g,5px:g,p,2px,p:g(2),0px</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="11"/>
@@ -3358,11 +3474,11 @@
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="addendum" uitype="combobox"/>        
                 </row>
-              <row>
-                    <cell type="subview" id="determiners" name="determiners" viewname="Determiners" colspan="10"/>
-</row>
                 <row>
-<!--                     <cell type="label" labelfor="5"/>
+                    <cell type="subview" id="determiners" name="determiners" viewname="Determiners" colspan="10"/>
+                </row>
+                <row>
+                    <!-- <cell type="label" labelfor="5"/>
                     <cell type="field" id="5" name="determiner" uitype="querycbx" initialize="name=Agent" colspan="5"/> -->
                     <cell type="label" labelfor="IHcode"/>
                     <cell type="field" id="IHcode" name="text4" uitype="combobox"/>
@@ -3406,6 +3522,7 @@
                     <cell type="label"/>
                 </row>
                   
+
                 <!--<row>
                     <cell type="label" labelfor="9"/>
                     <cell type="field" id="9" name="addendum" uitype="text"/>            
@@ -3461,6 +3578,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="Determination Table"
@@ -3470,6 +3588,7 @@
             <desc><![CDATA[Determination subform table for Collection Object form.]]></desc>
             <definition>Determination</definition>
         </viewdef>
+
         <viewdef
             name="Determination Abridged"
             type="form"
@@ -3484,6 +3603,7 @@
             <columnDef os="mac">130px,2px,260px,5px,130px,2px,238px,5px,108px,2px,150px,0px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g,5px:g,p,2px,p:g(2),0px</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="11"/>
@@ -3505,6 +3625,7 @@
                     <cell type="label" labelfor="genusNumber" label="Genus No."/>
                     <cell type="field" id="genusNumber" name="taxon.text12" uitype="label"/>
                 </row>
+
                                 <!-- <row>
                     <cell type="label" labelfor="7"/>
                     <cell type="field" id="7" uitype="plugin" name="this" initialize="name=PartialDateUI;df=determinedDate;tp=determinedDatePrecision" uifieldformatter="Date"/>
@@ -3521,6 +3642,7 @@
                
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="Determination Abridged Table"
@@ -3530,7 +3652,8 @@
             <desc><![CDATA[Determination subform table for Collection Object form.]]></desc>
             <definition>Determination Abridged</definition>
         </viewdef> 
-      <viewdef
+
+<viewdef
                 type="form"
                 name="Determiner"
                 class="edu.ku.brc.specify.datamodel.Determiner"
@@ -3538,11 +3661,13 @@
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Determiner form.]]></desc>
             <enableRules/>
+
             <columnDef>105px,2px,210px,5px,100px,2px,98px,300px,p:g</columnDef>
             <columnDef os="lnx">135px,2px,230px,5px,120px,2px,118px,325px,p:g</columnDef>
             <columnDef os="mac">130px,2px,215px,5px,140px,2px,138px,395px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g,p:g(2),p:g</columnDef>
             <rowDef>p,2dlu,p:g,2dlu,p:g</rowDef>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
@@ -3571,6 +3696,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
                 type="formtable"
                 name="Determiners Table"
@@ -3580,6 +3706,7 @@
             <desc><![CDATA[Determiners grid view for Determination form.]]></desc>
             <definition>Determiners</definition>
         </viewdef>
+
         <viewdef
                 type="iconview"
                 name="DeterminersIconView"
@@ -3588,6 +3715,7 @@
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Determiners Icon Viewer]]></desc>
         </viewdef>
+
         <viewdef
                 type="form"
                 name="Determiners"
@@ -3596,8 +3724,10 @@
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Determiners form - UNKNOWN use in database.]]></desc>
             <enableRules/>
+
             <columnDef>p,5dlu,p:g,5dlu,p</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="3"/>
@@ -3613,7 +3743,7 @@
                 </row>
             </rows>
         </viewdef>
-      
+
         <viewdef
             type="form"
             name="DeterminationCitation"
@@ -3627,6 +3757,7 @@
             <columnDef os="mac">130px,2px,215px,5px,80px,2px,165px,433px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px,100px,2px,p:g,p:g(2)</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="5"/>
@@ -3650,7 +3781,9 @@
                 </row>-->
             </rows>
         </viewdef>
+
 <!--SECTION: EXCHANGE OUT (GIFT)-->
+
 <viewdef
                 type="form"
                 name="ExchangeOut"
@@ -3658,11 +3791,13 @@
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[ExchangeOut viewing form.]]></desc>
+
             <columnDef>105px,2px,170px,5px,125px,2px,150px,5px,96px,2px,170px,0px,15px,p,p:g</columnDef>
             <columnDef os="lnx">115px,2px,185px,5px,150px,2px,165px,5px,101px,2px,185px,0px,15px,p,p:g</columnDef>
             <columnDef os="mac">130px,2px,204px,5px,170px,2px,183px,5px,126px,2px,203px,0px,15px,p,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),5px,p:g,2px,p:g(2),0px,p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="1dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="exchangeOutNumber"/>
@@ -3718,6 +3853,7 @@
                 </row>
             </rows>
         </viewdef>
+
         <viewdef
                 type="form"
                 name="ExchangeOutSub"
@@ -3725,11 +3861,13 @@
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[ExchangeOut sub form.]]></desc>
+
             <columnDef>105px,2px,170px,5px,125px,2px,150px,5px,96px,2px,170px,0px,15px,p,p:g</columnDef>
             <columnDef os="lnx">115px,2px,185px,5px,150px,2px,165px,5px,101px,2px,185px,0px,15px,p,p:g</columnDef>
             <columnDef os="mac">130px,2px,204px,5px,170px,2px,183px,5px,126px,2px,203px,0px,15px,p,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),5px,p:g,2px,p:g(2),0px,p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="1dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
@@ -3790,15 +3928,18 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
                 type="formtable"
                 name="ExchangeOutPrep Table"
                 class="edu.ku.brc.specify.datamodel.ExchangeOutPrep"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+
             <desc><![CDATA[Preparation subform table for Collection Object form.]]></desc>
             <definition>ExchangeOutPrep</definition>
         </viewdef>
+
         <viewdef
                 type="form"
                 name="ExchangeOutPrep"
@@ -3806,11 +3947,13 @@
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Loan viewing form.]]></desc>
+
             <columnDef>105px,2px,105px,5px,130px,2px,115px,5px,125px,2px,101px,15px,120px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,137px,5px,135px,2px,130px,5px,133px,2px,81px,15px,155px,p:g</columnDef>
             <columnDef os="mac">130px,2px,151px,5px,155px,2px,145px,5px,155px,2px,95px,20px,165px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),15px,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="9"/>
@@ -3850,6 +3993,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
                 type="form"
                 name="ExchangeOutDeaccSub"
@@ -3857,11 +4001,13 @@
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[ExchangeOut sub form.]]></desc>
+
             <columnDef>105px,2px,170px,5px,115px,2px,150px,5px,96px,2px,170px,0px,10px,p,p:g</columnDef>
             <columnDef os="lnx">115px,2px,185px,5px,150px,2px,165px,5px,101px,2px,185px,0px,15px,p,p:g</columnDef>
             <columnDef os="mac">130px,2px,214px,5px,170px,2px,183px,5px,126px,2px,203px,0px,15px,p,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),5px,p:g,2px,p:g(2),0px,10px,p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="1dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
@@ -3922,15 +4068,18 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
                 type="formtable"
                 name="ExchangeOutDeaccPrep Table"
                 class="edu.ku.brc.specify.datamodel.ExchangeOutPrep"
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+
             <desc><![CDATA[Preparation subform table for Collection Object form.]]></desc>
             <definition>ExchangeOutDeaccPrep</definition>
         </viewdef>
+
         <viewdef
                 type="form"
                 name="ExchangeOutDeaccPrep"
@@ -3938,11 +4087,13 @@
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Loan viewing form.]]></desc>
+
             <columnDef>105px,2px,100px,5px,115px,2px,110px,5px,75px,2px,70px,5px,120px,2px,100px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,117px,5px,130px,2px,120px,5px,90px,2px,70px,5px,135px,2px,108px,p:g</columnDef>
             <columnDef os="mac">130px,2px,131px,5px,145px,2px,135px,5px,105px,2px,85px,5px,135px,2px,143px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2),p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="9"/>
@@ -3980,7 +4131,9 @@
                 </row>-->
             </rows>
         </viewdef>
+
 <!--SECTION: EXSICCATA-->
+
         <viewdef
             type="form"
             name="Exsiccata"
@@ -4030,6 +4183,7 @@
                  </row>
             </rows>
         </viewdef> 
+
         <!--SECTION: GEO COORD-->
         
         <viewdef
@@ -4105,6 +4259,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
 <!--SECTION: GIFT-->
         
         <viewdef
@@ -4133,7 +4288,7 @@
                     <cell type="field" id="giftStatusint" name="integer1" uitype="text"/> -->
                 </row>
                 <row>
-<!--                     <cell type="label" labelfor="justification"/>
+                    <!-- <cell type="label" labelfor="justification"/>
                     <cell type="field" id="justification" name="text3" uitype="combobox"/> -->
                     <cell type="label" labelfor="purpose"/>
                     <cell type="field" id="purpose" name="text5"  uitype="combobox"/> 
@@ -4161,7 +4316,8 @@
                 <row>
                     <cell type="subview" viewname="GiftAgent" id="GiftAgent" name="giftAgents" defaulttype="table" desc="Agents" colspan="15" rows="7"/>
                 </row>
-                                <row>
+                
+                <row>
                     <cell type="subview" viewname="GiftItems" id="GiftItems" name="giftPreparations" defaulttype="table" colspan="15" rows="4"/>
                 </row>
                 <row>
@@ -4182,33 +4338,29 @@
                     <cell type="label" labelfor="dateRequestReceived"/>
                     <cell type="field" id="dateRequestReceived" name="date1" uitype="formattedtext" uifieldformatter="Date"  default="today"/>
                     <cell type="label" labelfor="giftDate"/>
-                    <cell type="field" id="giftDate" name="giftDate" uitype="formattedtext" uifieldformatter="Date"/>
-<!--                     <cell type="label" labelfor="dateReceived"/>
-                    <cell type="field" id="dateReceived" name="dateReceived" uitype="formattedtext" uifieldformatter="Date"/>   -->
-                    <!-- <cell type="label" labelfor="numberSent"/>
-                    <cell type="field" id="numberSent" name="number1" uitype="text"/>
-                    <cell type="label" labelfor="numberParcels"/>
-                    <cell type="field" id="numberParcels" name="number2" uitype="text"/> -->
-                </row>
+                    <cell type="field" id="giftDate" name="giftDate" uitype="formattedtext" uifieldformatter="Date"/> 
+                    <cell type="label" labelfor="shippingNumber"/>
+                    <cell type="field" id="shippingNumber" name="integer2" uitype="formattedtext" uifieldformatter="text"/>
+                 </row>
                  <row>    
                     <cell type="label" labelfor="receivedComments"/>
                     <cell type="field" id="receivedComments" name="receivedComments" uitype="textareabrief" rows="2" colspan="12"/>
                 </row>
-                <row>
+                <!-- <row>
                     <cell type="subview" viewname="Shipment" id="shipments" name="shipments" colspan="15"/>
-                </row>
+                </row> -->
                 <row>
                     <cell type="panel" id="16" name="outerPanel" coldef="p,f:p:g" rowdef="p,4px,p" colspan="15">
                         <rows>
                             <row>
-                                <cell type="command" id="generateInv" name="generateLabelBtn" label="Generate Invoice" ignore="true" default="true" initialize="visible=false"/>
+                                <cell type="command" id="generateInv" name="generateLabelBtn" label="Generate Report" ignore="true" default="true" initialize="visible=false"/>
                             </row>
                         </rows>
                     </cell>
                 </row>
                 <row>
                     <cell type="subview" id="attachments" viewname="ObjectAttachment" name="giftAttachments" initialize="btn=true;icon=GiftAttachment"/>
-                  <cell type="field" id="CBDform" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
+                    <cell type="field" id="CBDform" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
                 </row>
                 <row>
                     <cell type="label" labelfor="createdByAgent"/>
@@ -4287,6 +4439,7 @@
             <desc><![CDATA[Preparation subform table for Collection Object form.]]></desc>
             <definition>GiftAgent</definition>
         </viewdef>
+
         <viewdef
             type="form"
             name="GiftAgent"
@@ -4295,16 +4448,18 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The gift form.]]></desc>
             <enableRules/>
+
             <columnDef>105px,2px,400px,5px,90px,2px,155px,0px,p:g</columnDef> 
             <!-- 993px -->
             <columnDef os="lnx">115px,2px,330px,5px,70px,2px,55px,p:g</columnDef>
             <columnDef os="mac">130px,2px,415px,5px,80px,2px,165px,233px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px:g,p,2px,p:g,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="giftAgent"/>
-                    <cell type="field" id="giftAgent" name="agent" uitype="querycbx" colspan="5" initialize="name=Agent;title=Agent"/> 
+                    <cell type="field" id="giftAgent" name="agent" uitype="querycbx" initialize="name=Agent;title=Agent" colspan="6"/> 
                 </row>
                 <row>
                  <cell type="label" labelfor="giftAgentRole"/>
@@ -4405,6 +4560,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
 <!--SECTION: JOURNAL-->                
         
         <viewdef
@@ -4414,11 +4570,13 @@
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Journal form - unknown use in schema]]></desc>
+
             <columnDef>100px,2px,473px,5px,120px,2px,125px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,460px,5px,150px,2px,183px,p:g</columnDef>
             <columnDef os="mac">130px,2px,518px,5px,180px,2px,195px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(4),5px:g,p,2px,p:g(2)</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
@@ -4432,6 +4590,7 @@
                 </row>
             </rows>
         </viewdef>
+
         <viewdef
             type="form"
             name="JournalForm"
@@ -4439,11 +4598,13 @@
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The Journal form]]></desc>
+
             <columnDef>100px,2px,473px,5px,120px,2px,125px,15px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,460px,5px,150px,2px,183px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,518px,5px,180px,2px,195px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(4),5px:g,p,2px,p:g(2),p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
@@ -4488,7 +4649,9 @@
                 </row>-->
             </rows>
         </viewdef>
+
 <!--SECTION: LOAN-->
+
         <viewdef
             type="form"
             name="Loan"
@@ -4581,6 +4744,7 @@
                     <cell type="field" id="ri" name="resolvedPreps" uitype="label" readonly="true"/>
                     <cell type="label" label="Unresolved Preps:" initialize="align=right"/>
                     <cell type="field" id="ui" name="unresolvedPreps" uitype="label" readonly="true"/>
+
                     <!-- <cell type="label" label="Resolved Items:" initialize="align=right"/>
                     <cell type="field" id="rq" name="resolvedItems" uitype="text" readonly="true"/> -->
                     <!-- <cell type="label" label="Unresolved Items:" initialize="align=right"/>
@@ -4610,6 +4774,7 @@
                     <!-- <cell type="field" id="transferGranted" name="yesNo2" uitype="checkbox" initialize="editable=true"/> -->
                 </row>
                 
+
                 <!-- <row>
                     <cell type="separator" label="Spare/not needed" colspan="15"/>
                 </row>
@@ -4624,6 +4789,7 @@
                     <cell type="label" labelfor="19"/>
                     <cell type="field" id="19" name="srcTaxonomy" uitype="text"/>
                 </row>              -->
+
                 <!-- <row>
                     <cell type="subview" viewname="Shipment" id="Shipment" name="shipments" colspan="15"/>
                 </row> -->
@@ -4733,11 +4899,13 @@
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The loan form.]]></desc>
             <enableRules/>
+
             <columnDef>105px,2px,465px,5px,103px,2px,150px,0px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,565px,5px,73px,2px,155px,0px,p:g</columnDef>
             <columnDef os="mac">130px,2px,648px,5px,80px,2px,165px,0px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px,100px,2px,p:g,p:g(2)</columnDef>
             <rowDef auto="true" cell="p" sep="2px"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="loanAgent" label="Agent"/>
@@ -4869,6 +5037,7 @@
             
             <desc><![CDATA[Preparation subform table for Collection Object form.]]></desc>
             <definition>LoanItems Abridged</definition>
+
         </viewdef>
         
         <viewdef
@@ -4954,6 +5123,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="form"
             name="LoanReturnPreparation"
@@ -5050,7 +5220,9 @@
                 
             </rows>
         </viewdef>    
+
 <!--SECTION: LOCALITY-->
+
         <viewdef
                 type="form"
                 name="Locality"
@@ -5058,6 +5230,7 @@
                 gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
                 settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[Locality]]></desc>
+
             <columnDef>100px,2px,90px,5px,100px,2px,90px,5px,105px,2px,126px,5px,95px,2px,98px,0px,15px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,120px,5px,94px,2px,100px,5px,115px,2px,110px,5px,125px,2px,115px,0px,15px,p:g</columnDef>
             <columnDef os="mac">130px,2px,120px,5px,116px,2px,120px,5px,137px,2px,120px,5px,146px,2px,120px,0px,15px,p:g</columnDef>
@@ -5066,6 +5239,7 @@
             <enableRules>
                 <rule id="georef"><![CDATA[localityName.isNotEmpty() && geography.isNotEmpty()]]></rule>
             </enableRules>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="localityName"/>
@@ -5120,12 +5294,14 @@
                     <cell type="label" labelfor="oeu"/>
                     <cell type="field" id="oeu" name="originalElevationUnit" uitype="text"/>
                 </row>
+
                 <row>
                     <cell type="separator" label="Locality Alias" colspan="17"/>    
                 </row>
                 <row>
                     <cell type="subview" id="las" viewname="LocalityNameAliass" name="localityNameAliass" colspan="12"/>
                 </row>
+
                 <row>
                     <cell type="separator" label="Plugins" colspan="17"/>
                 </row>
@@ -5235,6 +5411,7 @@
             <columnDef os="mac">130px,2px,215px,5px,80px,2px,165px,433px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g,5px,100px,2px,p:g,p:g(2)</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="referenceWork"/>
@@ -5418,9 +5595,11 @@
             class="java.util.Hashtable"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForHashMap"
             settable="edu.ku.brc.af.ui.forms.DataSetterForHashMap">
+
             <desc><![CDATA[Locality Mapper]]></desc>
             <columnDef>p,2px,p,2px</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="startDate"/>
@@ -5448,6 +5627,7 @@
                 </row>
             </rows>
         </viewdef>
+
         <viewdef
             type="form"
             name="LocalityNameAliass"
@@ -5472,14 +5652,17 @@
         </viewdef>
         
 <!--SECTION: PERMIT-->
+
         <viewdef
             type="form"
             name="Permit"
             class="edu.ku.brc.specify.datamodel.Permit"
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
+
             <desc><![CDATA[Permit Form.]]></desc>
             <enableRules/>
+
             <columnDef>105px,2px,200px,5px,88px,2px,200px,5px,100px,2px,123px,0px,15px,p,p:g</columnDef>
             <columnDef os="lnx">115px,2px,210px,5px,105px,2px,210px,5px,120px,2px,141px,0px,15px,p,p:g</columnDef>
             <columnDef os="mac">130px,2px,225px,5px,120px,2px,225px,5px,140px,2px,176px,0px,15px,p,p:g</columnDef>
@@ -5491,6 +5674,7 @@
                     <cell type="label" labelfor="permitNumber"/>
                     <cell type="field" id="permitNumber" name="permitNumber" uitype="text"/>
                     <cell type="field" id="WebLink" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=RBGEPermit"/>
+
                     <cell type="label" labelfor="type"/>
                     <cell type="field" id="type" name="type" uitype="combobox" colspan="3"/>
                 </row>
@@ -5502,7 +5686,7 @@
                     <cell type="label" labelfor="country"/>
                     <cell type="field" id="country" name="copyright" uitype="text" colspan="10"/>
                 </row>
-              <row>
+                <row>
                     <cell type="label" labelfor="remarks"/>
                     <cell type="field" id="remarks" name="remarks" uitype="text" colspan="10" rows="3"/>
                 </row>
@@ -5511,6 +5695,7 @@
                     <cell type="field" id="legacyNumber" name="text1" uitype="text"/>
                 </row>
 <!--
+
                     <cell type="label" labelfor="issuedBy"/>
                     <cell type="field" id="issuedBy" name="issuedBy" uitype="querycbx" initialize="name=Agent"/>
                     <cell type="label" labelfor="issuedDate"/>
@@ -5580,6 +5765,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="form"
             name="PermitForAccessions"
@@ -5628,7 +5814,9 @@
                 </row>
             </rows>
         </viewdef>
+
 <!--SECTION: PREPARATION-->
+
         <viewdef
             type="form"
             name="Preparation"
@@ -5638,11 +5826,13 @@
             useresourcelabels="true">
             <desc><![CDATA[Preparation for Collection Object form.]]></desc>
             <enableRules/>
+
             <columnDef>100px,2px,178px,5px,100px,2px,163px,5px,100px,2px,163px,2px,10px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,190px,5px,115px,2px,180px,5px,115px,2px,180px,2px,4px,p:g</columnDef>
             <columnDef os="mac">110px,2px,230px,5px,110px,2px,220px,5px,110px,2px,220px,2px,14px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g,5px:g,p,2px,p:g,10px,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="prepType"/>
@@ -5746,6 +5936,7 @@
         <row>
 		    <cell type="field" id="countAmt" name="countAmt" uitype="text" initialize="visible=false" default="1"/>
 		</row>
+
                 
                 
                 <!--<row>
@@ -5789,6 +5980,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="Preparation Table"
@@ -5808,11 +6000,13 @@
             useresourcelabels="true">
             <desc><![CDATA[Preparation for Collection Object form.]]></desc>
             <enableRules/>
+
             <columnDef>100px,2px,133px,5px,91px,2px,210px,5px,87px,2px,123px,2px,70px,p:g</columnDef>
             <columnDef os="lnx">115px,2px,150px,5px,110px,2px,223px,5px,100px,2px,126px,2px,75px,p:g</columnDef>
             <columnDef os="mac">130px,2px,165px,5px,110px,2px,260px,5px,105px,2px,174px,2px,70px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g,5px:g,p,2px,p:g,10px,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="barcode"/>
@@ -5867,6 +6061,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="Preparation Abridged Table"
@@ -6010,6 +6205,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
 <viewdef
             type="form"
             name="PreparationProperty"
@@ -6152,6 +6348,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="PreparationProperty Table"
@@ -6162,6 +6359,7 @@
             <desc><![CDATA[Preparation subform table for Collection Object form.]]></desc>
             <definition>PreparationProperty</definition>
         </viewdef>
+
 <!--SECTION: REFERENCE WORK-->        
         
         <viewdef
@@ -6226,10 +6424,6 @@
                     <cell type="label" labelfor="url"/>
                     <cell type="field" id="url" name="url" uitype="text" colspan="9"/>
                 </row>  
-              <row>
-                    <cell type="label" labelfor="containedRFParent"/>
-                    <cell type="field" id="containedRFParent" name="containedRFParent" uitype="querycbx" colspan="5"/>
-                </row>
                 <row>
                     <cell type="subview" viewname="Authors" id="authors" name="authors" initialize="name=Agent" colspan="12" rows="3"/>
                 </row>
@@ -6307,11 +6501,13 @@
             gettable="edu.ku.brc.af.ui.forms.DataGetterForObj"
             settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
             <desc><![CDATA[The ReferenceWork form]]></desc>
+
             <columnDef>100px,2px,170px,5px,90px,2px,150px,5px,140px,2px,161px</columnDef>
             <columnDef os="lnx">115px,2px,186px,5px,90px,2px,165px,5px,165px,2px,180px,p:g</columnDef>
             <columnDef os="mac">130px,2px,203px,5px,100px,2px,203px,5px,185px,2px,195px,p:g</columnDef>
             <columnDef os="exp">p,2px,p:g(2),5px:g,p,2px,p:g(2),5px:g,p,2px,p:g(2)</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="referenceWorkType"/>
@@ -6343,6 +6539,7 @@
         </viewdef>         
         
 <!--SECTION: TAXON-->
+
         <viewdef
             name="Taxon"
             type="form"
@@ -6501,6 +6698,7 @@
                         <cell type="label" labelfor="timestampModified"/>
                         <cell type="field" id="timestampModified" name="timestampModified" uitype="label" readonly="true"/>
                     </row>
+
                     <!--<row>
                         <cell type="label" labelfor="cs"/>
                         <cell type="field" id="cs" name="citesStatus" uitype="text"/>
@@ -6636,6 +6834,7 @@
                     </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             name="TaxonSubform"
             type="form"
@@ -6659,6 +6858,7 @@
                 </row>
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="TaxonSubform Table"
@@ -6669,14 +6869,19 @@
             <desc><![CDATA[Taxon subform table for Taxon form.]]></desc>
             <definition>TaxonSubform</definition>
         </viewdef>
+
     
+
+
     <!--##################################################################################################
     ##################################################################################################
     ##################################################################################################
     ##################################################################################################
     ##################################################################################################
     ##################################################################################################-->
+
                                         <!--NOT CURRENTLY MODIFIED FOR RBGE-->
+
 <!--SECTION: MATERIAL SAMPLE-->        
                 
         <viewdef
@@ -6688,11 +6893,13 @@
             useresourcelabels="true">
             <desc><![CDATA[Preparation for Collection Object form.]]></desc>
             <enableRules/>
+
             <columnDef>120px,2px,144px,5px,140px,2px,144px,5px,139px,2px,144px,15px,p:g</columnDef>
             <columnDef os="lnx">135px,2px,156px,5px,150px,2px,157px,5px,147px,2px,156px,15px,p:g</columnDef>
             <columnDef os="mac">150px,2px,185px,5px,172px,2px,185px,5px,165px,2px,184px,15px,p:g</columnDef>
             <columnDef os="exp">p,2px,max(p;150px),5px:g,p,2px,p,5px:g,p,2px,151px,10px,p,p:g</columnDef>
             <rowDef auto="true" cell="p" sep="2dlu"/>
+
             <rows>
                 <row>
                     <cell type="label" labelfor="1"/>
@@ -6753,6 +6960,7 @@
                 </row>-->
             </rows>
         </viewdef>
+
         <viewdef
             type="formtable"
             name="MaterialSample Table"
