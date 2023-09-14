@@ -5591,7 +5591,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="materialType"/>
-                    <cell type="field" id="materialType" name="status" uitype="combobox"/>
+                    <cell type="field" id="materialType" name="status" uitype="text" colspan="10"/>
                 </row>
               <row>
                     <cell type="label" labelfor="restrictions"/>
