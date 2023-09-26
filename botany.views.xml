@@ -1230,6 +1230,8 @@
             <cell type="field" id="type" name="permit.type" uitype="combobox" colspan="3"/>
             <cell type="label" labelfor="restrictions"/>
             <cell type="field" id="restrictions" name="permit.statusQualifier" uitype="combobox"/>
+            <cell type="field" id="type" name="permit.remarks" uitype="combobox" colspan="3"/>
+            <cell type="label" labelfor="remarks"/>
         </row>
         <!-- <row>
             <cell type="label" labelfor="restrictionText"/>
