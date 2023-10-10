@@ -1644,7 +1644,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="variant"/>
-                    <cell type="field" id="variant" name="variant" uitype="text" colspan="9"/>
+                    <cell type="field" id="variant" name="name" uitype="text" colspan="9"/>
                 </row>
             </rows>
         </viewdef>
