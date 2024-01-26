@@ -4344,6 +4344,10 @@
                     <cell type="field" id="remarks" name="remarks" uitype="textareabrief" rows="2" colspan="12"/>
                 </row>
                 <row>
+                    <cell type="label" labelfor="deniedSamples"/>
+                    <cell type="field" id="deniedSamples" name="text3" uitype="text" colspan="12"/>
+                </row>
+                <row>
                     <cell type="label" labelfor="intMisc"/>
                     <cell type="field" id="intMisc" name="text4" uitype="textareabrief" rows="2" colspan="12"/>
                 </row>
@@ -5283,6 +5287,10 @@
                     <cell type="label" labelfor="geography"/>
                     <cell type="field" id="geography" name="geography" uitype="querycbx" initialize="name=Geography" isrequired="true" colspan="14"/>
                 </row>
+                <row>
+                    <cell type="label" labelfor="guid" />
+                    <cell type="field" id="guid" name="guid" uitype="text" colspan="5" readonly="true"/>
+                </row>
                 <!--<row>
                     <cell type="label" labelfor="t2"/>
                     <cell type="field" id="t2" name="text2" uitype="text" colspan="3"/>
@@ -5988,6 +5996,10 @@
                     <cell type="field" id="preparedBy" name="preparedByAgent" uitype="querycbx" initialize="name=Agent" colspan="3"/>                     -->
                     <cell type="label" labelfor="preparedDate"/>
                     <cell type="field" id="preparedDate" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date" colspan="3"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="deniedRequests"/>
+                    <cell type="field" id="deniedRequests" name="text13" uitype="text" colspan="14"/>
                 </row>
                 <!-- <row>
                     <cell type="label" labelfor="sampleNumber"/>
