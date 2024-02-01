@@ -6185,7 +6185,17 @@
                     <cell type="label" labelfor="sex"/>
                     <cell type="field" id="sex" name="text4" uitype="text"/>
                 </row>
-                
+                <row>
+                    <cell type="separator" label="Associated works" colspan="14"/>    
+                </row>
+                <row>
+                    <cell type="label" labelfor="typeOfWork"/>
+                    <cell type="field" id="typeOfWork" name="text5" uitype="text" colspan="14"/>  
+                </row>
+                <row>
+                    <cell type="label" labelfor="kohaID" />
+                    <cell type="field" id="kohaID" name="text6" uitype="text" />
+                </row>
                 <!--<row>
                     <cell type="label" labelfor="t5"/>
                     <cell type="field" id="t5" name="text5" uitype="text"/>
