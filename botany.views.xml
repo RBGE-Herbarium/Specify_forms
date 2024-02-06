@@ -6695,13 +6695,13 @@
                         <cell type="label" labelfor="status" colspan="3"/>
                         <cell type="field" id="status" name="text3" uitype="combobox" colspan="3"/>			
                     </row>
-                    <row>
+                    <!--<row>
                         <cell type="label" labelfor="genusStatus"/>
                         <cell type="field" id="genusStatus" name="text4" uitype="label"/>
                         <cell type="label" labelfor="basionym"/>
                         <cell type="field" id="basionym" name="text10" uitype="text"/>
                         <cell type="field" id="homonym" name="yesNo1" uitype="checkbox" initialize="editable=true"/>
-                    </row>
+                    </row>-->
                     <row>
                         <cell type="label" labelfor="herbariumNum"/>
                         <cell type="field" id="herbariumNum" name="text2" uitype="text"/>
