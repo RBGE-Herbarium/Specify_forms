@@ -5948,10 +5948,10 @@
                     <cell type="label" labelfor="storage"/>
                     <cell type="field" id="storage" name="storage" uitype="querycbx" initialize="name=Storage" colspan="5" default="Main Herbarium"/>
                 </row>
-                <row>               
+                <!-- <row>               
                     <cell type="label" labelfor="physicallyLinked"/>
                     <cell type="field" id="physicallyLinked" name="text8" uitype="label" colspan="5"/>
-                </row>
+                </row> -->
                 <row>
                     <cell type="separator" label="" colspan="14"/>    
                 </row>
