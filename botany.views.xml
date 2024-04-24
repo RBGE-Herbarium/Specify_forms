@@ -6010,6 +6010,13 @@
                     <cell type="field" id="sampleNumber" name="sampleNumber" uitype="text"/>
                 </row> -->
                 <row>
+                    <cell type="separator" label="Silica Dried Material" colspan="14"/>   
+                </row>
+                <row>
+                    <cell type="label" labelfor="silicaMaterialGone"/>
+                    <cell type="field" id="silicaMaterialGone" name="yesNo1" uitype="checkbox"/>
+                </row>
+                <row>
                     <cell type="separator" colspan="14"/>    
                 </row>
                 <row>
