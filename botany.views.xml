@@ -5946,7 +5946,7 @@
                     <!-- <cell type="label" labelfor="stat"/>
                     <cell type="field" id="stat" name="status" uitype="combobox" deafult="Mounted"/> -->
                     <cell type="label" labelfor="storage"/>
-                    <cell type="field" id="storage" name="storage" uitype="querycbx" initialize="name=Storage" colspan="5" default="Main Herbarium"/>
+                    <cell type="field" id="storage" name="storage" uitype="querycbx" initialize="name=Storage" colspan="13" default="Main Herbarium"/>
                 </row>
                 <!-- <row>               
                     <cell type="label" labelfor="physicallyLinked"/>
@@ -5996,10 +5996,13 @@
                     <cell type="field" id="derivedFrom" name="text9" uitype="text"/>
                 </row>
                 <row>
-                    <!-- <cell type="label" labelfor="preparedBy"/>
-                    <cell type="field" id="preparedBy" name="preparedByAgent" uitype="querycbx" initialize="name=Agent" colspan="3"/>                     -->
+                    
                     <cell type="label" labelfor="preparedDate"/>
                     <cell type="field" id="preparedDate" uitype="plugin" name="this" initialize="name=PartialDateUI;df=preparedDate;tp=preparedDatePrecision" uifieldformatter="Date" colspan="3"/>
+                </row>
+                <row>
+                    <!-- <cell type="label" labelfor="preparedBy"/>
+                    <cell type="field" id="preparedBy" name="preparedByAgent" uitype="querycbx" initialize="name=Agent" colspan="3"/>                     -->
                 </row>
                 <row>
                     <cell type="label" labelfor="deniedRequests"/>
@@ -6014,7 +6017,7 @@
                 </row>
                 <row>
                     <cell type="label" labelfor="silicaMaterialGone"/>
-                    <cell type="field" id="silicaMaterialGone" name="yesNo1" uitype="checkbox"/>
+                    <cell type="field" id="silicaMaterialGone" name="yesNo1" uitype="checkbox" colspan="14"/>
                 </row>
                 <row>
                     <cell type="separator" colspan="14"/>    
