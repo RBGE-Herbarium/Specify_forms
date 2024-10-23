@@ -5295,6 +5295,21 @@
                     <cell type="label" labelfor="guid" />
                     <cell type="field" id="guid" name="guid" uitype="text" colspan="5" readonly="true"/>
                 </row>
+                 <row>
+                    <cell type="separator" label="" colspan="17"/>
+                </row>
+                <row>
+                    <cell type="label" labelfor="ca"/>
+                    <cell type="field" id="ca" name="createdByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="cts"/>
+                    <cell type="field" id="cts" name="timestampCreated" uitype="label" readonly="true"/>    
+                </row>
+                <row>
+                    <cell type="label" labelfor="ma"/>
+                    <cell type="field" id="ma" name="modifiedByAgent" uitype="label" readonly="true" uifieldformatter="Agent"/>
+                    <cell type="label" labelfor="mts"/>
+                    <cell type="field" id="mts" name="timestampModified" uitype="label" readonly="true"/>  
+                </row>
                 <!--<row>
                     <cell type="label" labelfor="t2"/>
                     <cell type="field" id="t2" name="text2" uitype="text" colspan="3"/>
@@ -6796,6 +6811,16 @@
                     <row>
                         <cell type="label" labelfor="taxonid"/>
                         <cell type="field" id="taxonid" name="taxonId" uitype="label" readonly="true"/>
+                    </row>
+                    <row>
+                        <cell type="separator" label="Data Cleaning" colspan="14"/>
+                    </row>
+                    <row>
+                        <cell type="label" labelfor="dataCleaningNotes"/>
+                        <cell type="field" id="dataCleaningNotes" name="text14" uitype="text" colspan="14"/>
+                    </row>
+                    <row>
+                        <cell type="field" id="dataCleaningYN" name="yesNo2" uitype="checkbox" initialize="editable=true"/>
                     </row>
                     <row>
                         <cell type="label" labelfor="createdByAgent"/>
