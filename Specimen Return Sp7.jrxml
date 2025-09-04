@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="Specimen Return Sp7"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+	<field name="18,19-borrowAgents,5,8-addresses.address.address" class="java.lang.String"/>
+	<field name="18,20-borrowMaterials.borrowmaterial.description" class="java.lang.String"/>
+	<field name="18,19-borrowAgents,5,8-addresses.address.city" class="java.lang.String"/>
+	<field name="18.borrow.borrowDate" class="java.lang.String"/>
+	<field name="18.borrow.invoiceNumber" class="java.lang.Object"/>
+	<field name="18.borrow.text2" class="java.lang.String"/>
+	<field name="18,20-borrowMaterials.borrowmaterial.quantity" class="java.lang.Short"/>
+	<field name="18,20-borrowMaterials.borrowmaterial.quantityReturned" class="java.lang.Short"/>
+	<field name="18,19-borrowAgents,5,8-addresses.address.address2" class="java.lang.String"/>
+	<field name="18,19-borrowAgents,5,8-addresses.address.country" class="java.lang.String"/>
+	<field name="18,19-borrowAgents.borrowagent.role" class="java.lang.String"/>
+	<field name="18,19-borrowAgents,5.agent.title" class="java.lang.String"/>
+	<field name="18,19-borrowAgents,5.agent.firstName" class="java.lang.String"/>
+	<field name="18,19-borrowAgents,5,8-addresses.address.postalCode" class="java.lang.String"/>
+	<field name="18,19-borrowAgents,5,8-addresses.address.state" class="java.lang.String"/>
+	<field name="18.borrow.currentDueDate" class="java.lang.String"/>
+	<field name="18,19-borrowAgents,5.agent.lastName" class="java.lang.String"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="resultsetsize" class="java.lang.String"/>
+	<variable name="CURRENT_DATE" class="java.lang.String" resetType="Report" calculation="Nothing">
+		<variableExpression><![CDATA[new SimpleDateFormat("dd MMM yyyy").format(new Date())]]></variableExpression>
+		<initialValueExpression><![CDATA[""]]></initialValueExpression>
+	</variable>
+	<variable name="OUTSTANDING" class="java.lang.Integer" resetType="Report" calculation="Nothing">
+		<variableExpression><![CDATA[$F{18,20-borrowMaterials.borrowmaterial.quantity}.intValue() - $F{18,20-borrowMaterials.borrowmaterial.quantityReturned}.intValue()]]></variableExpression>
+	</variable>
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="137"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="10"
+						y="10"
+						width="336"
+						height="16"
+						key="textField-1"/>
+					<box></box>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{18,19-borrowAgents,5.agent.title}==null?"":$F{18,19-borrowAgents,5.agent.title}+" ")+($F{18,19-borrowAgents,5.agent.firstName}==null?"":$F{18,19-borrowAgents,5.agent.firstName}+" ")+($F{18,19-borrowAgents,5.agent.lastName}==null?"":$F{18,19-borrowAgents,5.agent.lastName})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="10"
+						y="26"
+						width="336"
+						height="84"
+						key="textField-2"/>
+					<box></box>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{18,19-borrowAgents,5,8-addresses.address.address}==null?"":$F{18,19-borrowAgents,5,8-addresses.address.address}+"\n")+($F{18,19-borrowAgents,5,8-addresses.address.address2}==null?"":$F{18,19-borrowAgents,5,8-addresses.address.address2}+"\n")+($F{18,19-borrowAgents,5,8-addresses.address.city}==null?"":$F{18,19-borrowAgents,5,8-addresses.address.city}+"\n")+($F{18,19-borrowAgents,5,8-addresses.address.state}==null?"":$F{18,19-borrowAgents,5,8-addresses.address.state}+"\n")+($F{18,19-borrowAgents,5,8-addresses.address.postalCode}==null?"":$F{18,19-borrowAgents,5,8-addresses.address.postalCode}+"\n")+($F{18,19-borrowAgents,5,8-addresses.address.country}==null?"":$F{18,19-borrowAgents,5,8-addresses.address.country})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false" evaluationTime="Report" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="10"
+						y="110"
+						width="172"
+						height="19"
+						key="textField-3"/>
+					<box></box>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$V{CURRENT_DATE}]]></textFieldExpression>
+				</textField>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="357"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="0"
+						y="10"
+						width="535"
+						height="47"
+						key="staticText-1"/>
+					<box></box>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+				<text><![CDATA[We are returning you the following herbarium material to you. Upon arrival of the consignment please verify the contents and kindly acknowledge receipt by signing the duplicate sheet and returning it to RBGE Herbarium. Many Thanks.]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false" evaluationTime="Report" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="66"
+						width="535"
+						height="266"
+						key="textField-4"/>
+					<box></box>
+					<textElement markup="html">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["<b>Material enclosed</b>"+
+"<br/>"+
+"<br/>"+
+"<b>RBGE loan num.: </b>"+$F{18.borrow.invoiceNumber}+"<i>  (please use in all correspondence regarding this material)</i>"+
+"<br/>"+
+"<br/>"+
+"<b>Your loan num.: </b>"+$F{18.borrow.text2}+
+"<br/>"+
+"<br/>"+
+"<b>Description: </b>"+" specimens returned of "+$F{18,20-borrowMaterials.borrowmaterial.description}+
+"<br/>"+
+"<br/>"+
+"There are "+$V{OUTSTANDING}+" specimen(s) outstanding from this loan"+
+"<br/>"+
+"<br/>"+
+"<br/>"+
+"Please can you sign and return one copy to acknowledge as received safely."+
+"<br/>"+
+"<b>You can scan and email the document to herbarium@rbge.org.uk<b/>"]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<lastPageFooter>
+			<band height="123"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="10"
+						y="0"
+						width="165"
+						height="118"
+						key="staticText-2"/>
+					<box></box>
+					<textElement markup="html">
+						<font size="12"/>
+					</textElement>
+				<text><![CDATA[<br/>
+<br/>
+Signed:
+<br/>
+<br/>
+Lesley Scott
+<br/>
+Assistant Herbarium Curator]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="189"
+						y="38"
+						width="165"
+						height="69"
+						key="staticText-3"/>
+					<box></box>
+					<textElement markup="html">
+						<font size="12"/>
+					</textElement>
+				<text><![CDATA[<br/>
+<br/>
+<br/>
+Signed:
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="362"
+						y="38"
+						width="165"
+						height="69"
+						key="staticText-4"/>
+					<box></box>
+					<textElement markup="html">
+						<font size="12"/>
+					</textElement>
+				<text><![CDATA[<br/>
+<br/>
+<br/>
+Date:]]></text>
+				</staticText>
+			</band>
+		</lastPageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Standard Label" columnCount="2" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="267" columnSpacing="30" leftMargin="15" rightMargin="15" topMargin="20" bottomMargin="20" uuid="eeca2cf1-2945-466a-abbe-4fd07731da79">
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<field name="1.collectionobject.integer1" class="java.lang.Integer"/>
+	<field name="1.collectionobject.description" class="java.lang.String"/>
+	<field name="1,63-preparations.preparation.text1" class="java.lang.String"/>
+	<field name="1,63-preparations.preparation.text2" class="java.lang.String"/>
+	<field name="1,63-preparations.preparation.integer2" class="java.lang.Integer"/>
+	<field name="1,63-preparations.preparation.integer1" class="java.lang.Integer"/>
+	<field name="1.collectionobject.text6" class="java.lang.String"/>
+	<field name="1,10.collectingevent.startDate" class="java.lang.String"/>
+	<field name="1,10.collectingevent.startDateNumericDay" class="java.lang.String"/>
+	<field name="1,10.collectingevent.startDateNumericMonth" class="java.lang.String"/>
+	<field name="1,10.collectingevent.startDateNumericYear" class="java.lang.String"/>
+	<field name="1,10.collectingevent.endDate" class="java.lang.String"/>
+	<field name="1,10.collectingevent.text1" class="java.lang.String"/>
+	<field name="1,10.collectingevent.text2" class="java.lang.String"/>
+	<field name="1,10.collectingevent.stationFieldNumber" class="java.lang.String"/>
+	<field name="1,10.collectingevent.verbatimLocality" class="java.lang.String"/>
+	<field name="1,10,92.collectingeventattribute.integer6" class="java.lang.Integer"/>
+	<field name="1,10,92.collectingeventattribute.integer5" class="java.lang.Integer"/>
+	<field name="1,10,92.collectingeventattribute.text10" class="java.lang.String"/>
+	<field name="1,10,92.collectingeventattribute.text6" class="java.lang.String"/>
+	<field name="1,10,92.collectingeventattribute.integer1" class="java.lang.Integer"/>
+	<field name="1,10,92.collectingeventattribute.text8" class="java.lang.String"/>
+	<field name="1,10,92.collectingeventattribute.number2" class="java.math.BigDecimal"/>
+	<field name="1,10,92.collectingeventattribute.number3" class="java.math.BigDecimal"/>
+	<field name="1,10,92.collectingeventattribute.integer2" class="java.lang.Integer"/>
+	<field name="1,10,92.collectingeventattribute.text7" class="java.lang.String"/>
+	<field name="1,10,92.collectingeventattribute.number5" class="java.math.BigDecimal"/>
+	<field name="1,10,92.collectingeventattribute.number6" class="java.math.BigDecimal"/>
+	<field name="1,10,2.locality.localityName" class="java.lang.String"/>
+	<field name="1,9-determinations.determination.isCurrent" class="java.lang.Boolean"/>
+	<field name="1,9-determinations,4.taxon.taxon" class="java.lang.String"/>
+	<field name="1,9-determinations,4.taxon.Family" class="java.lang.String"/>
+	<field name="1,9-determinations.determination.text2" class="java.lang.String"/>
+	<field name="1,10,30-collectors.collector.collectors" class="java.lang.String"/>
+	<field name="1.collectionobject.remarks" class="java.lang.String"/>
+	<field name="1,63-preparations.preparation.remarks" class="java.lang.String"/>
+	<field name="1,10,2,3.geography.country" class="java.lang.String"/>
+	<field name="1,10,2,3.geography.subcountry" class="java.lang.String"/>
+	<field name="1,10,2,3.geography.subsubcountry" class="java.lang.String"/>
+	<field name="1,10,2,3.geography.subsubsubcountry" class="java.lang.String"/>
+	<field name="1,10.collectingevent.remarks" class="java.lang.String"/>
+	<field name="1,10,92.collectingeventattribute.number12" class="java.math.BigDecimal"/>
+	<field name="1,10,92.collectingeventattribute.number13" class="java.math.BigDecimal"/>
+	<field name="1,10,92.collectingeventattribute.text14" class="java.lang.String"/>
+	<field name="1,10,92.collectingeventattribute.text15" class="java.lang.String"/>
+	<field name="1.collectionobject.text7" class="java.lang.String"/>
+	<field name="1,9-determinations,4.taxon.author" class="java.lang.String"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="resultsetsize" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="335" splitType="Prevent">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="1" width="250" height="19" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="3e8d3a43-e338-48e1-8af4-a5b4d7f146cc"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Royal Botanic Garden Edinburgh "]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="18" width="250" height="19" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="e5f54d1b-a774-42d3-b254-043b687863b2"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{1,10,2,3.geography.country}==null?"":"Flora of " +$F{1,10,2,3.geography.country})]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="90" y="37" width="160" height="20" isRemoveLineWhenBlank="true" uuid="6ee1bc40-6088-410d-827c-161b73cc0fa8"/>
+				<textElement textAlignment="Right">
+					<font isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{1,9-determinations,4.taxon.Family}==null?"":$F{1,9-determinations,4.taxon.Family})]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="58" width="250" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="107096b3-f8c7-46a4-bb99-1a2720b61907"/>
+				<textElement markup="html">
+					<font isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<i>" + ($F{1,9-determinations,4.taxon.taxon}==null?"":$F{1,9-determinations,4.taxon.taxon}) + "</i> " + ($F{1,9-determinations,4.taxon.author}==null?"":$F{1,9-determinations,4.taxon.author} )
+/* Previously was verbatim name: ($F{1,9-determinations.determination.text2}==null?"":$F{1,9-determinations.determination.text2}) */]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="0" y="81" width="250" height="30" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="33648b01-85c7-492a-b001-3791c09a2024"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[($F{1,10,2,3.geography.country} == null ? "" : $F{1,10,2,3.geography.country} + "; ") +
+			        ($F{1,10,2,3.geography.subcountry} == null ? "" : $F{1,10,2,3.geography.subcountry} + "; ") +
+			        ($F{1,10,2,3.geography.subsubcountry} == null ? "" : $F{1,10,2,3.geography.subsubcountry} + "; ") +
+			        ($F{1,10,2,3.geography.subsubsubcountry} == null ? "" : $F{1,10,2,3.geography.subsubsubcountry} + "; ") +
+			        ($F{1,10.collectingevent.verbatimLocality} == null ? "" : "" + $F{1,10.collectingevent.verbatimLocality})]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="0" y="111" width="250" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="e0c5e72e-59b1-427a-8726-d35b53e48e6e"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[(
+    ($F{1,10,92.collectingeventattribute.text10} == null && 
+     $F{1,10,92.collectingeventattribute.integer5} == null && 
+     $F{1,10,92.collectingeventattribute.integer6} == null) 
+    ? "" 
+    : ("Altitude: " +
+        ($F{1,10,92.collectingeventattribute.text10} == null ? "" : $F{1,10,92.collectingeventattribute.text10} + " ") +
+        ($F{1,10,92.collectingeventattribute.integer5} == null ? "" : $F{1,10,92.collectingeventattribute.integer5} + " ") +
+        ($F{1,10,92.collectingeventattribute.integer6} == null ? "" : $F{1,10,92.collectingeventattribute.integer6} + " ") +
+        ($F{1,10,92.collectingeventattribute.text6} == null ? "" : $F{1,10,92.collectingeventattribute.text6} + " ")
+    )
+)]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="0" y="131" width="250" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="b07f7600-1d07-4147-9c6a-f824dc9800d7"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[($F{1,10,92.collectingeventattribute.integer1} == null ? "" : $F{1,10,92.collectingeventattribute.integer1} + "° ") +
+			        ($F{1,10,92.collectingeventattribute.number2} == null ? "" : $F{1,10,92.collectingeventattribute.number2}.stripTrailingZeros().toPlainString() + "' ") +
+			        ($F{1,10,92.collectingeventattribute.number3} == null ? "" : $F{1,10,92.collectingeventattribute.number3}.stripTrailingZeros().toPlainString() + "'' ") +
+			        ($F{1,10,92.collectingeventattribute.text8} == null ? "" : $F{1,10,92.collectingeventattribute.text8} + " ") +
+			        ($F{1,10,92.collectingeventattribute.integer2} == null ? "" : $F{1,10,92.collectingeventattribute.integer2} + "° ") +
+			        ($F{1,10,92.collectingeventattribute.number5} == null ? "" : $F{1,10,92.collectingeventattribute.number5}.stripTrailingZeros().toPlainString() + "' ") +
+			        ($F{1,10,92.collectingeventattribute.number6} == null ? "" : $F{1,10,92.collectingeventattribute.number6}.stripTrailingZeros().toPlainString() + "'' ") +
+			        ($F{1,10,92.collectingeventattribute.text7} == null ? "" : $F{1,10,92.collectingeventattribute.text7} + "")]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="0" y="151" width="250" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="4ca83d82-e7db-4877-9983-806e7ef71975"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[($F{1,10.collectingevent.text1} != null && !$F{1,10.collectingevent.text1}.startsWith("Habitat: ") 
+    ? "Habitat: " + $F{1,10.collectingevent.text1} 
+    : $F{1,10.collectingevent.text1} != null ? $F{1,10.collectingevent.text1} : "")]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="0" y="171" width="250" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="b147908f-34e6-4efe-a2ca-bec0c24ed388"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[($F{1,10.collectingevent.text2}  != null ? "Substrate: " + $F{1,10.collectingevent.text2} + "" : "")]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="0" y="191" width="250" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="a09b7525-e0ac-49af-b6d3-6d6d112d0c50"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[($F{1.collectionobject.description} != null ? "Description: " + $F{1.collectionobject.description} + "" : "")]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="0" y="219" width="160" height="30" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="84ddf840-241e-420d-b685-dead1d286d59"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[($F{1,10,30-collectors.collector.collectors}==null?"":$F{1,10,30-collectors.collector.collectors})]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="160" y="221" width="90" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="12877606-7739-48d9-91c9-63d5dac27bd4"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[($F{1,10.collectingevent.stationFieldNumber}==null?"":$F{1,10.collectingevent.stationFieldNumber})]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="170" y="246" width="80" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="4698fc66-4580-401c-9299-2e1646dc938f"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[($F{1,10.collectingevent.startDateNumericDay}==null?"":$F{1,10.collectingevent.startDateNumericDay}+" ").toString() +
+($F{1,10.collectingevent.startDateNumericMonth}==null?"":$F{1,10.collectingevent.startDateNumericMonth}+" ").toString()
+    .replace("10","Oct").replace("11","Nov").replace("12","Dec")
+    .replace("1","Jan").replace("2","Feb").replace("3","Mar")
+    .replace("4","Apr").replace("5","May").replace("6","Jun")
+    .replace("7","Jul").replace("8","Aug").replace("9","Sep") +
+($F{1,10.collectingevent.startDateNumericYear}==null?"":""+$F{1,10.collectingevent.startDateNumericYear}).toString()]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="0" y="269" width="250" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="a418c2d1-b3d9-4860-aa89-d3199d3f9abd"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[($F{1.collectionobject.text7} != null ? "Associated material: " + $F{1.collectionobject.text7} + "" : "")]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="0" y="294" width="250" height="30" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="b81c7b74-3fff-40f4-8329-a8483e7ace8c"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{1,63-preparations.preparation.text2} != null ? $F{1,63-preparations.preparation.text2} + "" : "")]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

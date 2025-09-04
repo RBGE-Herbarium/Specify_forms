@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.1.final using JasperReports Library version 6.20.1-7584acb244139816654f64e2fd57a00d3e31921e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Destructive Sampling Packing LIst" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" uuid="a1abaefb-fea3-44da-ac24-f9fcc58237d2">
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<field name="131.gift.giftNumber" class="java.lang.String"/>
+	<field name="131,132-giftPreparations,63,1,10.collectingevent.stationFieldNumber" class="java.lang.String"/>
+	<field name="131,132-giftPreparations,63,1,10,30-collectors.collector.collectors" class="java.lang.String"/>
+	<field name="131,132-giftPreparations,63,1,9-determinations.determination.isCurrent" class="java.lang.Boolean"/>
+	<field name="131,132-giftPreparations,63,1,9-determinations,4.taxon.fullName" class="java.lang.String"/>
+	<field name="131,132-giftPreparations,63.preparation.barCode" class="java.lang.String"/>
+	<field name="131,133-giftAgents.giftagent.role" class="java.lang.String"/>
+	<field name="131,133-giftAgents,5.agent.lastName" class="java.lang.String"/>
+	<field name="131,133-giftAgents,5.agent.firstName" class="java.lang.String"/>
+	<field name="131,132-giftPreparations,63.preparation.text9" class="java.lang.String"/>
+	<field name="131.gift.text3" class="java.lang.String"/>
+	<field name="131.gift.remarks" class="java.lang.String"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="resultsetsize" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText-1" x="0" y="0" width="535" height="39" uuid="f3ecb54f-674c-4098-9271-9cd1de57fc92"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Royal Botanic Garden Edinburgh (E)
+Herbarium Sample Packing List]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="69" splitType="Stretch">
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-4" x="93" y="32" width="105" height="21" uuid="4ac2daed-9842-4beb-b346-a86a5d0b350f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{131.gift.giftNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-8" x="0" y="32" width="93" height="21" uuid="98f3ebd1-86a4-4680-97cd-678a0d005377">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Request No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-7" x="0" y="10" width="93" height="21" uuid="803ef7af-4186-4cae-9488-ba0fde439430">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Recipient:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-3" x="93" y="10" width="207" height="21" uuid="d3b843f2-a9fa-4576-9ec8-874e9fbc575e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{131,133-giftAgents,5.agent.firstName} + " " +
+$F{131,133-giftAgents,5.agent.lastName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="5" width="100" height="21" uuid="39509681-52bd-483b-9ade-baf724cab52c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Barcode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="107" y="5" width="220" height="21" uuid="1fec9e66-5860-4f17-8ba6-817cd8c67624"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Taxon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="336" y="5" width="199" height="21" uuid="c9b0e340-5b30-40d8-b03e-e8d26503eed8"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Collector & Collector No.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="0" y="0" width="107" height="18" uuid="8ee9c58a-b5f1-40a9-9d88-fda33c4681db"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{131,132-giftPreparations,63.preparation.text9} == null ? "" : $F{131,132-giftPreparations,63.preparation.text9}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="false">
+				<reportElement key="textField" x="107" y="0" width="221" height="18" uuid="f00efb83-4a74-4b8f-9b86-d4d9e5a61c3b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{131,132-giftPreparations,63,1,9-determinations,4.taxon.fullName} == null ? "" : $F{131,132-giftPreparations,63,1,9-determinations,4.taxon.fullName}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="false">
+				<reportElement key="textField" x="336" y="0" width="199" height="18" uuid="7c094b78-6ecf-44d7-b8a3-7979c65d3807"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{131,132-giftPreparations,63,1,10,30-collectors.collector.collectors} == null ? "" : $F{131,132-giftPreparations,63,1,10,30-collectors.collector.collectors}) + 
+($F{131,132-giftPreparations,63,1,10.collectingevent.stationFieldNumber} == null ? "" : ", " + $F{131,132-giftPreparations,63,1,10.collectingevent.stationFieldNumber} )]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="30" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="50" splitType="Stretch"/>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="50" splitType="Stretch"/>
+	</lastPageFooter>
+	<summary>
+		<band height="30" splitType="Stretch"/>
+	</summary>
+</jasperReport>

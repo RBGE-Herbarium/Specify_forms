@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="Outgoing Gift Sp7"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+	<field name="40.exchangeout.exchangeOutNumber" class="java.lang.Object"/>
+	<field name="40,125.addressofrecord.address2" class="java.lang.String"/>
+	<field name="40,5-agentCatalogedBy.agent.firstName" class="java.lang.String"/>
+	<field name="40,125.addressofrecord.country" class="java.lang.String"/>
+	<field name="40,125.addressofrecord.state" class="java.lang.String"/>
+	<field name="40,125.addressofrecord.postalCode" class="java.lang.String"/>
+	<field name="40.exchangeout.contents" class="java.lang.String"/>
+	<field name="40,125.addressofrecord.city" class="java.lang.String"/>
+	<field name="40,125.addressofrecord.address" class="java.lang.String"/>
+	<field name="40,5-agentCatalogedBy.agent.title" class="java.lang.String"/>
+	<field name="40,5-agentCatalogedBy.agent.lastName" class="java.lang.String"/>
+	<field name="40,141-exchangeOutPreps.exchangeoutprep.quantity" class="java.lang.Integer"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="resultsetsize" class="java.lang.String"/>
+	<variable name="CURRENT_DATE" class="java.lang.String" resetType="Report" calculation="Nothing">
+		<variableExpression><![CDATA[new SimpleDateFormat("dd MMM yyyy").format(new Date())]]></variableExpression>
+		<initialValueExpression><![CDATA[""]]></initialValueExpression>
+	</variable>
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="132"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="10"
+						y="10"
+						width="293"
+						height="16"
+						key="textField-1"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{40,5-agentCatalogedBy.agent.title}==null?"":$F{40,5-agentCatalogedBy.agent.title}+" ")+($F{40,5-agentCatalogedBy.agent.firstName}==null?"":$F{40,5-agentCatalogedBy.agent.firstName}+" ")+($F{40,5-agentCatalogedBy.agent.lastName}==null?"":$F{40,5-agentCatalogedBy.agent.lastName})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="10"
+						y="26"
+						width="293"
+						height="84"
+						key="textField-2"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{40,125.addressofrecord.address}==null?"":$F{40,125.addressofrecord.address}+"\n")+($F{40,125.addressofrecord.address2}==null?"":$F{40,125.addressofrecord.address2}+"\n")+($F{40,125.addressofrecord.city}==null?"":$F{40,125.addressofrecord.city}+"\n")+($F{40,125.addressofrecord.state}==null?"":$F{40,125.addressofrecord.state}+"\n")+($F{40,125.addressofrecord.postalCode}==null?"":$F{40,125.addressofrecord.postalCode}+"\n")+($F{40,125.addressofrecord.country}==null?"":$F{40,125.addressofrecord.country})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false" evaluationTime="Report" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="10"
+						y="110"
+						width="172"
+						height="19"
+						key="textField-3"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$V{CURRENT_DATE}]]></textFieldExpression>
+				</textField>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="471"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="0"
+						y="0"
+						width="535"
+						height="58"
+						key="staticText-1"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<text><![CDATA[We are sending you the following herbarium material as a gift. This is upon the understanding that you agree that it will be used for scientific purposes only and not for commercial use. Upon arrival of the consignment please verify the contents and kindly acknowledge receipt by signing the duplicate sheet and returning it to RBGE Herbarium. Many Thanks.]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false" evaluationTime="Report" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="58"
+						width="535"
+						height="242"
+						key="textField-4"/>
+					<box></box>
+					<textElement markup="html">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["<b>Material enclosed</b>"+
+"<br/>"+
+"<br/>"+
+"<b>RBGE gift num.: </b>"+$F{40.exchangeout.exchangeOutNumber}+"<i>  (please use in all correspondence regarding this material)</i>"+
+"<br/>"+
+"<br/>"+
+"<b>Description: </b>"+$F{40,141-exchangeOutPreps.exchangeoutprep.quantity}+" specimens returned of "+$F{40.exchangeout.contents}+
+"<br/>"+
+"<br/>"+
+"<b>Restrictions of use <b/>(any restrictions arising from CBD or Nagoya benefit sharing agreement)"+
+"<br/>"+
+"<br/>"+
+"Please can you sign and return one copy to acknowledge as received safely."+
+"<br/>"+
+"<b>You can scan and email the document to herbarium@rbge.org.uk<b/>"]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<lastPageFooter>
+			<band height="100"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="174"
+						y="9"
+						width="165"
+						height="69"
+						key="staticText-2"/>
+					<box></box>
+					<textElement markup="html">
+						<font/>
+					</textElement>
+				<text><![CDATA[Signed:
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="346"
+						y="9"
+						width="165"
+						height="69"
+						key="staticText-3"/>
+					<box></box>
+					<textElement markup="html">
+						<font/>
+					</textElement>
+				<text><![CDATA[Date:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="9"
+						width="165"
+						height="82"
+						key="staticText-4"/>
+					<box></box>
+					<textElement markup="html">
+						<font/>
+					</textElement>
+				<text><![CDATA[Signed:
+<br/>
+<br/>
+David Harris
+<br/>
+Curator]]></text>
+				</staticText>
+			</band>
+		</lastPageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

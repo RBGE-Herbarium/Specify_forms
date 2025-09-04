@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="Loan Reminder letter"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="515"
+		 columnSpacing="0"
+		 leftMargin="40"
+		 rightMargin="40"
+		 topMargin="30"
+		 bottomMargin="30"
+		 whenNoDataType="NoPages"
+		 scriptletClass="edu.ku.brc.specify.config.Scriptlet"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="true">
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+	<field name="52.loan.contents" class="java.lang.String"/>
+	<field name="52.loan.loanDate" class="java.lang.String"/>
+	<field name="52.loan.loanNumber" class="java.lang.String"/>
+	<field name="52.loan.currentDueDate" class="java.lang.String"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="resultsetsize" class="java.lang.String"/>
+	<field name="52,54-loanPreparations,63.preparation.barCode" class="java.lang.String"/>
+	<field name="52,53-loanAgents,5,8-addresses.address.address2" class="java.lang.String"/>
+	<field name="52,53-loanAgents,5.agent.firstName" class="java.lang.String"/>
+	<field name="52,53-loanAgents,5,8-addresses.address.address" class="java.lang.String"/>
+	<field name="52,53-loanAgents,5,8-addresses.address.country" class="java.lang.String"/>
+	<field name="52,53-loanAgents,5.agent.title" class="java.lang.String"/>
+	<field name="52,53-loanAgents.loanagent.role" class="java.lang.String"/>
+	<field name="52,53-loanAgents,5,8-addresses.address.city" class="java.lang.String"/>
+	<field name="52,53-loanAgents,5.agent.lastName" class="java.lang.String"/>
+	<field name="52,53-loanAgents,5,8-addresses.address.state" class="java.lang.String"/>
+	<field name="52,53-loanAgents,5,8-addresses.address.postalCode" class="java.lang.String"/>
+	<variable name="CURRENT_DATE" class="java.lang.String" resetType="Report" calculation="Nothing">
+		<variableExpression><![CDATA[new SimpleDateFormat("dd MMM yyy").format(new Date())]]></variableExpression>
+		<initialValueExpression><![CDATA[""]]></initialValueExpression>
+	</variable>
+	<variable name="NoSpecimensOnLoan" class="java.lang.Integer" resetType="Report" incrementType="Group" incrementGroup="Count of Barcodes" calculation="Count">
+		<variableExpression><![CDATA[new java.lang.Integer(1)]]></variableExpression>
+		<initialValueExpression><![CDATA[new java.lang.Integer(0)]]></initialValueExpression>
+	</variable>
+		<group  name="Count of Barcodes" >
+			<groupExpression><![CDATA[$F{52,54-loanPreparations,63.preparation.barCode}]]></groupExpression>
+			<groupHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+			</groupHeader>
+			<groupFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+			</groupFooter>
+		</group>
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="705"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false" evaluationTime="Report" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="134"
+						width="172"
+						height="19"
+						key="textField-2"/>
+					<box></box>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$V{CURRENT_DATE}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="0"
+						y="181"
+						width="515"
+						height="43"
+						key="staticText-1"/>
+					<box></box>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+				<text><![CDATA[We are chasing up some of our outstanding loans and according to our records, we have the following loan items listed as overdue. Please could the following material be returned as soon as possible to Edinburgh. We enclose information on the specimens which are outstanding. ]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="224"
+						width="515"
+						height="1"
+						key="line-1"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false" evaluationTime="Report" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="256"
+						width="515"
+						height="266"
+						key="textField-3"/>
+					<box></box>
+					<textElement markup="html">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="-1"
+						y="569"
+						width="165"
+						height="118"
+						key="staticText-3"/>
+					<box></box>
+					<textElement markup="html">
+						<font size="12"/>
+					</textElement>
+				<text><![CDATA[<br/>
+Signed:
+<br/>
+<br/>
+Lesley Scott
+<br/>
+Assistant Herbarium Curator]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="525"
+						width="515"
+						height="40"
+						key="staticText-6"/>
+					<box></box>
+					<textElement markup="html">
+						<font size="12"/>
+					</textElement>
+				<text><![CDATA[Many Thanks and kind regards
+<br/>
+<b>You can scan and email the document to herbarium@rbge.org.uk</b>]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="6"
+						y="7"
+						width="323"
+						height="16"
+						key="textField-4"/>
+					<box></box>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{52,53-loanAgents,5.agent.title}==null?"":$F{52,53-loanAgents,5.agent.title}+" ")+($F{52,53-loanAgents,5.agent.firstName}==null?"":$F{52,53-loanAgents,5.agent.firstName}+" ")+($F{52,53-loanAgents,5.agent.lastName}==null?"":$F{52,53-loanAgents,5.agent.lastName})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="6"
+						y="23"
+						width="323"
+						height="84"
+						key="textField-5"/>
+					<box></box>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{52,53-loanAgents,5,8-addresses.address.address}==null?"":$F{52,53-loanAgents,5,8-addresses.address.address}+"\n")+($F{52,53-loanAgents,5,8-addresses.address.address2}==null?"":$F{52,53-loanAgents,5,8-addresses.address.address2}+"\n")+($F{52,53-loanAgents,5,8-addresses.address.city}==null?"":$F{52,53-loanAgents,5,8-addresses.address.city}+"\n")+($F{52,53-loanAgents,5,8-addresses.address.state}==null?"":$F{52,53-loanAgents,5,8-addresses.address.state}+"\n")+($F{52,53-loanAgents,5,8-addresses.address.postalCode}==null?"":$F{52,53-loanAgents,5,8-addresses.address.postalCode}+"\n")+($F{52,53-loanAgents,5,8-addresses.address.country}==null?"":$F{52,53-loanAgents,5,8-addresses.address.country})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false" evaluationTime="Report" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="163"
+						width="515"
+						height="19"
+						key="textField-6"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[Reminder of Outstanding Loans]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="257"
+						width="515"
+						height="268"
+						key="textField-7"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[ <table>
+  <tr>
+    <th>RBGE Number</th>
+    <th>Total items sent</th>
+    <th>Items due back</th>
+    <th>Due date</th>
+    <th>Requested by</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>$F{52.loan.loanNumber}</td>
+    <td>$F{resultsetsize}</td>
+    <td></td>
+    <td>$F{52.loan.currentDueDate}</td>
+    <td></td>
+    <td>$F{52.loan.contents}</td>
+  </tr>
+  </table>]]></textFieldExpression>
+				</textField>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="35"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<lastPageFooter>
+			<band height="50"  isSplitAllowed="true" >
+			</band>
+		</lastPageFooter>
+		<summary>
+			<band height="508"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="0"
+						y="1"
+						width="515"
+						height="498"
+						key="staticText-2"/>
+					<box></box>
+					<textElement markup="html" lineSpacing="Single">
+						<font size="10"/>
+					</textElement>
+				<text><![CDATA[<b>Loans of Herbarium Specimens</b>
+<br/>
+Terms and Conditions
+<ul>
+<li>In order to ensure the preservation of our specimen collections certain restrictions apply to all loan requests.</li>
+<br/>
+<li>It is the responsibility of the user to comply with Access and Benefits Sharing requirements from the country of origin and if the sample was collected after the 12th of October 2014 from a country that has ratified the Nagoya Protocol.  Refer to the Access and Benefit -Sharing Clearing-House absch.cbd.int for more information.</li>
+<br/>
+<li>The Herbarium at RBGE will only consider loans from recognised institutes and not from individuals.  All loan requests should come from the Curator or Director of the researcher’s institute.</li>
+<br/>
+<li>Loans are normally issued for a period of 12 months only. Type specimens are issued for a period of 6 months only.  An extension to this period may be granted following a written request.</li>
+<br/>
+<li>Loans should be returned securely packed to ensure safe transit.  A shipping notice should be included with each returned loan.</li>
+<br/>
+<li>The permanent removal of any part of the specimen on loan for palynological, anatomical, phytochemical or molecular work is not permitted without obtaining prior permission.  If the study requires destructive sampling a special request may be submitted.  Please see our Destructive Sampling policy for more information; it is found on our website.   www.rbge.org.uk/science/herbarium</li>
+<br/>
+<li>Specimens on loan should be stored in suitable conditions to ensure that no specimen is damaged whilst in the researcher’s institute.  Specimens should not be removed from the researcher’s institute whilst on loan.</li>
+<br/>
+<li>Please annotate specimens with appropriate slips before returning the loan (e.g. Determinavit, Confirmavit, Fide….).  These should be attached with archival quality adhesives or with a paper clip.</li>
+<br/>
+<li>Publications which include specimens loaned from RBGE should include an acknowledgement and, where possible, a copy should be sent to the Herbarium Office at RBGE.  herbarium@rbge.org.uk</li>
+</ul>
+<br/>
+<br/>
+For Data Protection guidance please see website http://rbge.org.uk/privacy]]></text>
+				</staticText>
+			</band>
+		</summary>
+</jasperReport>
